@@ -8,56 +8,65 @@ exports.onCreateBabelConfig = ({ actions }) => {
   })
 }
 
-// const path = require('path');
+const path = require('path');
 
-// const { createFilePath } = require(`gatsby-source-filesystem`)
-// exports.onCreateNode = ({ node, getNode, actions }) => {
-//   const { createNodeField } = actions
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const slug = createFilePath({ node, getNode, basePath: `pages` })
-//     createNodeField({
-//       node,
-//       name: `slug`,
-//       value: slug,
-//     })
-//   }
-// }
+const { createFilePath } = require(`gatsby-source-filesystem`)
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+}
 
-// exports.createPages = async ({ graphql, actions }) => {
 
-//   const { createPage } = actions
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  if (page.path.match(/^\/works/)) {
+    page.matchPath = "/works/*"
+    createPage(page)
+  }
+}
 
-//   const blogs = graphql(`
-//     query {
-// 			allMarkdownRemark(
-// 				filter: { fileAbsolutePath: { regex: "/(blog)\\/.*\\\\.md$/" } }
-// 			) {
-// 				edges {
-// 					node {
-// 						fields {
-// 							slug
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	`).then(result => {
-//     if (result.errors) {
-//       Promise.reject(result.errors);
-//     }
+exports.createPages = async ({ graphql, actions }) => {
 
-//     // Create blog pages
-//     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//       createPage({
-//         path: node.fields.slug,
-//         component: path.resolve(`./src/components/Blog/index.js`),
-//         context: {
-//           slug: node.fields.slug
-//         },
-//       });
-//     });
-//   });
+  const { createPage } = actions
 
-//   return Promise.all([blogs]);
+  const blogs = graphql(`
+    query {
+			allMarkdownRemark(
+				filter: { fileAbsolutePath: { regex: "/(blog)\\/.*\\\\.md$/" } }
+			) {
+				edges {
+					node {
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		}
+	`).then(result => {
+    if (result.errors) {
+      Promise.reject(result.errors);
+    }
 
-// }
+    // Create blog pages
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/components/Blog/index.js`),
+        context: {
+          slug: node.fields.slug
+        },
+      });
+    });
+  });
+
+  return Promise.all([blogs]);
+
+}
