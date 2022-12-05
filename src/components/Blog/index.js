@@ -10,8 +10,8 @@ import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
 import BlogCollapse from "../blogCollapse";
 import BlogArticles from "../blogArticles";
-import BlogHeader from "../BlogHeader";
-import BlogCoinTypes from "../BlogCoinTypes";
+import BlogHeader from "../blogHeader";
+import BlogCoinTypes from "../blogCoinTypes";
 const { Meta } = Card;
 
 const { Content } = Layout
