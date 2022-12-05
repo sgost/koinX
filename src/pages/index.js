@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Subscribe from "../components/subscribe";
 import BlogPost from "../components/Blog";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 
 import SEO from "../components/seo";
 
