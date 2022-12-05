@@ -1,12 +1,10 @@
 import React from "react";
-import { Layout, Menu, Card, Row, Col } from "antd";
+import { Layout, Card } from "antd";
 import thumbnail from "../../data/assets/blogs/thumbnail.png";
 import watch_icon from "../../data/assets/blogs/watch_icon.svg";
 import { BlogVideoStyle } from "./styles";
 
-const { Meta } = Card;
-
-const { Header, Footer, Sider, Content } = Layout
+const { Content } = Layout
 const BlogVideo = () => {
     return (
         <BlogVideoStyle>

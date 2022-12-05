@@ -1,29 +1,38 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import SEO from "../seo"
-import { BlogsWrapper } from "../../styles/pages/BlogsStyles";
+import { BlogsWrapper } from "./styles";
 import { Layout, Card } from "antd";
 import bitcoin_banner from "../../data/assets/blogs/bitcoin_banner.png";
-import hambuger from "../../data/assets/blogs/hambuger.svg";
 import hold_coin from "../../data/assets/blogs/hold_coin.png";
 import hold_coin_tax from "../../data/assets/blogs/hold_coin_tax.png";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
 import BlogCollapse from "../blogCollapse";
 import BlogArticles from "../blogArticles";
 import BlogHeader from "../blogHeader";
 import BlogCoinTypes from "../blogCoinTypes";
+import BlogLinks from "../blogLinks";
 import { ArrowRightOutlined } from '@ant-design/icons';
-const { Meta } = Card;
 
-const { Content } = Layout
-const BlogPost = () => {
+export const BlogPost = ({
+  fields,
+  author,
+  bio,
+  linkdin,
+  twitter,
+  date,
+  title,
+  html,
+  preview
+}) => {
+  const { Content } = Layout
 
   return (
     <BlogsWrapper>
       <Layout className="blog_data">
-        <BlogHeader />
+        <BlogHeader title={title} />
         <Content className="blog_body">
           <img src={bitcoin_banner} alt="img" />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
@@ -64,19 +73,84 @@ const BlogPost = () => {
         {/* Blog releated coin types */}
         <BlogCoinTypes />
       </Layout>
-      <div className="side_menu">
-        <h2 className="menu_title"><img src={hambuger} alt="img" className="ham_icon" />Contents</h2>
-        <ul className="sub_link_main">
-          <li>How to buy Bitcoin in 3 easy steps</li>
-          <li>How to buy Bitcoin in 3 easy steps</li>
-          <li>How to buy Bitcoin in 3 easy steps</li>
-          <li>How to buy Bitcoin in 3 easy steps</li>
-          <li>How to buy Bitcoin in 3 easy steps</li>
-        </ul>
-      </div>
+      <BlogLinks />
       {/* Blog releated articles */}
       <BlogArticles />
     </BlogsWrapper>
   )
 }
-export default BlogPost;
+
+const Blog = ({ data }) => {
+
+  const { blogpost: post } = data;
+
+  const seoData = post.frontmatter.seo;
+
+  var author_image;
+  if (post.frontmatter.author_image.publicURL) {
+    author_image = post.frontmatter.author_image.publicURL;
+  } else {
+    author_image = post.frontmatter.author_image;
+  }
+
+
+  return (
+    <Fragment>
+      <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+      <BlogPost
+        fields={post.fields}
+        author_image={author_image}
+        author={post.frontmatter.author}
+        bio={post.frontmatter.bio}
+        linkdin={post.frontmatter.linkdin}
+        twitter={post.frontmatter.twitter}
+        date={post.frontmatter.date}
+        title={post.frontmatter.title}
+        html={post.html}
+        tags={post.frontmatter.tags}
+        preview={false}
+      />
+    </Fragment>
+  )
+}
+
+export default Blog
+
+export const query = graphql`
+  query($slug: String!) {
+    blogpost: markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+        readingTime {
+          text
+        }
+      }
+      frontmatter {
+        author
+        author_image {
+          publicURL
+        }
+        bio
+        linkdin
+        twitter
+        date(formatString: "MMMM DD, YYYY")
+        title
+        seo {
+          title
+          description
+          keywords
+        }
+      }
+      html
+    }
+    seoData: file(relativePath: {eq: "seoBlog.md"}) {
+      childMarkdownRemark {
+        frontmatter {
+          title
+          description
+          keywords
+        }
+      }
+    }
+  }
+`

@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import { BlogArticlesStyle } from "./styles";
-import wazirx from "../../data/assets/blogs/wazirx.png";
-import bitbns from "../../data/assets/blogs/bitbns.png";
-import { Layout, Menu, Card, Row, Col } from "antd";
+import { Layout } from "antd";
 import thumbnail from "../../data/assets/blogs/thumbnail.png";
 
 const BlogArticles = () => {
-    const { Header, Footer, Sider, Content } = Layout
+    const { Content } = Layout
     return (
         <BlogArticlesStyle>
             <Content className="blog_dashboad_wrapper">
@@ -27,7 +25,7 @@ const BlogArticles = () => {
                         <div className="thumb_img">
                             <img src={thumbnail} alt="thumbnail" />
                             <div className="blog_title">
-                                <h3></h3>
+                                <h3>How to stake Bitcoin</h3>
                                 <span>Added: 23 October 2020</span>
                             </div>
                         </div>

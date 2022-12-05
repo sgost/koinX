@@ -1,65 +1,55 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import "../styles/blogs.css"
+import { graphql, Link, useStaticQuery } from "gatsby"
+// import "../styles/blogs.css"
 import SEO from "../components/seo"
 
 const BlogPage = ({ data }) => {
 
-  const blogList = data.blogData.edges;
+  const posts = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date
+              author_image {
+                childImageSharp {
+                  fluid {
+                    src
+                  }
+                }
+                extension
+                publicURL
+              }
+              excerpt
+            }
+          }
+        }
+      }
+    }
+  `);
 
-  const seoData = data.seoData.childMarkdownRemark.frontmatter;
+
+  const blogData = posts?.allMarkdownRemark?.edges
 
   return (
     <div style={{ background: '#000' }}>
-      <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
       <div className="blogListContainer">
-        <h2>Blog</h2>
+        {blogData?.map((item) => {
+          return (
+            <Link to={item.node.fields.slug} id="blog_card">
+              <h2 style={{ color: `red` }}>Blog</h2>
+            </Link>
+          )
+        })}
       </div>
     </div>
   )
 }
 
-export default BlogPage
-
-export const pageQuery = graphql`
-  query {
-    blogData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-            readingTime {
-              text
-            }
-          }
-          frontmatter {
-            title
-            excerpt
-            author
-            author_image {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-              extension
-              publicURL
-            }
-            previewTitle
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-    seoData: file(relativePath: {eq: "seoBlog.md"}) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          description
-          keywords
-        }
-      }
-    }
-  }
-`
+export default BlogPage;

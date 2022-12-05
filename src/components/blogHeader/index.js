@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import { BlogHeaderStyles } from "./styles";
 import TimeCircle from "../../data/assets/blogs/TimeCircle.svg";
 import Calendar from "../../data/assets/blogs/Calendar.svg";
@@ -8,14 +8,14 @@ import instagram from "../../data/assets/blogs/instagram.svg";
 import twitter from "../../data/assets/blogs/twitter.svg";
 import linkdin from "../../data/assets/blogs/linkdin.svg";
 import youtube from "../../data/assets/blogs/youtube.svg";
-import { Layout, Menu, Card, Row, Col } from "antd";
+import { Layout } from "antd";
 
-const BlogHeader = () => {
-    const { Header, Footer, Sider, Content } = Layout
+const BlogHeader = ({ title }) => {
+    const { Content } = Layout
     return (
         <BlogHeaderStyles>
             <Content>
-                <h2 className="blog_title">How to buy Bitcoin?</h2>
+                <h2 className="blog_title">{title}</h2>
                 <div className="time_date">
                     <span>
                         <img src={Calendar} className="badge_icon" alt="img" />

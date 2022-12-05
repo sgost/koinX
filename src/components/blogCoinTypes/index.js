@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import { BlogCoinTypesStyle } from "./styles";
 import ET from "../../data/assets/blogs/ET.png";
 import usdt from "../../data/assets/blogs/usdt.png";
 import xrp from "../../data/assets/blogs/xrp.png";
 import matic from "../../data/assets/blogs/matic.png";
 import doge from "../../data/assets/blogs/doge.png";
-import { Layout, Menu, Card, Row, Col } from "antd";
+import { Layout } from "antd";
 
 const BlogCoinTypes = () => {
-    const { Header, Footer, Sider, Content } = Layout
+    const { Content } = Layout
     return (
         <BlogCoinTypesStyle>
             <Content className="coin_wrapper">

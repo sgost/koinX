@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogs = graphql(`
     query {
 			allMarkdownRemark(
-				filter: { fileAbsolutePath: { regex: "/(blog)\\/.*\\\\.md$/" } }
+				filter: { fileAbsolutePath: { regex: "./src/data/(blog)\\/.*\\\\.md$/" } }
 			) {
 				edges {
 					node {

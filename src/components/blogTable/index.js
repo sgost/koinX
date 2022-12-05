@@ -3,10 +3,10 @@ import { Link } from "gatsby";
 import { BlogTableStyle } from "./styles";
 import wazirx from "../../data/assets/blogs/wazirx.png";
 import bitbns from "../../data/assets/blogs/bitbns.png";
-import { Layout, Menu, Card, Row, Col } from "antd";
+import { Layout } from "antd";
 
 const BlogTable = () => {
-    const { Header, Footer, Sider, Content } = Layout
+    const { Content } = Layout
     return (
         <BlogTableStyle>
             <Content className="table_wrapper">
