@@ -135,8 +135,53 @@ color: ${palette.SECONDARY_TXT_COLOR};
         margin-bottom: 1.3rem;
         color: ${palette.PRIMARY_TXT_COLOR};
     }
-    .hold_coin_link {
-      text-decoration: underline;
+    .hold_coin_container_cards {
+      display:grid;
+      gap: 31px;
+      margin-top: 24px;
+      grid-template-columns: 1fr 1fr;
+      .card {
+        display: flex;
+        gap: 27px;
+        align-items: center;
+        padding:12px;
+        background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%);
+border-radius: 6.64828px;
+img{
+  width: 128px;
+height: 128px;
+}
+.card_title {
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+width: 190px;
+}
+button {
+  width: 132px;
+height: 32px;
+font-weight: 600;
+font-size: 14px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #0F1629;
+background: #FFFFFF;
+border-radius: 8px;
+margin-top: 18px;
+border: none;
+outline: none;
+cursor: pointer;
+.icon {
+  margin-left: 10px;
+}
+}
+:nth-child(2){
+  background: linear-gradient(135.73deg, #FF9865 0%, #EF3031 110.55%);
+}
+      }
     }
   }
 

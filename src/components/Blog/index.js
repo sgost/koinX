@@ -5,6 +5,8 @@ import { BlogsWrapper } from "../../styles/pages/BlogsStyles";
 import { Layout, Card } from "antd";
 import bitcoin_banner from "../../data/assets/blogs/bitcoin_banner.png";
 import hambuger from "../../data/assets/blogs/hambuger.svg";
+import hold_coin from "../../data/assets/blogs/hold_coin.png";
+import hold_coin_tax from "../../data/assets/blogs/hold_coin_tax.png";
 import { Link } from "gatsby";
 import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
@@ -12,6 +14,7 @@ import BlogCollapse from "../blogCollapse";
 import BlogArticles from "../blogArticles";
 import BlogHeader from "../blogHeader";
 import BlogCoinTypes from "../blogCoinTypes";
+import { ArrowRightOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 
 const { Content } = Layout
@@ -40,8 +43,22 @@ const BlogPost = () => {
         <BlogTable />
         <Content className="hold_coin">
           <h2>Already Holding Bitcoin?</h2>
-          <Link className="hold_coin_link">Calculate your profits</Link>
-          <Link className="hold_coin_link">Calculate your tax liability</Link>
+          <div className="hold_coin_container_cards">
+            <div className="card">
+              <img src={hold_coin} alt="hold_coin" />
+              <div className="coin_text">
+                <span className="card_title">Calculate your Profits</span>
+                <button>Check Now<ArrowRightOutlined className="icon" /></button>
+              </div>
+            </div>
+            <div className="card">
+              <img src={hold_coin_tax} alt="hold_coin_tax" />
+              <div className="coin_text">
+                <span className="card_title">Calculate your tax liability</span>
+                <button>Check Now<ArrowRightOutlined className="icon" /></button>
+              </div>
+            </div>
+          </div>
         </Content>
         <BlogCollapse />
         {/* Blog releated coin types */}
