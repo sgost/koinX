@@ -14,7 +14,7 @@ const BlogVideo = ({ youtubeContainerTitle, youtubeArray }) => {
                             <div className="youtube_card_main" key={index}>
                                 <div className="card_cover">
                                     <iframe className="youtube_thumbnail"
-                                        src={item.link}>
+                                        src={`https://www.youtube.com/embed/${item.link}`}>
                                     </iframe>
                                 </div>
                                 <label className="youtube_card_desc">{item?.title}</label>

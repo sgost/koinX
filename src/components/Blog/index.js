@@ -74,7 +74,7 @@ export const BlogPost = ({
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${item?.slug}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${item?.title?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -82,7 +82,7 @@ export const BlogPost = ({
             {blogBodyArray?.map((item, index) => {
               return (
                 <>
-                  <h3 id={item?.slug}>Step {index + 1} : {item?.title} </h3>
+                  <h3 id={item?.title?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>Step {index + 1} : {item?.title} </h3>
                   <p>{item?.description}</p>
                 </>
               )
@@ -216,7 +216,6 @@ export const query = graphql`
         blogBodyArray {
           title
           description
-          slug
         }
         alsoReadTitle
         alsoReadSlug

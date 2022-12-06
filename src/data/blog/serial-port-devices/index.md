@@ -16,13 +16,10 @@ bannerDesc: Already Holding Bitcoin?
 blogBodyArray:
   - title: Lorem ipsum dolor sit amet, consectetur
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step1
   - title: Lorem ipsum dolor sit amet, consectetur
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step2
   - title: Lorem ipsum dolor sit amet, consectetur
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step3
 
 alsoReadTitle: Bitcoin Price Prediction
 alsoReadSlug: title_step1
@@ -31,23 +28,23 @@ youtubeContainerTitle: Popular video guides on buying Bitcoin
 youtubeArray:
   - id: 1
     image: bitcoin_banner.png
-    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    link: "tgbNymZ7vqY"
     title: Lorem ipsum do neque, ornare vitae ante id
   - id: 1
     image: bitcoin_banner.png
-    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    link: "PKwu15ldZ7k"
     title: Lorem ipsum do neque, ornare vitae ante id
   - id: 1
     image: bitcoin_banner.png
-    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    link: "tgbNymZ7vqY"
     title: Lorem ipsum do neque, ornare vitae ante id
   - id: 1
     image: bitcoin_banner.png
-    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    link: "tgbNymZ7vqY"
     title: Lorem ipsum do neque, ornare vitae ante id
   - id: 1
     image: bitcoin_banner.png
-    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    link: "tgbNymZ7vqY"
     title: Lorem ipsum do neque, ornare vitae ante id
 buyCoinTitle: Where to buy BITCOIN?
 buyCoinArray:

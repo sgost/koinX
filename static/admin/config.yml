@@ -47,7 +47,6 @@ collections:
             [
               { label: Title, name: title, widget: string },
               { label: Description, name: description, widget: string },
-              { label: Link (Slug), name: slug, widget: string },
             ],
         }
       - { name: alsoReadTitle, label: Read link title, widget: string }
