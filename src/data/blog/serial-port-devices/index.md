@@ -36,6 +36,10 @@ blogBodyArray:
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step3
+  - title: New Link
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit.
+    slug: step3
 alsoReadTitle: Bitcoin Price Prediction
 alsoReadSlug: title_step1
 youtubeContainerTitle: Popular video guides on buying Bitcoin
