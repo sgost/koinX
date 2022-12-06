@@ -200,14 +200,14 @@ articlesArray:
     image: ET.png
 currencyBlockArray:
   - title: How to stake Bitcoin
-    description: Article Description
-    date: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis
-      eros sed risus sollicitudin fringilla dictum in metus. "
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+      quis eros sed risus sollicitudin fringilla dictum in metus. "
+    date: 25 October 2022
     icon: team.png
 cryptoGuideTitle: "More cyrpto buying guides "
 cryptoGuideArray:
   - title: How to buy Ethereum?
-    date: 23 October 2020
+    date: 25 October 2022
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team.png
