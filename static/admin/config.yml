@@ -53,7 +53,7 @@ collections:
           name: alsoReadTitle,
           label: Read link title,
           widget: string,
-          default: "Link Title",
+          default: "Also read",
         }
       - {
           name: alsoReadSlug,
@@ -113,12 +113,6 @@ collections:
                 widget: list,
                 fields:
                   [
-                    {
-                      label: Title,
-                      name: title,
-                      widget: string,
-                      default: "Title",
-                    },
                     {
                       label: Table Value,
                       name: sheetValue,
@@ -183,40 +177,71 @@ collections:
               { label: Coin DP, name: icon, widget: image },
             ],
         }
-      - { name: articlesTitle, label: Add Articles title, widget: string }
       - {
-          name: articlesArray,
-          label: Add new articles,
-          widget: list,
-          fields:
-            [
-              { label: Title, name: title, widget: string },
-              { name: date, label: Date, widget: datetime },
-              { label: Description, name: description, widget: string },
-              { label: Article Thumbnail, name: image, widget: image },
-            ],
+          name: currencyBlockTitle,
+          label: Add Articles title,
+          widget: string,
+          default: Related articles to Bitcoin,
         }
       - {
-          name: sideNavArray,
-          lable: Add Side Nav Links,
+          name: currencyBlockArray,
+          label: Add Article,
           widget: list,
           fields:
             [
               {
-                label: Link Title (slug),
+                label: Title,
                 name: title,
-                widget: "string",
-                default: Navigation title,
+                widget: string,
+                default: "Article Title",
               },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Article Description",
+              },
+              {
+                label: Date,
+                name: date,
+                widget: string,
+                default: 23 October 2020,
+              },
+              { label: Thumnnail, name: icon, widget: image },
             ],
         }
       - {
-          name: previewTitle,
-          label: Blog Category Tag,
-          widget: "select",
-          options:
-            ["Frontend Development", "Backend Development", "Full Stack"],
-          required: false,
+          name: cryptoGuideTitle,
+          label: Add Crypto Guides title,
+          widget: string,
+          default: Related articles to Bitcoin,
+        }
+      - {
+          name: cryptoGuideArray,
+          label: Add Crypto Guides,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Article Title",
+              },
+              {
+                label: Date,
+                name: date,
+                widget: string,
+                default: 23 October 2020,
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Article Description",
+              },
+              { label: Thumnnail, name: icon, widget: image },
+            ],
         }
       - { name: excerpt, label: Excerpt }
       - label: SEO

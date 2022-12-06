@@ -12,7 +12,7 @@ const BlogLinks = ({ fields, sideNavArray }) => {
                 <ul className="sub_link_main">
                     {sideNavArray?.map((item, index) => {
                         return (
-                            <Link to={fields?.slug + "/" + `#${resolveFunction(item?.title)}`}> <li key={index}>{item?.title}</li></Link>
+                            <Link to={fields?.slug + "/#" + resolveFunction(item?.title)}> <li key={index}>{item?.title}</li></Link>
                         )
                     })}
                 </ul>

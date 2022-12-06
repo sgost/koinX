@@ -27,7 +27,7 @@ const BlogHeader = ({
                     </span>
                     <span className="seperator">|</span>
                     <span>
-                        <img src={TimeCircle} className="badge_icon" alt="img" />{fields?.readingTime?.text}
+                        <img src={TimeCircle} className="badge_icon" alt="img" />{title?.length < 20 ? 7 : 11} Min Read
                     </span>
                 </div>
                 <div className="icons_wrapper">

@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
 import { Layout } from "antd";
-// import { Link } from "gatsby";
 import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
 import BlogCollapse from "../blogCollapse";
@@ -11,22 +10,19 @@ import BlogArticles from "../blogArticles";
 import BlogHeader from "../blogHeader";
 import BlogCoinTypes from "../blogCoinTypes";
 import BlogLinks from "../blogLinks";
+import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
-// import BlogPost from "../Blog";
 import Footer from "../Footer";
 import Navbar from "../navbar";
 import { resolveFunction } from "../../utils/functions";
-import { ArrowRightOutlined } from '@ant-design/icons';
 
 export const BlogPost = ({
   fields,
   author_image,
   author,
-  bio,
   date,
   title,
   preview,
-  banner_image,
   bannerTitle,
   bannerDesc,
   blogBodyArray,
@@ -42,8 +38,10 @@ export const BlogPost = ({
   questionsArray,
   moreCoinsTitle,
   moreCoinsArray,
-  articlesTitle,
-  articlesArray,
+  currencyBlockTitle,
+  currencyBlockArray,
+  cryptoGuideTitle,
+  cryptoGuideArray,
   sideNavArray
 }) => {
   const { Content } = Layout
@@ -65,7 +63,7 @@ export const BlogPost = ({
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${resolveFunction(item?.title)}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -80,28 +78,20 @@ export const BlogPost = ({
             })}
 
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/" + `#${alsoReadSlug}`}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
           {/* blogs table component */}
-          <BlogTable buyCoinTitle={buyCoinTitle} buyCoinArray={buyCoinArray} />
-          <Content className="hold_coin" id={resolveFunction(bitCoinTitle)}>
-            <h2>{bitCoinTitle}</h2>
-            <div className="hold_coin_container_cards">
-              {bitcoinArray?.map((item, index) => {
-                return (
-                  <div className="card" key={index}>
-                    <img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt="item?.title" />
-                    <div className="coin_text">
-                      <span className="card_title">{item?.title}</span>
-                      <Link to={item?.link}><button>Check Now<ArrowRightOutlined className="icon" /></button></Link>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </Content>
+          <BlogTable
+            buyCoinTitle={buyCoinTitle}
+            buyCoinArray={buyCoinArray}
+            linkcompo={<Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link>}
+          />
+          <HoldCoins
+            bitCoinTitle={bitCoinTitle}
+            bitcoinArray={bitcoinArray}
+          />
           <BlogCollapse
             collapseTitle={collapseTitle}
             questionsArray={questionsArray}
@@ -115,8 +105,12 @@ export const BlogPost = ({
         <BlogLinks fields={fields} sideNavArray={sideNavArray} />
         {/* Blog releated articles */}
         <BlogArticles
-          articlesTitle={articlesTitle}
-          articlesArray={articlesArray}
+          articlesTitle={currencyBlockTitle}
+          articlesArray={currencyBlockArray}
+        />
+        <BlogArticles
+          articlesTitle={cryptoGuideTitle}
+          articlesArray={cryptoGuideArray}
         />
       </BlogsWrapper>
       <Subscribe />
@@ -138,14 +132,6 @@ const Blog = ({ data }) => {
     author_image = post.frontmatter.author_image;
   }
 
-
-  var banner_image;
-  if (post.frontmatter.banner_image.publicURL) {
-    banner_image = post.frontmatter.banner_image.publicURL;
-  } else {
-    banner_image = post.frontmatter.banner_image;
-  }
-
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
@@ -157,7 +143,6 @@ const Blog = ({ data }) => {
         title={post.frontmatter.title}
         tags={post.frontmatter.tags}
         preview={false}
-        banner_image={banner_image}
         bannerTitle={post.frontmatter.bannerTitle}
         bannerDesc={post.frontmatter.bannerDesc}
         blogBodyArray={post.frontmatter.blogBodyArray}
@@ -173,8 +158,10 @@ const Blog = ({ data }) => {
         questionsArray={post.frontmatter.questionsArray}
         moreCoinsTitle={post.frontmatter.moreCoinsTitle}
         moreCoinsArray={post.frontmatter.moreCoinsArray}
-        articlesTitle={post.frontmatter.articlesTitle}
-        articlesArray={post.frontmatter.articlesArray}
+        currencyBlockTitle={post.frontmatter.currencyBlockTitle}
+        currencyBlockArray={post.frontmatter.currencyBlockArray}
+        cryptoGuideTitle={post.frontmatter.cryptoGuideTitle}
+        cryptoGuideArray={post.frontmatter.cryptoGuideArray}
         sideNavArray={post.frontmatter.sideNavArray}
       />
     </Fragment>
@@ -194,9 +181,6 @@ export const query = graphql`
       }
       frontmatter {
         author
-        banner_image {
-          publicURL
-        }
         bannerTitle
         bannerDesc
         blogBodyArray {
@@ -219,8 +203,7 @@ export const query = graphql`
           }
           description
           Factsheet {
-           title
-           sheetValue
+            sheetValue
           }
         }
         bitCoinTitle
@@ -243,12 +226,21 @@ export const query = graphql`
             publicURL
           }
         }
-        articlesTitle
-        articlesArray{
+        currencyBlockTitle
+        currencyBlockArray {
           title
-          date(formatString: "MMMM DD, YYYY")
+          date
           description
-          image {
+          icon {
+            publicURL
+          }
+        }
+        cryptoGuideTitle
+        cryptoGuideArray {
+          title
+          date
+          description
+          icon {
             publicURL
           }
         }

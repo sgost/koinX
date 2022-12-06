@@ -65,22 +65,14 @@ buyCoinArray:
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
-      - title: Operational Since
-        sheetValue: Jan 2016
-      - title: Weekly Average Transaction Volume
-        sheetValue: $160M
-      - title: Deposit Methods
-        sheetValue: Credit Card, Debit Card, Netbanking
-      - title: Deposit Fees
-        sheetValue: 0.10%
-      - title: Cryptos Listed
-        sheetValue: "1650"
-      - title: Trading Fees
-        sheetValue: 0.2%
-      - title: Fiat Currencies Supported
-        sheetValue: USD, INR
-      - title: Trustworthiness
-        sheetValue: 78%
+      - sheetValue: Jan 2016
+      - sheetValue: $160M
+      - sheetValue: Credit Card, Debit Card, Netbanking
+      - sheetValue: 0.10%
+      - sheetValue: "1650"
+      - sheetValue: 0.2%
+      - sheetValue: USD, INR
+      - sheetValue: 78%
   - id: 2
     title: Bitbns
     image: bitbns.png
@@ -89,22 +81,14 @@ buyCoinArray:
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
-      - title: Operational Since
-        sheetValue: Jan 2016
-      - title: Weekly Average Transaction Volume
-        sheetValue: $160M
-      - title: Deposit Methods
-        sheetValue: Credit Card, Debit Card, Netbanking
-      - title: Deposit Fees
-        sheetValue: 0.10%
-      - title: Cryptos Listed
-        sheetValue: "1650"
-      - title: Trading Fees
-        sheetValue: 0.2%
-      - title: Fiat Currencies Supported
-        sheetValue: USD, INR
-      - title: Trustworthiness
-        sheetValue: 78%
+      - sheetValue: Jan 2016
+      - sheetValue: $160M
+      - sheetValue: Credit Card, Debit Card, Netbanking
+      - sheetValue: 0.10%
+      - sheetValue: "1650"
+      - sheetValue: 0.2%
+      - sheetValue: USD, INR
+      - sheetValue: 78%
 bitcoinArray:
   - image: hold_coin.png
     link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
@@ -143,7 +127,6 @@ excerpt: A serial port is a bidirectional communication interface that allows
   the physical world by allowing websites to communicate with serial devices,
   such as microcontrollers, 3D printers, removable USB and Bluetooth devices
   that emulate a serial port.
-banner_image: bitcoin_banner.png
 author: Pachiyappan Velu
 bitCoinTitle: Already Holding Bitcoin?
 collapseTitle: Frequently asked questions
@@ -158,26 +141,6 @@ moreCoinsArray:
     icon: matic.png
   - title: Doge
     icon: doge.png
-articlesTitle: Related articles to Bitcoin
-articlesArray:
-  - title: How to stake Bitcoin
-    date: 2021-11-30T18:30:00.000Z
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-      quis eros sed risus sollicitudin fringilla dictum in metus.
-    image: bitcoin_banner.png
-  - title: How to mine Bitcoin
-    date: 2021-11-30T18:30:00.000Z
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-      quis eros sed risus sollicitudin fringilla dictum in metus.
-    image: bitcoin_banner.png
-  - title: Bitcoin price prediction
-    date: 2021-11-30T18:30:00.000Z
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-      quis eros sed risus sollicitudin fringilla dictum in metus.
-    image: bitcoin_banner.png
 sideNavArray:
   - title: How to buy Bitcoin in 3 easy steps
   - title: Popular video guides on buying Bitcoin
@@ -185,6 +148,18 @@ sideNavArray:
   - title: Already holding Bitcoin?
   - title: Frequently asked questions
   - title: More Cryptos Similar to Bitcoin
+currencyBlockTitle: Related articles to Bitcoin
+currencyBlockArray:
+  - title: title
+    date: 23 October 2020
+    description: dfghj
+    icon: usdt.png
+cryptoGuideTitle: Related articles to Bitcoin
+cryptoGuideArray:
+  - title: title
+    date: 23 October 2020
+    description: dfghj
+    icon: usdt.png
 previewTitle: Backend Development
 tags:
   - Serial API
