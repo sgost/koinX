@@ -12,14 +12,30 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
         var date = moment(data.date).format("MMMM DD YYYY")
     }
 
-    var image = entry.getIn(['data', 'author_image']);
+    // For banner main image
+    var image = entry.getIn(['data', 'banner_image']);
     var getImage = getAsset(image);
 
     if (getImage) {
-        var author_image = getImage.toString();
+        var banner_image = getImage.toString();
     }
 
-    if (data.hasOwnProperty('Ffacility')) {
+
+    // For banner author image
+    var image2 = entry.getIn(['data', 'author_image']);
+    var getImage2 = getAsset(image2);
+
+    if (getImage2) {
+        var author_image = getImage2.toString();
+    }
+
+
+    // For array mapping images
+    if (data.hasOwnProperty('youtubeArray')
+        || data.hasOwnProperty('buyCoinArray')
+        || data.hasOwnProperty('bitcoinArray')
+        || data.hasOwnProperty('moreCoinsArray')
+        || data.hasOwnProperty('articlesArray')) {
         if (data.youtubeArray) {
             data.youtubeArray.map(item => {
                 var getImage = getAsset(item.image);
@@ -65,15 +81,37 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
     return (
         <BlogPost
+            fields={data.fields}
             author_image={author_image}
             author={data.author}
-            bio={data.bio}
+            facebook={data.facebook}
+            instagram={data.instagram}
             linkdin={data.linkdin}
             twitter={data.twitter}
+            youtube={data.youtube}
             date={date}
             title={data.title}
-            html={widgetFor('body')}
+            tags={data.tags}
             preview={true}
+            banner_image={banner_image}
+            bannerTitle={data.bannerTitle}
+            bannerDesc={data.bannerDesc}
+            blogBodyArray={data.blogBodyArray}
+            alsoReadTitle={data.alsoReadTitle}
+            alsoReadSlug={data.alsoReadSlug}
+            youtubeContainerTitle={data.youtubeContainerTitle}
+            youtubeArray={data.youtubeArray}
+            buyCoinTitle={data.buyCoinTitle}
+            buyCoinArray={data.buyCoinArray}
+            bitCoinTitle={data.bitCoinTitle}
+            bitcoinArray={data.bitcoinArray}
+            collapseTitle={data.collapseTitle}
+            questionsArray={data.questionsArray}
+            moreCoinsTitle={data.moreCoinsTitle}
+            moreCoinsArray={data.moreCoinsArray}
+            articlesTitle={data.articlesTitle}
+            articlesArray={data.articlesArra}
+            sideNavArray={data.sideNavArray}
         />
     );
 

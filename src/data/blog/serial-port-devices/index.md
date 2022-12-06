@@ -1,7 +1,5 @@
 ---
-author_image: bitcoin_banner.png
 author: Pachiyappan Velu
-bio: Senior Frontend Developer
 title: How to buy Bitcoin?
 navLinkTitle: How to buy Bitcoin?
 facebook: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
@@ -10,30 +8,48 @@ linkdin: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 twitter: https://twitter.com/fidisysInc
 youtube: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 date: 2021-11-30T18:30:00.000Z
-previewTitle: Backend Development
-excerpt: A serial port is a bidirectional communication interface that allows
-  sending and receiving data byte by byte.    Web Serial API bridges the web and
-  the physical world by allowing websites to communicate with serial devices,
-  such as microcontrollers, 3D printers, removable USB and Bluetooth devices
-  that emulate a serial port.
-tags:
-  - Serial API
-  - ReactJS  and Javascript.
-seo:
-  description: A serial port is a bidirectional communication interface that
-    allows sending and receiving data byte by byte. Web Serial API bridges the
-    web and the physical world by allowing websites to communicate with serial
-    devices, such as microcontrollers, 3D printers, removable USB and Bluetooth
-    devices that emulate a serial port.
-  title: How to communicate with Web Serial Port using Serial API and Reactjs.
-  keywords:
-    - Serial API
-    - ReactJS and Javascript.
+
+author_image: bitcoin_banner.png
+banner_image: bitcoin_banner.png
+bannerTitle: How to buy Bitcoin in 3 easy steps
+bannerDesc: Already Holding Bitcoin?
+blogBodyArray:
+  - title: Lorem ipsum dolor sit amet, consectetur
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
+    slug: title_step1
+  - title: Lorem ipsum dolor sit amet, consectetur
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
+    slug: title_step2
+  - title: Lorem ipsum dolor sit amet, consectetur
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
+    slug: title_step3
+
+alsoReadTitle: Bitcoin Price Prediction
+alsoReadSlug: title_step1
+
 youtubeContainerTitle: Popular video guides on buying Bitcoin
 youtubeArray:
   - id: 1
     image: bitcoin_banner.png
+    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
     title: Lorem ipsum do neque, ornare vitae ante id
+  - id: 1
+    image: bitcoin_banner.png
+    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    title: Lorem ipsum do neque, ornare vitae ante id
+  - id: 1
+    image: bitcoin_banner.png
+    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    title: Lorem ipsum do neque, ornare vitae ante id
+  - id: 1
+    image: bitcoin_banner.png
+    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    title: Lorem ipsum do neque, ornare vitae ante id
+  - id: 1
+    image: bitcoin_banner.png
+    link: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    title: Lorem ipsum do neque, ornare vitae ante id
+buyCoinTitle: Where to buy BITCOIN?
 buyCoinArray:
   - id: 1
     title: WazirX
@@ -81,8 +97,10 @@ buyCoinArray:
 bitCoinTitle: Already Holding Bitcoin?
 bitcoinArray:
   - image: hold_coin.png
+    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
     title: Calculate your Profits
   - image: hold_coin_tax.png
+    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
     title: Calculate your tax liability
 
 collapseTitle: Frequently asked questions
@@ -123,22 +141,32 @@ articlesArray:
     date: 2021-11-30T18:30:00.000Z
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis eros sed risus sollicitudin fringilla dictum in metus.
     image: bitcoin_banner.png
+
+sideNavArray:
+  - title: How to buy Bitcoin in 3 easy steps
+  - title: Popular video guides on buying Bitcoin
+  - title: Where to buy Bitcoin?
+  - title: Already holding Bitcoin?
+  - title: Frequently asked questions
+  - title: More Cryptos Similar to Bitcoin
+
+previewTitle: Backend Development
+excerpt: A serial port is a bidirectional communication interface that allows
+  sending and receiving data byte by byte.    Web Serial API bridges the web and
+  the physical world by allowing websites to communicate with serial devices,
+  such as microcontrollers, 3D printers, removable USB and Bluetooth devices
+  that emulate a serial port.
+tags:
+  - Serial API
+  - ReactJS  and Javascript.
+seo:
+  description: A serial port is a bidirectional communication interface that
+    allows sending and receiving data byte by byte. Web Serial API bridges the
+    web and the physical world by allowing websites to communicate with serial
+    devices, such as microcontrollers, 3D printers, removable USB and Bluetooth
+    devices that emulate a serial port.
+  title: How to communicate with Web Serial Port using Serial API and Reactjs.
+  keywords:
+    - Serial API
+    - ReactJS and Javascript.
 ---
-
-![Serial Port](bitcoin_banner.png "How to communicate with Web Serial Port using Serial API and Reactjs.")
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
-
-## How to buy Bitcoin in 3 easy steps
-
-STEP1: [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API)
-
-##### In this article, you will learn:
-
-Open the serial port connection with desired baud rate.
-Read the data from the serial port.
-Write the data to the serial port.
-Then finally, close the connected serial port connection.
-
-- [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API)
-- [Getting started with the web serial API.](https://codelabs.developers.google.com/codelabs/web-serial#0)[](https://codelabs.developers.google.com/codelabs/web-serial#0)

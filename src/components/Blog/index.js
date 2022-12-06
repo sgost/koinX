@@ -1,11 +1,8 @@
 import React, { Fragment } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
-import { Layout, Card } from "antd";
-import bitcoin_banner from "../../data/assets/blogs/bitcoin_banner.png";
-import hold_coin from "../../data/assets/blogs/hold_coin.png";
-import hold_coin_tax from "../../data/assets/blogs/hold_coin_tax.png";
+import { Layout } from "antd";
 // import { Link } from "gatsby";
 import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
@@ -32,9 +29,16 @@ export const BlogPost = ({
   youtube,
   date,
   title,
-  html,
   preview,
+  banner_image,
+  bannerTitle,
+  bannerDesc,
+  blogBodyArray,
+  alsoReadTitle,
+  alsoReadSlug,
+  youtubeContainerTitle,
   youtubeArray,
+  buyCoinTitle,
   buyCoinArray,
   bitCoinTitle,
   bitcoinArray,
@@ -43,11 +47,10 @@ export const BlogPost = ({
   moreCoinsTitle,
   moreCoinsArray,
   articlesTitle,
-  articlesArray
+  articlesArray,
+  sideNavArray
 }) => {
   const { Content } = Layout
-
-  console.log("bitCoinTitle", bitCoinTitle)
 
   return (
     <Fragment>
@@ -65,15 +68,34 @@ export const BlogPost = ({
             youtube={youtube}
           />
           <Content className="blog_body">
-            {
-              preview ? <div>{html}</div> : <div dangerouslySetInnerHTML={{ __html: html }} />
-            }
+            <img src={author_image} alt="img" />
+            <p>{bannerDesc}</p>
+            <h2 id={bannerTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>{bannerTitle}</h2>
+            {/* Link map */}
+            {blogBodyArray?.map((item, index) => {
+              return (
+                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${item?.slug}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+              )
+            })}
+
+            {/* body map */}
+            {blogBodyArray?.map((item, index) => {
+              return (
+                <>
+                  <h3 id={item?.slug}>Step {index + 1} : {item?.title} </h3>
+                  <p>{item?.description}</p>
+                </>
+              )
+            })}
+
+            {/* About link */}
+            <p className="text_link">Also Read: <Link to={fields?.slug + "/" + `#${alsoReadSlug}`}>{alsoReadTitle}</Link></p>
           </Content>
           {/* blogs video component */}
-          <BlogVideo youtubeArray={youtubeArray} />
+          <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
           {/* blogs table component */}
-          <BlogTable buyCoinArray={buyCoinArray} />
-          <Content className="hold_coin">
+          <BlogTable buyCoinTitle={buyCoinTitle} buyCoinArray={buyCoinArray} />
+          <Content className="hold_coin" id={bitCoinTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>
             <h2>{bitCoinTitle}</h2>
             <div className="hold_coin_container_cards">
               {bitcoinArray?.map((item, index) => {
@@ -82,7 +104,7 @@ export const BlogPost = ({
                     <img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt="item?.title" />
                     <div className="coin_text">
                       <span className="card_title">{item?.title}</span>
-                      <button>Check Now<ArrowRightOutlined className="icon" /></button>
+                      <Link to={item?.link}><button>Check Now<ArrowRightOutlined className="icon" /></button></Link>
                     </div>
                   </div>
                 )
@@ -99,7 +121,7 @@ export const BlogPost = ({
             moreCoinsArray={moreCoinsArray}
           />
         </Layout>
-        <BlogLinks />
+        <BlogLinks fields={fields} sideNavArray={sideNavArray} />
         {/* Blog releated articles */}
         <BlogArticles
           articlesTitle={articlesTitle}
@@ -126,6 +148,13 @@ const Blog = ({ data }) => {
   }
 
 
+  var banner_image;
+  if (post.frontmatter.banner_image.publicURL) {
+    banner_image = post.frontmatter.banner_image.publicURL;
+  } else {
+    banner_image = post.frontmatter.banner_image;
+  }
+
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
@@ -133,7 +162,6 @@ const Blog = ({ data }) => {
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
-        bio={post.frontmatter.bio}
         facebook={post.frontmatter.facebook}
         instagram={post.frontmatter.instagram}
         linkdin={post.frontmatter.linkdin}
@@ -141,10 +169,17 @@ const Blog = ({ data }) => {
         youtube={post.frontmatter.youtube}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
-        html={post.html}
         tags={post.frontmatter.tags}
         preview={false}
+        banner_image={banner_image}
+        bannerTitle={post.frontmatter.bannerTitle}
+        bannerDesc={post.frontmatter.bannerDesc}
+        blogBodyArray={post.frontmatter.blogBodyArray}
+        alsoReadTitle={post.frontmatter.alsoReadTitle}
+        alsoReadSlug={post.frontmatter.alsoReadSlug}
+        youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
+        buyCoinTitle={post.frontmatter.buyCoinTitle}
         buyCoinArray={post.frontmatter.buyCoinArray}
         bitcoinArray={post.frontmatter.bitcoinArray}
         bitCoinTitle={post.frontmatter.bitCoinTitle}
@@ -154,6 +189,7 @@ const Blog = ({ data }) => {
         moreCoinsArray={post.frontmatter.moreCoinsArray}
         articlesTitle={post.frontmatter.articlesTitle}
         articlesArray={post.frontmatter.articlesArray}
+        sideNavArray={post.frontmatter.sideNavArray}
       />
     </Fragment>
   )
@@ -172,13 +208,28 @@ export const query = graphql`
       }
       frontmatter {
         author
+        banner_image {
+          publicURL
+        }
+        bannerTitle
+        bannerDesc
+        blogBodyArray {
+          title
+          description
+          slug
+        }
+        alsoReadTitle
+        alsoReadSlug
+        youtubeContainerTitle
         youtubeArray {
           id
           image {
             publicURL
           }
+          link
           title
         }
+        buyCoinTitle
         buyCoinArray {
           id
           title
@@ -194,6 +245,7 @@ export const query = graphql`
         bitCoinTitle
         bitcoinArray{
           title
+          link
           image {
             publicURL
           }
@@ -219,10 +271,12 @@ export const query = graphql`
             publicURL
           }
         }
+        sideNavArray {
+          title
+        }
         author_image {
           publicURL
         }
-        bio
         facebook
         instagram
         linkdin
@@ -236,7 +290,6 @@ export const query = graphql`
           keywords
         }
       }
-      html
     }
     seoData: file(relativePath: {eq: "seoBlog.md"}) {
       childMarkdownRemark {

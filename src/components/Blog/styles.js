@@ -37,6 +37,16 @@ padding-top: 50px;
         margin-top: 1rem;
         color: ${palette.SECONDARY_TXT_COLOR};
       }
+      .text_link {
+        font-weight: 500;
+font-size: 1rem;
+line-height: 170%;
+color: ${palette.PRIMARY_TXT_COLOR};
+.head_link {
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
       h3{
         font-style: normal;
         font-weight: bold;

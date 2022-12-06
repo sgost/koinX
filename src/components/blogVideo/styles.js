@@ -1,50 +1,55 @@
 import styled from "styled-components"
-import * as palette from "../../styles/variables";
+import * as palette from "../../styles/variables"
 
 export const BlogVideoStyle = styled.div`
-   .blog_video {
+  .blog_video {
     margin-top: 67px;
     h2 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 2.2rem;
-        letter-spacing: -0.8px;
-        color: ${palette.PRIMARY_TXT_COLOR};
-        span{
-            color: ${palette.NAVLINK_COLOR};
-         }
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.2rem;
+      letter-spacing: -0.8px;
+      color: ${palette.PRIMARY_TXT_COLOR};
+      span {
+        color: ${palette.NAVLINK_COLOR};
       }
+    }
     .youtube_grid {
-        display: flex;
-            gap: 1rem;
-            over-flow:scroll;
-            margin-top: 1rem;
-        .ant-card{
-        background: transparent;
-        .ant-card-body {
-            padding:0;
-        }
-        .card_cover {
-            position: relative;
-            .youtube_thumbnail {
-            max-height: 131px;
-            border-radius: 12px;
+      display: flex;
+      width: 100%;
+      gap: 1rem;
+      overflow: scroll;
+      margin-top: 1rem;
+      overflow-y: hidden; /* Hide vertical scrollbar */
+      .card_cover {
+        position: relative;
+        width: 213px;
+        .youtube_thumbnail {
+          width: 100%;
+          height: 131px;
+          border-radius: 12px;
+          cursor: pointer;
         }
         .watch_icon {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            left: 0;
-            bottom: 1rem;
-            left: 0.8rem;
-            color: white;
-            font-size: 0.8rem;
-            img {
-                width: 1.5rem;
-            }
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 3vw;
+          left: 5.2rem;
+          width: 3rem;
         }
-        }
-        }
+      }
+      ::-webkit-scrollbar {
+  width: 50px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: ${palette.BORDER_COLOR};
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray ;
+  border-radius: 6px;
+}
     }
   }
 `

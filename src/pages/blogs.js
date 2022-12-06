@@ -41,6 +41,7 @@ const BlogPage = ({ data }) => {
   return (
     <div style={{ background: '#000' }}>
       <div className="blogListContainer">
+        <h1 style={{ color: `blue` }}>Blogs List</h1>
         {blogData?.map((item) => {
           return (
             <Link to={item.node.fields.slug} id="blog_card">
