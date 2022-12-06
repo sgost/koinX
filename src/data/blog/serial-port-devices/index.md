@@ -6,7 +6,7 @@ linkdin: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 twitter: https://twitter.com/fidisysInc
 youtube: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 date: 2021-11-30T18:30:00.000Z
-author_image: bitcoin_banner.png
+author_image: unsplash_8td991gibiq.svg
 bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
