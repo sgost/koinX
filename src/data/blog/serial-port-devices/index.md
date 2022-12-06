@@ -204,13 +204,18 @@ currencyBlockArray:
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 25 October 2022
     icon: team.png
+  - title: How to mine Bitcoin
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+      quis eros sed risus sollicitudin fringilla dictum in metus. "
+    date: 23 October 2020
+    icon: team-2-.png
 cryptoGuideTitle: "More cyrpto buying guides "
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 25 October 2022
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
-    icon: team.png
+    icon: team-3-.png
 seo:
   description: A serial port is a bidirectional communication interface that
     allows sending and receiving data byte by byte. Web Serial API bridges the
