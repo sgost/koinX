@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BlogCollapseStyles } from "./styles";
 import { Layout } from "antd";
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import { resolveFunction } from "../../utils/functions";
 
 const { Content } = Layout
 const BlogCollapse = ({
@@ -13,7 +14,7 @@ const BlogCollapse = ({
 
     return (
         <BlogCollapseStyles>
-            <Content className="questions_wrapper" id={collapseTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>
+            <Content className="questions_wrapper" id={resolveFunction(collapseTitle)}>
                 <h2 className="question_title_main">{collapseTitle}</h2>
                 {questionsArray?.map((item, index) => {
                     return (

@@ -16,12 +16,12 @@ const Footer = () => {
                     <div className="icon_grid_wrap">
                         <span className="icon_title">© 2022 KoinX</span>
                         <div className="icon_grid">
-                            <img src={angellist} alt='angellist' />
-                            <img src={linkdin} alt='linkdin' />
-                            <img src={facebok} alt='facebok' />
-                            <img src={instagram} alt='instagram' />
-                            <img src={twitter} alt='twitter' />
-                            <img src={youtube} alt='youtube' />
+                            <a href="https://angel.co/company/koinx" target="_blank" rel="noopener noreferrer"><img src={angellist} alt='angellist' /></a>
+                            <a href="https://www.linkedin.com/company/getkoinx" target="_blank" rel="noopener noreferrer"><img src={linkdin} alt='linkdin' /></a>
+                            <a href="https://www.facebook.com/getkoinx" target="_blank" rel="noopener noreferrer"><img src={facebok} alt='facebok' /></a>
+                            <a href="https://www.instagram.com/getkoinx/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt='instagram' /></a>
+                            <a href="https://twitter.com/getkoinx" target="_blank" rel="noopener noreferrer"><img src={twitter} alt='twitter' /></a>
+                            <a href="https://www.youtube.com/c/CryptoKanoon" target="_blank" rel="noopener noreferrer"><img src={youtube} alt='youtube' /></a>
                         </div>
                     </div>
                     <div className="list_grid">

@@ -32,4 +32,9 @@ export const BlogLinksStyle = styled.div`
         }
     }
   }
+@media(max-width: 1000px){
+    .side_menu {
+        display: none;
+    }
+}
 `

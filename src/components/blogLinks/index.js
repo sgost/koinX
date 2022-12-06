@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { BlogLinksStyle } from "./styles";
 import hambuger from "../../data/assets/blogs/hambuger.svg";
+import { resolveFunction } from "../../utils/functions";
 
 const BlogLinks = ({ fields, sideNavArray }) => {
     return (
@@ -11,7 +12,7 @@ const BlogLinks = ({ fields, sideNavArray }) => {
                 <ul className="sub_link_main">
                     {sideNavArray?.map((item, index) => {
                         return (
-                            <Link to={fields?.slug + "/" + `#${item?.title?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}`}> <li key={index}>{item?.title}</li></Link>
+                            <Link to={fields?.slug + "/" + `#${resolveFunction(item?.title)}`}> <li key={index}>{item?.title}</li></Link>
                         )
                     })}
                 </ul>

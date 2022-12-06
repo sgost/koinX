@@ -1,7 +1,7 @@
 import React from "react";
-// import { Link } from "gatsby";
 import { BlogCoinTypesStyle } from "./styles";
 import { Layout } from "antd";
+import { resolveFunction } from "../../utils/functions";
 
 const BlogCoinTypes = ({
     moreCoinsTitle,
@@ -10,7 +10,7 @@ const BlogCoinTypes = ({
     const { Content } = Layout
     return (
         <BlogCoinTypesStyle>
-            <Content className="coin_wrapper" id={moreCoinsTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>
+            <Content className="coin_wrapper" id={resolveFunction(moreCoinsTitle)}>
                 <h2 >{moreCoinsTitle}</h2>
                 <div className="cards_row">
                     {moreCoinsArray?.map((item, index) => {

@@ -1,12 +1,13 @@
 import React from "react";
 import { Layout } from "antd";
 import { BlogVideoStyle } from "./styles";
+import { resolveFunction } from "../../utils/functions";
 
 const { Content } = Layout
 const BlogVideo = ({ youtubeContainerTitle, youtubeArray }) => {
     return (
         <BlogVideoStyle>
-            <Content className="blog_video" id={youtubeContainerTitle?.replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>
+            <Content className="blog_video" id={resolveFunction(youtubeContainerTitle)}>
                 <h2>{youtubeContainerTitle}</h2>
                 <div className="youtube_grid">
                     {youtubeArray?.map((item, index) => {

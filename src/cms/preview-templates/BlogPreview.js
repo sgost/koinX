@@ -110,7 +110,7 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             moreCoinsTitle={data.moreCoinsTitle}
             moreCoinsArray={data.moreCoinsArray}
             articlesTitle={data.articlesTitle}
-            articlesArray={data.articlesArra}
+            articlesArray={data.articlesArray}
             sideNavArray={data.sideNavArray}
         />
     );

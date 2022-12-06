@@ -29,58 +29,102 @@ collections:
       depth: 100
       summary: "{{title}}"
     fields:
-      - { name: title, label: Title }
-      - { name: facebook, label: facebook, widget: string, required: false }
-      - { name: instagram, label: instagram, widget: string, required: false }
-      - { name: linkdin, label: Linkdin, widget: string, required: false }
-      - { name: twitter, label: Twitter, widget: string, required: false }
-      - { name: youtube, label: Youtube, widget: string, required: false }
+      - { name: title, label: Title, default: "Title" }
       - { name: date, label: Date, widget: datetime }
       - { label: Banner Image, name: author_image, widget: image }
-      - { name: bannerDesc, label: Description }
-      - { name: bannerTitle, label: Banner Title }
+      - { name: bannerDesc, label: Description, default: "Banner Description" }
+      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
       - {
           name: blogBodyArray,
           label: Body Data,
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string },
-              { label: Description, name: description, widget: string },
+              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Description",
+              },
             ],
         }
-      - { name: alsoReadTitle, label: Read link title, widget: string }
-      - { name: alsoReadSlug, label: Read link (Slug), widget: string }
-      - { name: youtubeContainerTitle, label: Youtube title, widget: string }
+      - {
+          name: alsoReadTitle,
+          label: Read link title,
+          widget: string,
+          default: "Link Title",
+        }
+      - {
+          name: alsoReadSlug,
+          label: Read link (Slug),
+          widget: string,
+          default: "Link",
+        }
+      - {
+          name: youtubeContainerTitle,
+          label: Youtube title,
+          widget: string,
+          default: "Video Container Title",
+        }
       - {
           name: youtubeArray,
           label: Add Videos,
           widget: list,
           fields:
             [
-              { label: Image, name: image, widget: image },
-              { label: Video Link, name: link, widget: string },
-              { label: Title, name: title, widget: string },
+              {
+                label: Video Link,
+                name: link,
+                widget: string,
+                default: "Video Id",
+              },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Video Title",
+              },
             ],
         }
-      - { name: buyCoinTitle, label: Buy coin container Title, widget: string }
+      - {
+          name: buyCoinTitle,
+          label: Buy coin container Title,
+          widget: string,
+          default: "Buy coin container title",
+        }
       - {
           name: buyCoinArray,
           label: Where to buy BITCOIN?,
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string },
+              { label: Title, name: title, widget: string, default: "Title" },
               { label: Description Logo, name: image, widget: image },
-              { label: Description, name: description, widget: string },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Description",
+              },
               {
                 label: Fact sheet table data,
                 name: Factsheet,
                 widget: list,
                 fields:
                   [
-                    { label: Title, name: title, widget: string },
-                    { label: Table Value, name: sheetValue, widget: string },
+                    {
+                      label: Title,
+                      name: title,
+                      widget: string,
+                      default: "Title",
+                    },
+                    {
+                      label: Table Value,
+                      name: sheetValue,
+                      widget: string,
+                      default: "Table Value",
+                    },
                   ],
               },
             ],
@@ -89,6 +133,7 @@ collections:
           name: bitCoinTitle,
           label: Calculation Container title,
           widget: string,
+          default: "Calculation Container title",
         }
       - {
           name: bitcoinArray,
@@ -96,30 +141,45 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string },
-              { label: Link, name: link, widget: string },
+              { label: Title, name: title, widget: string, default: "Title" },
+              { label: Link, name: link, widget: string, default: "link" },
               { label: Thumbnail image, name: image, widget: image },
             ],
         }
-      - { name: collapseTitle, label: Questions block title, widget: string }
+      - {
+          name: collapseTitle,
+          label: Questions block title,
+          widget: string,
+          default: "Frequently asked questions",
+        }
       - {
           name: questionsArray,
           label: Frequently asked questions,
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string },
-              { label: Description, name: description, widget: string },
+              { label: Title, name: title, widget: string, default: Title },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: Description,
+              },
             ],
         }
-      - { name: moreCoinsTitle, label: Add coins title, widget: string }
+      - {
+          name: moreCoinsTitle,
+          label: Add coins title,
+          widget: string,
+          default: "Add coins title",
+        }
       - {
           name: moreCoinsArray,
           label: New coins array,
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string },
+              { label: Title, name: title, widget: string, default: "Title" },
               { label: Coin DP, name: icon, widget: image },
             ],
         }
@@ -140,7 +200,15 @@ collections:
           name: sideNavArray,
           lable: Add Side Nav Links,
           widget: list,
-          fields: [{ label: Link Title (slug), name: title, widget: "string" }],
+          fields:
+            [
+              {
+                label: Link Title (slug),
+                name: title,
+                widget: "string",
+                default: Navigation title,
+              },
+            ],
         }
       - {
           name: previewTitle,

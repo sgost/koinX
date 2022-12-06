@@ -40,16 +40,16 @@ export const BlogVideoStyle = styled.div`
         }
       }
       ::-webkit-scrollbar {
-  width: 50px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: ${palette.BORDER_COLOR};
-}
-::-webkit-scrollbar-thumb {
-  background-color: gray ;
-  border-radius: 6px;
-}
+        width: 50px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: ${palette.BORDER_COLOR};
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 6px;
+      }
     }
   }
 `

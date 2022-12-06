@@ -15,6 +15,7 @@ import Subscribe from "../subscribe";
 // import BlogPost from "../Blog";
 import Footer from "../Footer";
 import Navbar from "../navbar";
+import { resolveFunction } from "../../utils/functions";
 import { ArrowRightOutlined } from '@ant-design/icons';
 
 export const BlogPost = ({
@@ -22,11 +23,6 @@ export const BlogPost = ({
   author_image,
   author,
   bio,
-  facebook,
-  instagram,
-  linkdin,
-  twitter,
-  youtube,
   date,
   title,
   preview,
@@ -61,20 +57,15 @@ export const BlogPost = ({
             title={title}
             date={date}
             fields={fields}
-            facebook={facebook}
-            instagram={instagram}
-            linkdin={linkdin}
-            twitter={twitter}
-            youtube={youtube}
           />
           <Content className="blog_body">
             <img src={author_image} alt="img" />
             <p>{bannerDesc}</p>
-            <h2 id={bannerTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>{bannerTitle}</h2>
+            <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${item?.title?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/" + `#${resolveFunction(item?.title)}`} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -82,7 +73,7 @@ export const BlogPost = ({
             {blogBodyArray?.map((item, index) => {
               return (
                 <>
-                  <h3 id={item?.title?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>Step {index + 1} : {item?.title} </h3>
+                  <h3 id={resolveFunction(item?.title)}>Step {index + 1} : {item?.title} </h3>
                   <p>{item?.description}</p>
                 </>
               )
@@ -95,7 +86,7 @@ export const BlogPost = ({
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
           {/* blogs table component */}
           <BlogTable buyCoinTitle={buyCoinTitle} buyCoinArray={buyCoinArray} />
-          <Content className="hold_coin" id={bitCoinTitle?.toLowerCase().replace(/^\s+|\s+$/g, '_').replace(/ /g, "_")}>
+          <Content className="hold_coin" id={resolveFunction(bitCoinTitle)}>
             <h2>{bitCoinTitle}</h2>
             <div className="hold_coin_container_cards">
               {bitcoinArray?.map((item, index) => {
@@ -162,11 +153,6 @@ const Blog = ({ data }) => {
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
-        facebook={post.frontmatter.facebook}
-        instagram={post.frontmatter.instagram}
-        linkdin={post.frontmatter.linkdin}
-        twitter={post.frontmatter.twitter}
-        youtube={post.frontmatter.youtube}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
         tags={post.frontmatter.tags}
@@ -221,10 +207,6 @@ export const query = graphql`
         alsoReadSlug
         youtubeContainerTitle
         youtubeArray {
-          id
-          image {
-            publicURL
-          }
           link
           title
         }
@@ -276,11 +258,6 @@ export const query = graphql`
         author_image {
           publicURL
         }
-        facebook
-        instagram
-        linkdin
-        twitter
-        youtube
         date(formatString: "MMMM DD, YYYY")
         title
         seo {

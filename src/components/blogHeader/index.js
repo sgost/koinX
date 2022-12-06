@@ -14,11 +14,6 @@ const BlogHeader = ({
     title,
     date,
     fields,
-    facebook,
-    instagram,
-    linkdin,
-    twitter,
-    youtube
 }) => {
     const { Content } = Layout
     return (
@@ -36,11 +31,11 @@ const BlogHeader = ({
                     </span>
                 </div>
                 <div className="icons_wrapper">
-                    {facebook && <a href={facebook}><img src={facebookIcon} className="social_icon" alt="img" /></a>}
-                    {instagram && <a href={instagram}><img src={instagramIcon} className="social_icon" alt="img" /></a>}
-                    {twitter && <a href={twitter}><img src={twitterIcon} className="social_icon" alt="img" /></a>}
-                    {linkdin && <a href={linkdin}><img src={linkdinIcon} className="social_icon" alt="img" /></a>}
-                    {youtube && <a href={youtube}><img src={youtubeIcon} className="social_icon" alt="img" /></a>}
+                    <a href="https://www.facebook.com/getkoinx" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} className="social_icon" alt="img" /></a>
+                    <a href="https://www.instagram.com/getkoinx/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} className="social_icon" alt="img" /></a>
+                    <a href="https://twitter.com/getkoinx" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} className="social_icon" alt="img" /></a>
+                    <a href="https://www.linkedin.com/company/getkoinx" target="_blank" rel="noopener noreferrer"><img src={linkdinIcon} className="social_icon" alt="img" /></a>
+                    <a href="https://www.youtube.com/c/CryptoKanoon" target="_blank" rel="noopener noreferrer"><img src={youtubeIcon} className="social_icon" alt="img" /></a>
                 </div>
             </Content>
         </BlogHeaderStyles>

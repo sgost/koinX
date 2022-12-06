@@ -1,8 +1,6 @@
 import React from "react";
-// import { Link } from "gatsby";
 import { BlogArticlesStyle } from "./styles";
 import { Layout } from "antd";
-import thumbnail from "../../data/assets/blogs/thumbnail.png";
 
 const BlogArticles = ({
     articlesTitle,
@@ -18,7 +16,7 @@ const BlogArticles = ({
                         return (
                             <div className="blog_dash_wrapper" key={index}>
                                 <div className="thumb_img">
-                                    <img src={thumbnail} alt="thumbnail" />
+                                    <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt="thumbnail" />
                                     <div className="blog_title">
                                         <h3>{item?.title}</h3>
                                         <span>Added: {item?.date}</span>
