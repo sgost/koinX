@@ -16,6 +16,7 @@ const BlogPage = ({ data }) => {
             }
             frontmatter {
               title
+              navLinkTitle
               date
               author_image {
                 childImageSharp {
@@ -43,7 +44,7 @@ const BlogPage = ({ data }) => {
         {blogData?.map((item) => {
           return (
             <Link to={item.node.fields.slug} id="blog_card">
-              <h2 style={{ color: `red` }}>Blog</h2>
+              <h2 style={{ color: `red` }}>{item.node.frontmatter.navLinkTitle}</h2>
             </Link>
           )
         })}

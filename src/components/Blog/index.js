@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
 import { Layout, Card } from "antd";
@@ -14,69 +14,101 @@ import BlogArticles from "../blogArticles";
 import BlogHeader from "../blogHeader";
 import BlogCoinTypes from "../blogCoinTypes";
 import BlogLinks from "../blogLinks";
+import Subscribe from "../subscribe";
+// import BlogPost from "../Blog";
+import Footer from "../Footer";
+import Navbar from "../navbar";
 import { ArrowRightOutlined } from '@ant-design/icons';
 
 export const BlogPost = ({
   fields,
+  author_image,
   author,
   bio,
+  facebook,
+  instagram,
   linkdin,
   twitter,
+  youtube,
   date,
   title,
   html,
-  preview
+  preview,
+  youtubeArray,
+  buyCoinArray,
+  bitCoinTitle,
+  bitcoinArray,
+  collapseTitle,
+  questionsArray,
+  moreCoinsTitle,
+  moreCoinsArray,
+  articlesTitle,
+  articlesArray
 }) => {
   const { Content } = Layout
 
+  console.log("bitCoinTitle", bitCoinTitle)
+
   return (
-    <BlogsWrapper>
-      <Layout className="blog_data">
-        <BlogHeader title={title} />
-        <Content className="blog_body">
-          <img src={bitcoin_banner} alt="img" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
-          </p>
-          <h2>How to buy Bitcoin in 3 easy steps</h2>
-          <h3>Step 1 : Lorem ipsum dolor sit amet, consectetur </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. </p>
-          <h3>Step 2 : Lorem ipsum dolor sit amet, consectetur  </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. </p>
-          <h3>Step 3 : Lorem ipsum dolor sit amet, consectetur </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. </p>
-          <a> Also Read:Bitcoin Price Prediction</a>
-        </Content>
-        {/* blogs video component */}
-        <BlogVideo />
-        {/* blogs table component */}
-        <BlogTable />
-        <Content className="hold_coin">
-          <h2>Already Holding Bitcoin?</h2>
-          <div className="hold_coin_container_cards">
-            <div className="card">
-              <img src={hold_coin} alt="hold_coin" />
-              <div className="coin_text">
-                <span className="card_title">Calculate your Profits</span>
-                <button>Check Now<ArrowRightOutlined className="icon" /></button>
-              </div>
+    <Fragment>
+      <Navbar />
+      <BlogsWrapper>
+        <Layout className="blog_data">
+          <BlogHeader
+            title={title}
+            date={date}
+            fields={fields}
+            facebook={facebook}
+            instagram={instagram}
+            linkdin={linkdin}
+            twitter={twitter}
+            youtube={youtube}
+          />
+          <Content className="blog_body">
+            {
+              preview ? <div>{html}</div> : <div dangerouslySetInnerHTML={{ __html: html }} />
+            }
+          </Content>
+          {/* blogs video component */}
+          <BlogVideo youtubeArray={youtubeArray} />
+          {/* blogs table component */}
+          <BlogTable buyCoinArray={buyCoinArray} />
+          <Content className="hold_coin">
+            <h2>{bitCoinTitle}</h2>
+            <div className="hold_coin_container_cards">
+              {bitcoinArray?.map((item, index) => {
+                return (
+                  <div className="card" key={index}>
+                    <img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt="item?.title" />
+                    <div className="coin_text">
+                      <span className="card_title">{item?.title}</span>
+                      <button>Check Now<ArrowRightOutlined className="icon" /></button>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
-            <div className="card">
-              <img src={hold_coin_tax} alt="hold_coin_tax" />
-              <div className="coin_text">
-                <span className="card_title">Calculate your tax liability</span>
-                <button>Check Now<ArrowRightOutlined className="icon" /></button>
-              </div>
-            </div>
-          </div>
-        </Content>
-        <BlogCollapse />
-        {/* Blog releated coin types */}
-        <BlogCoinTypes />
-      </Layout>
-      <BlogLinks />
-      {/* Blog releated articles */}
-      <BlogArticles />
-    </BlogsWrapper>
+          </Content>
+          <BlogCollapse
+            collapseTitle={collapseTitle}
+            questionsArray={questionsArray}
+          />
+          {/* Blog releated coin types */}
+          <BlogCoinTypes
+            moreCoinsTitle={moreCoinsTitle}
+            moreCoinsArray={moreCoinsArray}
+          />
+        </Layout>
+        <BlogLinks />
+        {/* Blog releated articles */}
+        <BlogArticles
+          articlesTitle={articlesTitle}
+          articlesArray={articlesArray}
+        />
+      </BlogsWrapper>
+      <Subscribe />
+      <Footer />
+    </Fragment>
   )
 }
 
@@ -102,13 +134,26 @@ const Blog = ({ data }) => {
         author_image={author_image}
         author={post.frontmatter.author}
         bio={post.frontmatter.bio}
+        facebook={post.frontmatter.facebook}
+        instagram={post.frontmatter.instagram}
         linkdin={post.frontmatter.linkdin}
         twitter={post.frontmatter.twitter}
+        youtube={post.frontmatter.youtube}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
         html={post.html}
         tags={post.frontmatter.tags}
         preview={false}
+        youtubeArray={post.frontmatter.youtubeArray}
+        buyCoinArray={post.frontmatter.buyCoinArray}
+        bitcoinArray={post.frontmatter.bitcoinArray}
+        bitCoinTitle={post.frontmatter.bitCoinTitle}
+        collapseTitle={post.frontmatter.collapseTitle}
+        questionsArray={post.frontmatter.questionsArray}
+        moreCoinsTitle={post.frontmatter.moreCoinsTitle}
+        moreCoinsArray={post.frontmatter.moreCoinsArray}
+        articlesTitle={post.frontmatter.articlesTitle}
+        articlesArray={post.frontmatter.articlesArray}
       />
     </Fragment>
   )
@@ -127,12 +172,62 @@ export const query = graphql`
       }
       frontmatter {
         author
+        youtubeArray {
+          id
+          image {
+            publicURL
+          }
+          title
+        }
+        buyCoinArray {
+          id
+          title
+          image {
+            publicURL
+          }
+          description
+          Factsheet {
+           title
+           sheetValue
+          }
+        }
+        bitCoinTitle
+        bitcoinArray{
+          title
+          image {
+            publicURL
+          }
+        }
+        collapseTitle
+        questionsArray {
+          title
+          description
+        }
+        moreCoinsTitle
+        moreCoinsArray{
+          title
+          icon {
+            publicURL
+          }
+        }
+        articlesTitle
+        articlesArray{
+          title
+          date(formatString: "MMMM DD, YYYY")
+          description
+          image {
+            publicURL
+          }
+        }
         author_image {
           publicURL
         }
         bio
+        facebook
+        instagram
         linkdin
         twitter
+        youtube
         date(formatString: "MMMM DD, YYYY")
         title
         seo {

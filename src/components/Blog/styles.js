@@ -13,6 +13,9 @@ padding-top: 50px;
     background: transparent;
 
     .blog_body {
+      .gatsby-resp-image-background-image {
+        border-radius: 1rem!important;
+      }
       img {
         max-height: 40rem;
         border-radius: 1rem;
@@ -31,6 +34,7 @@ padding-top: 50px;
         font-weight: 400;
         font-size: 1.1rem;
         line-height: 1.8rem;
+        margin-top: 1rem;
         color: ${palette.SECONDARY_TXT_COLOR};
       }
       h3{
@@ -46,7 +50,7 @@ padding-top: 50px;
         font-weight: 400;
         font-size: 1.1rem;
         line-height: 1.8rem;
-        color: ${palette.SECONDARY_TXT_COLOR};
+        color: ${palette.NAVLINK_COLOR};
         margin: 2rem 0 0 0;
       }
     }

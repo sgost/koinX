@@ -8,34 +8,24 @@ import matic from "../../data/assets/blogs/matic.png";
 import doge from "../../data/assets/blogs/doge.png";
 import { Layout } from "antd";
 
-const BlogCoinTypes = () => {
+const BlogCoinTypes = ({
+    moreCoinsTitle,
+    moreCoinsArray
+}) => {
     const { Content } = Layout
     return (
         <BlogCoinTypesStyle>
             <Content className="coin_wrapper">
-                <h2 >Some Similar coins</h2>
+                <h2 >{moreCoinsTitle}</h2>
                 <div className="cards_row">
-                    <div className="coin_card">
-                        <img src={ET} alt="ET" className="coin_img" />
-                        <span className="card_title">Ethereum</span>
-                    </div>
-                    <div className="coin_card">
-                        <img src={usdt} alt="usdt" className="coin_img" />
-                        <span className="card_title">USDT</span>
-                    </div>
-                    <div className="coin_card">
-                        <img src={xrp} alt="xrp" className="coin_img" />
-                        <span className="card_title">XRP</span>
-                    </div>
-                    <div className="coin_card">
-                        <img src={matic} alt="matic" className="coin_img" />
-                        <span className="card_title">XRP</span>
-                    </div>
-                    <div className="coin_card">
-                        <img src={doge} alt="doge" className="coin_img" />
-                        <span className="card_title">Doge</span>
-                    </div>
-
+                    {moreCoinsArray?.map((item, index) => {
+                        return (
+                            <div className="coin_card">
+                                <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item?.title} className="coin_img" />
+                                <span className="card_title">{item?.title}</span>
+                            </div>
+                        )
+                    })}
                 </div>
             </Content>
         </BlogCoinTypesStyle>

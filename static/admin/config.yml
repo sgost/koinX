@@ -1,10 +1,11 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: fixed
 
 publish_mode: editorial_workflow
 
-media_folder: 'assets'
-public_folder: '/'
+media_folder: "assets"
+public_folder: "/"
 
 collections:
   - label: Home
@@ -12,7 +13,126 @@ collections:
     files:
       - label: Home
         name: home
-        file: 'home.md'
+        file: "home.md"
         fields:
           - { label: Title, name: title }
           - { label: Description, name: description }
+  - name: blog
+    label: Blog
+    label_singular: "Blog"
+    folder: src/data/blog
+    slug: "{{slug}}"
+    create: true
+    media_folder: ""
+    public_folder: ""
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { name: navLinkTitle, label: Title }
+      - { name: title, label: Title }
+      - { name: facebook, label: facebook, widget: string, required: false }
+      - { name: instagram, label: instagram, widget: string, required: false }
+      - { name: linkdin, label: Linkdin, widget: string, required: false }
+      - { name: twitter, label: Twitter, widget: string, required: false }
+      - { name: youtube, label: Youtube, widget: string, required: false }
+      - { name: date, label: Date, widget: datetime }
+      - { name: youtubeContainerTitle, label: Youtube title }
+      - {
+          name: youtubeArray,
+          label: Add Videos,
+          widget: list,
+          fields:
+            [
+              { label: Image, name: image, widget: image },
+              { label: Title, name: title, widget: string },
+            ],
+        }
+      - {
+          name: buyCoinArray,
+          label: Where to buy BITCOIN?,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Description Logo, name: image, widget: image },
+              { label: Description, name: description, widget: string },
+              {
+                label: Fact sheet table data,
+                name: Factsheet,
+                widget: list,
+                fields:
+                  [
+                    { label: Title, name: title, widget: string },
+                    { label: Table Value, name: sheetValue, widget: string },
+                  ],
+              },
+            ],
+        }
+      - {
+          name: bitCoinTitle,
+          label: Calculation Container title,
+          widget: string,
+        }
+      - {
+          name: bitcoinArray,
+          label: Do you have BITCOIN?,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Thumbnail image, name: image, widget: image },
+            ],
+        }
+      - { name: collapseTitle, label: Questions block title, widget: string }
+      - {
+          name: questionsArray,
+          label: Frequently asked questions,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Description, name: description, widget: string },
+            ],
+        }
+      - { name: moreCoinsTitle, label: Add coins title, widget: string }
+      - {
+          name: moreCoinsArray,
+          label: New coins array,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Coin DP, name: icon, widget: image },
+            ],
+        }
+      - { name: articlesTitle, label: Add Articles title, widget: string }
+      - {
+          name: articlesArray,
+          label: Add new articles,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { name: date, label: Date, widget: datetime },
+              { label: Description, name: description, widget: string },
+              { label: Article Thumbnail, name: image, widget: image },
+            ],
+        }
+      - {
+          name: previewTitle,
+          label: Blog Category Tag,
+          widget: "select",
+          options:
+            ["Frontend Development", "Backend Development", "Full Stack"],
+          required: false,
+        }
+      - { name: excerpt, label: Excerpt }
+      - { name: body, label: Body, widget: markdown }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: keywords, label: Keywords, widget: list }

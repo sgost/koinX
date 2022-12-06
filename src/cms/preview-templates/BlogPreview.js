@@ -19,6 +19,49 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
         var author_image = getImage.toString();
     }
 
+    if (data.hasOwnProperty('Ffacility')) {
+        if (data.youtubeArray) {
+            data.youtubeArray.map(item => {
+                var getImage = getAsset(item.image);
+                item.image = getImage.toString();
+                return item;
+            })
+        }
+
+
+        if (data.buyCoinArray) {
+            data.buyCoinArray.map(item => {
+                var getImage = getAsset(item.image);
+                item.image = getImage.toString();
+                return item;
+            })
+        }
+
+        if (data.bitcoinArray) {
+            data.bitcoinArray.map(item => {
+                var getImage = getAsset(item.image);
+                item.image = getImage.toString();
+                return item;
+            })
+        }
+
+        if (data.moreCoinsArray) {
+            data.moreCoinsArray.map(item => {
+                var getImage = getAsset(item.icon);
+                item.icon = getImage.toString();
+                return item;
+            })
+        }
+
+        if (data.articlesArray) {
+            data.articlesArray.map(item => {
+                var getImage = getAsset(item.image);
+                item.image = getImage.toString();
+                return item;
+            })
+        }
+    }
+
 
     return (
         <BlogPost
