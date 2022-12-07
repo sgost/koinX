@@ -275,12 +275,19 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Title",
+                required: false,
+              },
               {
                 label: Description,
                 name: description,
                 widget: string,
                 default: "Description",
+                required: false,
               },
             ],
         }
@@ -342,6 +349,7 @@ collections:
           name: coinWorkTitle,
           label: Title,
           default: "How does  Bitcoin work?",
+          required: false,
         }
       - {
           name: coinWorkArray,
@@ -354,12 +362,20 @@ collections:
                 name: title,
                 widget: string,
                 default: "How long does it take to mine one Bitcoin?",
+                required: false,
               },
               {
                 label: Description,
                 name: description,
                 widget: string,
                 default: "Lorem ipsum dolor sit amet",
+                required: false,
+              },
+              {
+                label: Bullet Points,
+                name: pointArray,
+                widget: list,
+                required: false,
               },
             ],
         }
