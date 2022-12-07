@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
 import { Layout } from "antd";
-import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
 import BlogCollapse from "../blogCollapse";
 import BlogArticles from "../blogArticles";
@@ -107,7 +106,7 @@ export const MinePost = ({
                   {item?.title && <h3>{item?.title} </h3>}
                   {item?.description && <p>{item?.description}</p>}
                   {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index == 0 && <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>}
+                  {index === 0 && <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>}
                 </>
               )
             })}

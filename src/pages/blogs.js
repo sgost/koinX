@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { navigate } from "gatsby";
-// import "../styles/blogs.css"
-import SEO from "../components/seo";
 
 const BlogPage = ({ data }) => {
 
@@ -39,22 +36,18 @@ const BlogPage = ({ data }) => {
 
   const blogData = posts?.allMarkdownRemark?.edges
 
-
-  // useEffect(() => {
-  //   navigate(blogData[0].node.fields.slug);
-  // }, []);
-
   return (
     <div style={{ background: '#000' }}>
       <div className="blogListContainer">
-        <h1 style={{ color: `blue` }}>Blogs List</h1>
-        {blogData?.map((item) => {
-          return (
-            <Link to={item.node.fields.slug} id="blog_card">
-              <h2 style={{ color: `red` }}>{item.node.frontmatter.navLinkTitle}</h2>
-            </Link>
-          )
-        })}
+        <h1 style={{ color: `red` }}>How To Buy ?</h1>
+        <Link to={blogData[0].node.fields.slug} id="blog_card">
+          <h2 style={{ color: `blue` }}>{blogData[0].node.frontmatter.navLinkTitle}</h2>
+        </Link>
+
+        <h1 style={{ color: `red`, marginTop: `10px` }}>How to mine ?</h1>
+        <Link to={blogData[0].node.fields.slug} id="blog_card">
+          <h2 style={{ color: `blue` }}>{blogData[0].node.frontmatter.navLinkTitle}</h2>
+        </Link>
       </div>
     </div>
   )

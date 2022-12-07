@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { BlogTableStyle } from "./styles";
 import { Layout } from "antd";
 import { resolveFunction } from "../../utils/functions";
