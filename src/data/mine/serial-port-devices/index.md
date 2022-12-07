@@ -1,5 +1,5 @@
 ---
-title: How to buy Bitcoin?
+title: How to mine Bitcoin?
 date: 2021-11-30T18:30:00.000Z
 author_image: unsplash_8td991gibiq.svg
 bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
