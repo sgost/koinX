@@ -139,6 +139,13 @@ blogBodyArray:
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit.
     slug: step3
+  - title: Sample Text - Step
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
+      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
+      odio. Cras pulvinar ut justo eu tempor.
 youtubeArray:
   - id: 1
     image: bitcoin_banner.png
