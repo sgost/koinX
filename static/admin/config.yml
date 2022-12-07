@@ -643,13 +643,19 @@ collections:
                 default: "Lorem ipsum dolor sit amet",
                 required: false,
               },
+              { label: Description Logo, name: icon, widget: image },
               {
                 label: Bullet Points,
                 name: pointArray,
                 widget: list,
                 required: false,
               },
-              { label: Description Logo, name: icon, widget: image },
+              {
+                label: Bullet Points,
+                name: pointArray2,
+                widget: list,
+                required: false,
+              },
             ],
         }
       - {

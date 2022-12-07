@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import moment from 'moment';
 import { MinePost } from "../../components/Mine";
 
-const BlogPreview = ({ entry, widgetFor, getAsset }) => {
+const MinePreview = ({ entry, widgetFor, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
@@ -81,11 +81,6 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             fields={data.fields}
             author_image={author_image}
             author={data.author}
-            facebook={data.facebook}
-            instagram={data.instagram}
-            linkdin={data.linkdin}
-            twitter={data.twitter}
-            youtube={data.youtube}
             date={date}
             title={data.title}
             tags={data.tags}
@@ -119,11 +114,11 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
 };
 
-BlogPreview.propTypes = {
+MinePreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
     getAsset: PropTypes.func,
 };
 
-export default BlogPreview;
+export default MinePreview;

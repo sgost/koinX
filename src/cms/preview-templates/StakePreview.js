@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { StakePost } from "../../components/Mine";
+import { StakePost } from "../../components/Stake";
 
-const BlogPreview = ({ entry, widgetFor, getAsset }) => {
+const StakePreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
@@ -118,11 +118,11 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
 };
 
-BlogPreview.propTypes = {
+StakePreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
     getAsset: PropTypes.func,
 };
 
-export default BlogPreview;
+export default StakePreview;

@@ -114,7 +114,7 @@ export const StakePost = ({
                 <>
                   {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
                   <div className="desc_wrap">
-                    <img src={item?.icon?.publicURL} className="desc_wrap_icon" alt={item?.description} />
+                    <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} className="desc_wrap_icon" alt={item?.description} />
                     {item?.description && <p>{item?.description}</p>}
                   </div>
                   <p className="bullets_label">Pros</p>
