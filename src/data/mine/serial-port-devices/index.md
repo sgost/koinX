@@ -96,15 +96,15 @@ coinWorkArray:
 walletCoinsTitle: Top wallets to store your Bitcoin
 walletCoinsArray:
   - title: Crypto.com
-    icon: ET.png
+    icon: image-168.png
   - title: Coinbase
-    icon: usdt.png
+    icon: image-169.png
   - title: Ledger
-    icon: xrp.png
+    icon: image-170.png
   - title: Trezor
-    icon: matic.png
+    icon: image-171.png
   - title: Coinbase
-    icon: doge.png
+    icon: image-169-1.png
 bitCoinTitle: Already Holding Bitcoin?
 bitcoinArray:
   - image: hold_coin.png
