@@ -163,13 +163,11 @@ youtubeArray:
     image: bitcoin_banner.png
     link: https://www.youtube.com/embed/tgbNymZ7vqY
     title: Lorem ipsum do neque, ornare vitae ante id
-  - id: 1
-    image: bitcoin_banner.png
-    link: https://www.youtube.com/embed/tgbNymZ7vqY
-    title: Lorem ipsum do neque, ornare vitae ante id
   - link: tsgUVv4_oLE
     title: Test video on Bitcoin
     image: bitcoin_banner.png
+  - link: QTQ6mY0jT3w
+    title: STATE OF WEB3 IN INDIA | Nasscom Report
 tags:
   - Serial API
   - ReactJS  and Javascript.
