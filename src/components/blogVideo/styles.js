@@ -6,8 +6,8 @@ export const BlogVideoStyle = styled.div`
     margin-top: 67px;
     h2 {
       font-style: normal;
-      font-weight: bold;
-      font-size: 2.2rem;
+      font-weight: 600;
+      font-size: 2rem;
       letter-spacing: -0.8px;
       color: ${palette.PRIMARY_TXT_COLOR};
       span {

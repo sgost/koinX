@@ -1,13 +1,14 @@
-import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import React, { useEffect } from "react";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import { navigate } from "gatsby";
 // import "../styles/blogs.css"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
 const BlogPage = ({ data }) => {
 
   const posts = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(mine)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
         edges {
           node {
             id
@@ -37,6 +38,11 @@ const BlogPage = ({ data }) => {
 
 
   const blogData = posts?.allMarkdownRemark?.edges
+
+
+  // useEffect(() => {
+  //   navigate(blogData[0].node.fields.slug);
+  // }, []);
 
   return (
     <div style={{ background: '#000' }}>

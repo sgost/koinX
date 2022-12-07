@@ -10,7 +10,7 @@ export const BlogArticlesStyle = styled.div`
       font-weight: bold;
       font-size: 2.2vw;
       letter-spacing: -0.8px;
-      margin-top: 1vw;
+      margin-top: 0;
       margin-bottom: 0.8vw;
       color: ${palette.PRIMARY_TXT_COLOR};
     }

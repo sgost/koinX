@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { BlogPost } from "../../components/Blog";
+import { MinePost } from "../../components/Mine";
 
 const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
@@ -22,8 +22,8 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
     // For array mapping images
     if (data.hasOwnProperty('youtubeArray')
-        || data.hasOwnProperty('buyCoinArray')
         || data.hasOwnProperty('bitcoinArray')
+        || data.hasOwnProperty('walletCoinsArray')
         || data.hasOwnProperty('moreCoinsArray')
         || data.hasOwnProperty('currencyBlockArray')
         || data.hasOwnProperty('cryptoGuideArray')) {
@@ -35,19 +35,18 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             })
         }
 
-
-        if (data.buyCoinArray) {
-            data.buyCoinArray.map(item => {
+        if (data.bitcoinArray) {
+            data.bitcoinArray.map(item => {
                 var getImage = getAsset(item.image);
                 item.image = getImage.toString();
                 return item;
             })
         }
 
-        if (data.bitcoinArray) {
-            data.bitcoinArray.map(item => {
-                var getImage = getAsset(item.image);
-                item.image = getImage.toString();
+        if (data.walletCoinsArray) {
+            data.walletCoinsArray.map(item => {
+                var getImage = getAsset(item.icon);
+                item.icon = getImage.toString();
                 return item;
             })
         }
@@ -78,7 +77,7 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
     }
 
     return (
-        <BlogPost
+        <MinePost
             fields={data.fields}
             author_image={author_image}
             author={data.author}
@@ -91,6 +90,8 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             title={data.title}
             tags={data.tags}
             preview={true}
+            bannerTitle1={data.bannerTitle1}
+            blogBodyArray1={data.blogBodyArray1}
             bannerTitle={data.bannerTitle}
             bannerDesc={data.bannerDesc}
             blogBodyArray={data.blogBodyArray}
@@ -98,8 +99,10 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             alsoReadSlug={data.alsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}
             youtubeArray={data.youtubeArray}
-            buyCoinTitle={data.buyCoinTitle}
-            buyCoinArray={data.buyCoinArray}
+            coinWorkTitle={data.coinWorkTitle}
+            coinWorkArray={data.coinWorkArray}
+            walletCoinsTitle={data.walletCoinsTitle}
+            walletCoinsArray={data.walletCoinsArray}
             bitCoinTitle={data.bitCoinTitle}
             bitcoinArray={data.bitcoinArray}
             collapseTitle={data.collapseTitle}
