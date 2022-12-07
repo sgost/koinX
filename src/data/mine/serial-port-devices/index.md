@@ -14,14 +14,14 @@ blogBodyArray1:
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
-  - title: Lorem ipsum dolor sit amet, consectetur
+  - title: Is Bitcoin Mining Profitable?
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
-bannerTitle: How to buy Bitcoin in 3 easy steps
+bannerTitle: "How to Mine Bitcoin : Our Top 5 Recommendations"
 blogBodyArray:
   - title: Lorem ipsum dolor sit amet, consectetur
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -77,7 +77,7 @@ coinWorkArray:
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
     pointArray: []
-  - title: Lorem ipsum dolor sit amet, consectetur
+  - title: How difficult is it to mine Bitcoin?
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
@@ -96,15 +96,15 @@ coinWorkArray:
 walletCoinsTitle: Top wallets to store your Bitcoin
 walletCoinsArray:
   - title: Crypto.com
-    icon: ET.png
+    icon: image-168.png
   - title: Coinbase
-    icon: usdt.png
+    icon: image-169.png
   - title: Ledger
-    icon: xrp.png
+    icon: image-170.png
   - title: Trezor
-    icon: matic.png
+    icon: image-171.png
   - title: Coinbase
-    icon: doge.png
+    icon: image-169-1.png
 bitCoinTitle: Already Holding Bitcoin?
 bitcoinArray:
   - image: hold_coin.png
