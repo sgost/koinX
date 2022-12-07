@@ -68,6 +68,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
 
+  // How to mine Bitcoin?
   const mine = graphql(`
   query {
     allMarkdownRemark(
@@ -99,6 +100,39 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  return Promise.all([blogs, mine]);
+
+  // How to stake Bitcoin ?
+  const stake = graphql(`
+  query {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "./src/data/(stake)\\/.*\\\\.md$/" } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`).then(result => {
+    if (result.errors) {
+      Promise.reject(result.errors);
+    }
+
+    // Create blog pages
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/components/Stake/index.js`),
+        context: {
+          slug: node.fields.slug
+        },
+      });
+    });
+  });
+
+  return Promise.all([blogs, mine, stake]);
 
 }

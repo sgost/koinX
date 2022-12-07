@@ -13,6 +13,9 @@ export const BlogsWrapper = styled.div`
     background: transparent;
 
     .blog_body {
+      .gatsby-resp-image-background-image {
+        border-radius: 1rem !important;
+      }
       img {
         max-height: 40rem;
         border-radius: 1rem;
@@ -25,7 +28,7 @@ export const BlogsWrapper = styled.div`
         line-height: 3rem;
         letter-spacing: -0.8px;
         color: ${palette.PRIMARY_TXT_COLOR};
-        margin: 2rem 0 0 0;
+        margin: 5rem 0 0 0;
       }
       p {
         font-style: normal;
@@ -48,7 +51,7 @@ export const BlogsWrapper = styled.div`
       h3 {
         font-style: normal;
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         letter-spacing: -0.8px;
         color: ${palette.PRIMARY_TXT_COLOR};
         margin: 2rem 0 0 0;
@@ -60,6 +63,24 @@ export const BlogsWrapper = styled.div`
         line-height: 1.8rem;
         color: ${palette.NAVLINK_COLOR};
         margin: 2rem 0 0 0;
+      }
+      .desc_wrap {
+        display: flex;
+        gap: 20px;
+        height: 6.5rem;
+        align-items: center;
+        .desc_wrap_icon {
+          width: 4.5rem;
+          height: 4.5rem;
+          border-radius: 50%;
+        }
+      }
+      .bullets_label {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 170%;
+        margin-top: 20px;
+        color: ${palette.PRIMARY_TXT_COLOR};
       }
     }
   }
@@ -164,6 +185,7 @@ export const BlogsWrapper = styled.div`
       }
     }
   }
+
   .articles_guide {
     .blog_dashboad_wrapper {
       padding-top: 0;

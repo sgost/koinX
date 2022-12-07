@@ -13,9 +13,6 @@ export const BlogsWrapper = styled.div`
     background: transparent;
 
     .blog_body {
-      .gatsby-resp-image-background-image {
-        border-radius: 1rem !important;
-      }
       img {
         max-height: 40rem;
         border-radius: 1rem;
@@ -25,6 +22,7 @@ export const BlogsWrapper = styled.div`
         font-style: normal;
         font-weight: bold;
         font-size: 2.2rem;
+        line-height: 3rem;
         letter-spacing: -0.8px;
         color: ${palette.PRIMARY_TXT_COLOR};
         margin: 5rem 0 0 0;
@@ -164,6 +162,11 @@ export const BlogsWrapper = styled.div`
         margin-top: 1.5rem;
         transition: 0.5s ease-in-out;
       }
+    }
+  }
+  .articles_guide {
+    .blog_dashboad_wrapper {
+      padding-top: 0;
     }
   }
 `

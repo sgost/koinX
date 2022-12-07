@@ -136,10 +136,12 @@ export const MinePost = ({
           articlesTitle={currencyBlockTitle}
           articlesArray={currencyBlockArray}
         />
-        <BlogArticles
-          articlesTitle={cryptoGuideTitle}
-          articlesArray={cryptoGuideArray}
-        />
+        <div className="articles_guide">
+          <BlogArticles
+            articlesTitle={cryptoGuideTitle}
+            articlesArray={cryptoGuideArray}
+          />
+        </div>
       </BlogsWrapper>
       <Subscribe />
       <Footer />

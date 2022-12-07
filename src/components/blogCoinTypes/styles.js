@@ -26,6 +26,7 @@ export const BlogCoinTypesStyle = styled.div`
         .coin_img {
           width: 4vw;
           height: 4vw;
+          border-radius: 50%;
           margin: auto;
         }
         .card_title {

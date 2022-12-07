@@ -523,3 +523,267 @@ collections:
           - { name: title, label: Title }
           - { name: description, label: Description }
           - { name: keywords, label: Keywords, widget: list }
+
+  - name: stake
+    label: How to stake ?
+    label_singular: "Stake Blog"
+    folder: src/data/stake
+    slug: "{{slug}}"
+    create: true
+    media_folder: ""
+    public_folder: ""
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, default: "Title" }
+      - { name: date, label: Date, widget: datetime }
+      - { label: Banner Image, name: author_image, widget: image }
+      - { name: bannerDesc, label: Description, default: "Banner Description" }
+      - { name: bannerTitle1, label: Banner Title Top, default: "Banner Title" }
+      - {
+          name: blogBodyArray1,
+          label: Body Data Top,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Title",
+                required: false,
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Description",
+                required: false,
+              },
+            ],
+        }
+      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
+      - {
+          name: blogBodyArray,
+          label: Body Data,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Description",
+              },
+            ],
+        }
+      - {
+          name: alsoReadTitle,
+          label: Read link title,
+          widget: string,
+          default: "Also read",
+        }
+      - {
+          name: alsoReadSlug,
+          label: Read link (Slug),
+          widget: string,
+          default: "Link",
+        }
+      - {
+          name: youtubeContainerTitle,
+          label: Youtube title,
+          widget: string,
+          default: "Video Container Title",
+        }
+      - {
+          name: youtubeArray,
+          label: Add Videos,
+          widget: list,
+          fields:
+            [
+              {
+                label: Video Link,
+                name: link,
+                widget: string,
+                default: "Video Id",
+              },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Video Title",
+              },
+            ],
+        }
+      - {
+          name: coinWorkTitle,
+          label: Title,
+          default: "How does  Bitcoin work?",
+          required: false,
+        }
+      - {
+          name: coinWorkArray,
+          label: Coin Work Data,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "How long does it take to mine one Bitcoin?",
+                required: false,
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Lorem ipsum dolor sit amet",
+                required: false,
+              },
+              {
+                label: Bullet Points,
+                name: pointArray,
+                widget: list,
+                required: false,
+              },
+              { label: Description Logo, name: icon, widget: image },
+            ],
+        }
+      - {
+          name: coinPointTitle,
+          label: Bullet Points Title,
+          widget: string,
+          default: "Benefits of staking Bitcoin",
+        }
+      - { name: coinPointArray, label: Bullet Points, widget: list }
+      - {
+          name: bitCoinTitle,
+          label: Calculation Container title,
+          widget: string,
+          default: "Calculation Container title",
+        }
+      - {
+          name: bitcoinArray,
+          label: Do you have BITCOIN?,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: "Title" },
+              { label: Link, name: link, widget: string, default: "link" },
+              { label: Thumbnail image, name: image, widget: image },
+            ],
+        }
+      - {
+          name: collapseTitle,
+          label: Questions block title,
+          widget: string,
+          default: "Frequently asked questions",
+        }
+      - {
+          name: questionsArray,
+          label: Frequently asked questions,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: Title },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: Description,
+              },
+            ],
+        }
+      - {
+          name: moreCoinsTitle,
+          label: Add coins title,
+          widget: string,
+          default: "Add coins title",
+        }
+      - {
+          name: moreCoinsArray,
+          label: New coins array,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: "Title" },
+              { label: Coin DP, name: icon, widget: image },
+            ],
+        }
+      - {
+          name: currencyBlockTitle,
+          label: Add Articles title,
+          widget: string,
+          default: Related articles to Bitcoin,
+        }
+      - {
+          name: currencyBlockArray,
+          label: Add Article,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Article Title",
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Article Description",
+              },
+              {
+                label: Date,
+                name: date,
+                widget: string,
+                default: 23 October 2020,
+              },
+              { label: Thumnnail, name: icon, widget: image },
+            ],
+        }
+      - {
+          name: cryptoGuideTitle,
+          label: Add Crypto Guides title,
+          widget: string,
+          default: More crypto mining guides,
+        }
+      - {
+          name: cryptoGuideArray,
+          label: Add Crypto Guides,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Article Title",
+              },
+              {
+                label: Date,
+                name: date,
+                widget: string,
+                default: 23 October 2020,
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Article Description",
+              },
+              { label: Thumnnail, name: icon, widget: image },
+            ],
+        }
+      - { name: excerpt, label: Excerpt }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: keywords, label: Keywords, widget: list }
