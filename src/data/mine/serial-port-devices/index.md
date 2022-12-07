@@ -7,7 +7,7 @@ bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
 bannerTitle1: "How to Mine Bitcoin: an in-depth, no-nonsense guide to mining Bitcoin"
 blogBodyArray1:
-  - title: .
+  - title: ""
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
@@ -86,7 +86,7 @@ coinWorkArray:
       odio. Cras pulvinar ut justo eu tempor.
     pointArray: []
   - title: How all do you need to mine Bitcoin?
-    description: .
+    description: ""
     pointArray:
       - Mining Software.
       - Mining Hardware.
