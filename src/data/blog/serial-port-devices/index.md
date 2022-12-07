@@ -139,11 +139,14 @@ blogBodyArray:
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit.
     slug: step3
+  - title: Sample Text - Step
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
+      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
+      odio. Cras pulvinar ut justo eu tempor.
 youtubeArray:
-  - id: 1
-    image: bitcoin_banner.png
-    link: https://www.youtube.com/embed/tgbNymZ7vqY
-    title: Lorem ipsum do neque, ornare vitae ante id
   - id: 1
     image: bitcoin_banner.png
     link: https://www.youtube.com/embed/tgbNymZ7vqY
@@ -163,6 +166,8 @@ youtubeArray:
   - link: tsgUVv4_oLE
     title: Test video on Bitcoin
     image: bitcoin_banner.png
+  - link: QTQ6mY0jT3w
+    title: STATE OF WEB3 IN INDIA | Nasscom Report
 tags:
   - Serial API
   - ReactJS  and Javascript.
