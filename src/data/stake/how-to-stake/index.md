@@ -149,14 +149,19 @@ questionsArray:
 moreCoinsTitle: More Cryptos Similar to Bitcoin
 moreCoinsArray:
   - title: Ethereum
+    link: https://www.koinx.com/
     icon: ET.png
   - title: USDT
+    link: https://www.koinx.com/
     icon: usdt.png
   - title: XRP
+    link: https://www.koinx.com/
     icon: xrp.png
   - title: MATIC
+    link: https://www.koinx.com/
     icon: matic.png
   - title: Doge
+    link: https://www.koinx.com/
     icon: doge.png
 currencyBlockTitle: Related articles to Bitcoin
 excerpt: A serial port is a bidirectional communication interface that allows
@@ -210,12 +215,8 @@ cryptoGuideArray:
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-2-2-.png
 seo:
-  description: A serial port is a bidirectional communication interface that
-    allows sending and receiving data byte by byte. Web Serial API bridges the
-    web and the physical world by allowing websites to communicate with serial
-    devices, such as microcontrollers, 3D printers, removable USB and Bluetooth
-    devices that emulate a serial port.
-  title: How to communicate with Web Serial Port using Serial API and Reactjs.
+  description: How to stake Bitcoin - Step by Step Instructions
+  title: How to stake Bitcoin | KoinX
   keywords:
     - Serial API
     - ReactJS and Javascript.

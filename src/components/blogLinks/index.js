@@ -22,11 +22,7 @@ const BlogLinks = ({
                 <h2 className="menu_title"><img src={hambuger} alt="img" className="ham_icon" />Contents</h2>
                 <ul className="sub_link_main">
                     {bannerTitle && <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(bannerTitle)}> {bannerTitle}</Link>}
-                    {blogBodyArray.length > 0 && blogBodyArray?.map((item, index) => {
-                        return (
-                            <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(item?.title)} key={index}>{item?.title}</Link>
-                        )
-                    })}
+                    {blogBodyArray && <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(blogBodyArray)}>{blogBodyArray}</Link>}
                     {youtubeContainerTitle && <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(youtubeContainerTitle)}> {youtubeContainerTitle}</Link>}
                     {bitCoinTitle && <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(bitCoinTitle)}> {bitCoinTitle}</Link>}
                     {bulletpointTitle && <Link className="link_class" to={fields?.slug + "/#" + resolveFunction(bulletpointTitle)}> {bulletpointTitle}</Link>}

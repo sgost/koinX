@@ -140,7 +140,7 @@ export const StakePost = ({
         </Layout>
         <BlogLinks
           bannerTitle={bannerTitle1}
-          blogBodyArray={blogBodyArray}
+          blogBodyArray={bannerTitle}
           youtubeContainerTitle={youtubeContainerTitle}
           bitCoinTitle={coinWorkTitle}
           bulletpointTitle={bitCoinTitle}
@@ -279,6 +279,7 @@ export const query = graphql`
         moreCoinsTitle
         moreCoinsArray{
           title
+          link
           icon {
             publicURL
           }

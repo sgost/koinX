@@ -92,14 +92,19 @@ banner_image: bitcoin_banner.png
 author: Pachiyappan Velu
 moreCoinsArray:
   - title: Ethereum
+    link: https://www.koinx.com/
     icon: ET.png
   - title: USDT
+    link: https://www.koinx.com/
     icon: usdt.png
   - title: XRP
+    link: https://www.koinx.com/
     icon: xrp.png
   - title: MATIC
+    link: https://www.koinx.com/
     icon: matic.png
   - title: Doge
+    link: https://www.koinx.com/
     icon: doge.png
 linkdin: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 previewTitle: Backend Development
@@ -232,12 +237,8 @@ cryptoGuideArray:
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-3-.png
 seo:
-  description: A serial port is a bidirectional communication interface that
-    allows sending and receiving data byte by byte. Web Serial API bridges the
-    web and the physical world by allowing websites to communicate with serial
-    devices, such as microcontrollers, 3D printers, removable USB and Bluetooth
-    devices that emulate a serial port.
-  title: How to communicate with Web Serial Port using Serial API and Reactjs.
+  description: Learn how to buy Bitcoin (CRPTO) on 100+ crypto exchanges
+  title: How to buy Bitcoin | Buy Bitcoin in 5 easy steps | KoinX
   keywords:
     - Serial API
     - ReactJS and Javascript.

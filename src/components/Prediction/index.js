@@ -125,7 +125,7 @@ export const PredictionPost = ({
         </Layout>
         <BlogLinks
           bannerTitle={bannerTitle}
-          blogBodyArray={blogBodyArray}
+          blogBodyArray=""
           youtubeContainerTitle={youtubeContainerTitle}
           bitCoinTitle={bitCoinTitle}
           bulletpointTitle={coinPointTitle}
@@ -252,6 +252,7 @@ export const query = graphql`
         moreCoinsTitle
         moreCoinsArray{
           title
+          link
           icon {
             publicURL
           }

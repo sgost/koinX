@@ -62,7 +62,7 @@ export const MinePost = ({
             <img src={author_image} alt="img" />
             <p>{bannerDesc}</p>
             {/* Body 1 */}
-            <h2>{bannerTitle1}</h2>
+            <h2 id={resolveFunction(bannerTitle)}>{bannerTitle1}</h2>
             {blogBodyArray1?.map((item) => {
               return (
                 <>
@@ -130,8 +130,8 @@ export const MinePost = ({
           />
         </Layout>
         <BlogLinks
-          bannerTitle={bannerTitle}
-          blogBodyArray={blogBodyArray}
+          bannerTitle={bannerTitle1}
+          blogBodyArray={bannerTitle}
           youtubeContainerTitle={youtubeContainerTitle}
           bitCoinTitle={coinWorkTitle}
           bulletpointTitle={bitCoinTitle}
@@ -271,6 +271,7 @@ export const query = graphql`
         moreCoinsTitle
         moreCoinsArray{
           title
+          link
           icon {
             publicURL
           }

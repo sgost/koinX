@@ -233,6 +233,7 @@ export const query = graphql`
         moreCoinsTitle
         moreCoinsArray{
           title
+          link
           icon {
             publicURL
           }

@@ -15,10 +15,10 @@ const BlogCoinTypes = ({
                 <div className="cards_row">
                     {moreCoinsArray?.map((item, index) => {
                         return (
-                            <div className="coin_card" key={index}>
+                            <a href={item.link} className="coin_card" key={index} target="_blank" rel="noopener noreferrer">
                                 <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item?.title} className="coin_img" />
                                 <span className="card_title">{item?.title}</span>
-                            </div>
+                            </a>
                         )
                     })}
                 </div>
