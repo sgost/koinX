@@ -98,7 +98,7 @@ export const MinePost = ({
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
           {/* Body 1 */}
           <Content className="blog_body">
-            <h2>{coinWorkTitle}</h2>
+            <h2 id={resolveFunction(coinWorkTitle)}>{coinWorkTitle}</h2>
             {coinWorkArray?.map((item, index) => {
               return (
                 <>
