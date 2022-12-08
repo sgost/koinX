@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import * as palette from "../../styles/variables";
+import styled from "styled-components"
+import * as palette from "../../styles/variables"
 
 export const BlogLinksStyle = styled.div`
   .side_menu {
@@ -20,12 +20,18 @@ export const BlogLinksStyle = styled.div`
         }
     }
     .sub_link_main {
+        display: flex;
+        flex-direction: column;
         border-top: 1px solid ${palette.BORDER_COLOR};
-        li{
+        .link_class {
+            width: 15rem;
             color: ${palette.SIDE_BAR_TEXT_COLOR};
             margin-top: 1rem;
             cursor: pointer;
             transition:0.5s ease-in-out;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis; 
             :hover {
                 color: ${palette.SECONDARY_TXT_COLOR};NAVLINK_COLOR
             }

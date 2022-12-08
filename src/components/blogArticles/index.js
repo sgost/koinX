@@ -1,6 +1,7 @@
 import React from "react";
 import { BlogArticlesStyle } from "./styles";
 import { Layout } from "antd";
+import { resolveFunction } from "../../utils/functions";
 // import { graphql, Link, useStaticQuery } from "gatsby";
 
 const BlogArticles = ({
@@ -41,7 +42,7 @@ const BlogArticles = ({
   // console.log("ssssssssssss", posts?.allMarkdownRemark?.edges)
   return (
     <BlogArticlesStyle>
-      <Content className="blog_dashboad_wrapper">
+      <Content className="blog_dashboad_wrapper" id={resolveFunction(articlesTitle)}>
         <h2>{articlesTitle}</h2>
         <div className="blog_main_wrap">
           {articlesArray?.map((item, index) => {

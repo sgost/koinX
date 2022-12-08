@@ -9,7 +9,8 @@ buyCoinArray:
   - id: 1
     title: WazirX
     image: wazirx.png
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
@@ -32,7 +33,8 @@ buyCoinArray:
   - id: 2
     title: Bitbns
     image: bitbns.png
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
@@ -55,22 +57,26 @@ buyCoinArray:
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Bitcoin with a credit or debit card?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What will you need to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What is the easiest way to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: Best wallets to store your Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
@@ -95,13 +101,6 @@ moreCoinsArray:
     icon: matic.png
   - title: Doge
     icon: doge.png
-sideNavArray:
-  - title: How to buy Bitcoin in 3 easy steps
-  - title: Popular video guides on buying Bitcoin
-  - title: Where to buy Bitcoin?
-  - title: Already holding Bitcoin?
-  - title: Frequently asked questions
-  - title: More Cryptos Similar to Bitcoin
 linkdin: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 previewTitle: Backend Development
 instagram: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
@@ -112,7 +111,8 @@ bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
 blogBodyArray:
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -120,7 +120,8 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step1
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -128,7 +129,8 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step2
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -136,11 +138,13 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step3
   - title: New Link
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit.
     slug: step3
   - title: Sample Text - Step
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -186,17 +190,20 @@ currencyBlockTitle: Related articles to Bitcoin
 articlesArray:
   - title: How to stake Bitcoin
     date: 2021-11-30T18:30:00.000Z
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     image: bitcoin_banner.png
   - title: How to mine Bitcoin
     date: 2021-11-30T18:30:00.000Z
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     image: bitcoin_banner.png
   - title: Bitcoin price prediction
     date: 2021-11-30T18:30:00.000Z
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     image: bitcoin_banner.png
   - date: 2022-12-06T13:27:28.349Z
@@ -205,12 +212,14 @@ articlesArray:
     image: ET.png
 currencyBlockArray:
   - title: How to stake Bitcoin
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 25 October 2022
     icon: team.png
   - title: How to mine Bitcoin
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-2-.png
@@ -218,7 +227,8 @@ cryptoGuideTitle: "More cyrpto buying guides "
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 25 October 2022
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-3-.png
 seo:

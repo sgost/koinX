@@ -5,58 +5,79 @@ author_image: unsplash_8td991gibiq.png
 bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
-bannerTitle1: "How to Mine Bitcoin: an in-depth, no-nonsense guide to mining Bitcoin"
-blogBodyArray1:
-  - title: ""
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
-      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
-      odio. Cras pulvinar ut justo eu tempor.
-  - title: Is Bitcoin Mining Profitable?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
-      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
-      odio. Cras pulvinar ut justo eu tempor.
-bannerTitle: "How to Mine Bitcoin : Our Top 5 Recommendations"
+bannerTitle: "Bitcoin Overview"
+headTableArray:
+  - title: Cryptocurrency
+    value: Bitcoin
+    dataArr: []
+    dataArr2: []
+  - title: Launch Date
+    value: Jan 2016
+    dataArr: []
+    dataArr2: []
+  - title: Website
+    value: www.bitcoin.com
+    dataArr: []
+    dataArr2: []
+  - title: Price Today
+    value: $ 16,783
+    dataArr: []
+    dataArr2: []
+  - title: Price Change
+    value: Frequently asked questions
+    dataArr:
+      - "24H"
+      - "7D"
+      - "30D"
+      - "1M"
+      - "6M"
+      - "1Y"
+    dataArr2:
+      - "- 1.3%"
+      - "+ 1.3%"
+      - "+ 3.4%"
+      - "+ 14.2%"
+      - "+ 14.2%"
+      - "+ 14.2%"
+  - title: Bitcoin Market Cap
+    value: $ 326B
+    dataArr: []
+    dataArr2: []
+  - title: Circulating Supply
+    value: 19,224,350 BTC
+    dataArr: []
+    dataArr2: []
+  - title: Trading Volume
+    value: $17,586,552,045
+    dataArr: []
+    dataArr2: []
+  - title: All Time High
+    value: $68,789
+    dataArr: []
+    dataArr2: []
+  - title: All Time Low
+    value: $16,054
+    dataArr: []
+    dataArr2: []
 blogBodyArray:
-  - title: Lorem ipsum dolor sit amet, consectetur
+  - title: Bitcoin price prediction 2024
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
-      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
-      odio. Cras pulvinar ut justo eu tempor.
+      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
     slug: title_step1
-  - title: Lorem ipsum dolor sit amet, consectetur
+  - title: Bitcoin price prediction 2024
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
-      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
-      odio. Cras pulvinar ut justo eu tempor.
+      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
     slug: title_step2
-  - title: Lorem ipsum dolor sit amet, consectetur
+  - title: Bitcoin price prediction 2024
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
-      bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
-      odio. Cras pulvinar ut justo eu tempor.
+      id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
     slug: title_step3
-  - title: New Link
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit.
-    slug: step3
 alsoReadTitle: Bitcoin Price Prediction
 alsoReadSlug: title_step1
 youtubeContainerTitle: Popular video guides on buying Bitcoin
@@ -73,38 +94,6 @@ youtubeArray:
     title: Lorem ipsum do neque, ornare vitae ante id
   - link: tsgUVv4_oLE
     title: Test video on Bitcoin
-coinWorkTitle: How does  Bitcoin work?
-coinWorkArray:
-  - title: How long does it take to mine one Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio.
-    icon: image-168.png
-    pointArray:
-      - Mining Software.
-      - Mining Hardware.
-      - Application Specific Integrated Circuit.
-      - Home Computers.
-      - Hash Rate
-    pointArray2:
-      - Mining Software.
-      - Mining Hardware.
-      - Application Specific Integrated Circuit.
-      - Home Computers.
-      - Hash Rate
-  - title: How all do you need to mine Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio.
-    icon: image-168.png
-    pointArray:
-      - Mining Software.
-      - Mining Hardware.
-      - Application Specific Integrated Circuit.
-      - Home Computers.
-      - Hash Rate
-    pointArray2:
-      - Mining Software.
-      - Mining Hardware.
-      - Application Specific Integrated Circuit.
-      - Home Computers.
-      - Hash Rate
 coinPointTitle: Top wallets to store your Bitcoin
 coinPointArray:
   - Mining Software.

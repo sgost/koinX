@@ -44,8 +44,7 @@ export const MinePost = ({
   currencyBlockTitle,
   currencyBlockArray,
   cryptoGuideTitle,
-  cryptoGuideArray,
-  sideNavArray
+  cryptoGuideArray
 }) => {
   const { Content } = Layout
 
@@ -130,7 +129,18 @@ export const MinePost = ({
             questionsArray={questionsArray}
           />
         </Layout>
-        <BlogLinks fields={fields} sideNavArray={sideNavArray} />
+        <BlogLinks
+          bannerTitle={bannerTitle}
+          blogBodyArray={blogBodyArray}
+          youtubeContainerTitle={youtubeContainerTitle}
+          bitCoinTitle={coinWorkTitle}
+          bulletpointTitle={bitCoinTitle}
+          moreCoinsTitle={moreCoinsTitle}
+          collapseTitle={collapseTitle}
+          articlesTitle={currencyBlockTitle}
+          cryptoGuideTitle={cryptoGuideTitle}
+          fields={fields}
+        />
         {/* Blog releated articles */}
         <BlogArticles
           articlesTitle={currencyBlockTitle}
@@ -196,7 +206,6 @@ const Blog = ({ data }) => {
         currencyBlockArray={post.frontmatter.currencyBlockArray}
         cryptoGuideTitle={post.frontmatter.cryptoGuideTitle}
         cryptoGuideArray={post.frontmatter.cryptoGuideArray}
-        sideNavArray={post.frontmatter.sideNavArray}
       />
     </Fragment>
   )
@@ -283,9 +292,6 @@ export const query = graphql`
           icon {
             publicURL
           }
-        }
-        sideNavArray {
-          title
         }
         author_image {
           publicURL

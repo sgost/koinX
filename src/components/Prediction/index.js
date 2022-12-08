@@ -15,24 +15,21 @@ import Footer from "../Footer";
 import Navbar from "../navbar";
 import { resolveFunction } from "../../utils/functions";
 
-export const StakePost = ({
+export const PredictionPost = ({
   fields,
   author_image,
   author,
   date,
   title,
   preview,
-  bannerTitle1,
-  blogBodyArray1,
   bannerTitle,
+  headTableArray,
   bannerDesc,
   blogBodyArray,
   alsoReadTitle,
   alsoReadSlug,
   youtubeContainerTitle,
   youtubeArray,
-  coinWorkTitle,
-  coinWorkArray,
   coinPointTitle,
   coinPointArray,
   bitCoinTitle,
@@ -61,28 +58,39 @@ export const StakePost = ({
           <Content className="blog_body">
             <img src={author_image} alt="img" />
             <p>{bannerDesc}</p>
-            {/* Body 1 */}
-            <h2 id={resolveFunction(bannerTitle1)}>{bannerTitle1}</h2>
-            {blogBodyArray1?.map((item) => {
-              return (
-                <>
-                  {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
-                  {item?.description && <p>{item?.description}</p>}
-                </>
-              )
-            })}
 
             {/* Body 2  */}
             <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
-            {/* Link map */}
-            {blogBodyArray?.map((item, index) => {
-              return (
-                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
-              )
-            })}
+            {/* table  */}
+            <table className="table">
+              {headTableArray.map((item, index) => {
+                return (
+                  <tr className="table_head" key={index}>
+                    <td className="table_title">{item?.title}</td>
+                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 ?
+                      <td className="table_block">
+                        <tr>
+                          {item.dataArr.map((itm, index) =>
+                            <td key={index}>{itm}</td>
+                          )}
+                        </tr>
+                        <tr>
+                          {item.dataArr2.map((itm, index) =>
+                            <td key={index}>{itm}</td>
+                          )}
+                        </tr>
+                      </td>
+                      : item.value}
+                    </td>
+                  </tr>
+                )
+              })}
+            </table>
+            {/* About link */}
+            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
 
             {/* body map */}
-            {blogBodyArray?.map((item, index) => {
+            {blogBodyArray?.map((item) => {
               return (
                 <>
                   <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>
@@ -101,30 +109,7 @@ export const StakePost = ({
             bitcoinArray={bitcoinArray}
           />
           {/* Body 1 */}
-          <Content className="blog_body">
-            <h2 id={resolveFunction(coinWorkTitle)}>{coinWorkTitle}</h2>
-            {coinWorkArray?.map((item, index) => {
-              return (
-                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
-              )
-            })}
-            {coinWorkArray?.map((item, index) => {
-              return (
-                <>
-                  {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
-                  <div className="desc_wrap">
-                    <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} className="desc_wrap_icon" alt={item?.description} />
-                    {item?.description && <p>{item?.description}</p>}
-                  </div>
-                  <p className="bullets_label">Pros</p>
-                  {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  <p className="bullets_label bullets_label_margin_top">Pros</p>
-                  {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index === 0 && <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>}
-                </>
-              )
-            })}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+          <Content className="blog_body" id={resolveFunction(coinPointTitle)}>
             <h2>{coinPointTitle}</h2>
             {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
           </Content>
@@ -139,11 +124,11 @@ export const StakePost = ({
           />
         </Layout>
         <BlogLinks
-          bannerTitle={bannerTitle1}
+          bannerTitle={bannerTitle}
           blogBodyArray={blogBodyArray}
           youtubeContainerTitle={youtubeContainerTitle}
-          bitCoinTitle={coinWorkTitle}
-          bulletpointTitle={bitCoinTitle}
+          bitCoinTitle={bitCoinTitle}
+          bulletpointTitle={coinPointTitle}
           moreCoinsTitle={moreCoinsTitle}
           collapseTitle={collapseTitle}
           articlesTitle={currencyBlockTitle}
@@ -170,7 +155,7 @@ export const StakePost = ({
 
 const Blog = ({ data }) => {
 
-  const { Stakepost: post } = data;
+  const { Predictionpost: post } = data;
 
   const seoData = post.frontmatter.seo;
 
@@ -184,7 +169,7 @@ const Blog = ({ data }) => {
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
-      <StakePost
+      <PredictionPost
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
@@ -192,17 +177,14 @@ const Blog = ({ data }) => {
         title={post.frontmatter.title}
         tags={post.frontmatter.tags}
         preview={false}
-        bannerTitle1={post.frontmatter.bannerTitle1}
-        blogBodyArray1={post.frontmatter.blogBodyArray1}
         bannerTitle={post.frontmatter.bannerTitle}
+        headTableArray={post.frontmatter.headTableArray}
         bannerDesc={post.frontmatter.bannerDesc}
         blogBodyArray={post.frontmatter.blogBodyArray}
         alsoReadTitle={post.frontmatter.alsoReadTitle}
         alsoReadSlug={post.frontmatter.alsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
-        coinWorkTitle={post.frontmatter.coinWorkTitle}
-        coinWorkArray={post.frontmatter.coinWorkArray}
         coinPointTitle={post.frontmatter.coinPointTitle}
         coinPointArray={post.frontmatter.coinPointArray}
         bitcoinArray={post.frontmatter.bitcoinArray}
@@ -224,7 +206,7 @@ export default Blog
 
 export const query = graphql`
   query($slug: String!) {
-    Stakepost: markdownRemark(fields: { slug: { eq: $slug } }) {
+    Predictionpost: markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
         readingTime {
@@ -233,13 +215,14 @@ export const query = graphql`
       }
       frontmatter {
         author
-        bannerTitle1
-        blogBodyArray1 {
-          title
-          description
-        }
         bannerTitle
         bannerDesc
+        headTableArray {
+          title
+          value
+          dataArr
+          dataArr2
+        }
         blogBodyArray {
           title
           description
@@ -250,16 +233,6 @@ export const query = graphql`
         youtubeArray {
           link
           title
-        }
-        coinWorkTitle
-        coinWorkArray {
-          title
-          description
-          pointArray
-          pointArray2
-          icon {
-            publicURL
-          }
         }
         coinPointTitle
         coinPointArray

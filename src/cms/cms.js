@@ -7,6 +7,7 @@ import HomePreview from "./preview-templates/HomePreview";
 import BlogPreview from "./preview-templates/BlogPreview";
 import MinePreview from "./preview-templates/MinePreview";
 import StakePreview from "./preview-templates/StakePreview";
+import PredictionPreview from "./preview-templates/PredictionPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -41,3 +42,4 @@ CMS.registerPreviewTemplate("home", withStyledComponentsRendered(HomePreview));
 CMS.registerPreviewTemplate("blog", withStyledComponentsRendered(BlogPreview));
 CMS.registerPreviewTemplate("mine", withStyledComponentsRendered(MinePreview));
 CMS.registerPreviewTemplate("stake", withStyledComponentsRendered(StakePreview));
+CMS.registerPreviewTemplate("prediction", withStyledComponentsRendered(PredictionPreview));

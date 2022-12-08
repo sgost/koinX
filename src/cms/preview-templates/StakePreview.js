@@ -112,7 +112,6 @@ const StakePreview = ({ entry, getAsset }) => {
             currencyBlockArray={data.currencyBlockArray}
             cryptoGuideTitle={data.cryptoGuideTitle}
             cryptoGuideArray={data.cryptoGuideArray}
-            sideNavArray={data.sideNavArray}
         />
     );
 

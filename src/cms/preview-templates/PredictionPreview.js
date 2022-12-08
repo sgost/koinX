@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { MinePost } from "../../components/Mine";
+import { PredictionPost } from "../../components/Prediction";
 
-const MinePreview = ({ entry, widgetFor, getAsset }) => {
+const PredictionPreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
@@ -23,7 +23,6 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
     // For array mapping images
     if (data.hasOwnProperty('youtubeArray')
         || data.hasOwnProperty('bitcoinArray')
-        || data.hasOwnProperty('walletCoinsArray')
         || data.hasOwnProperty('moreCoinsArray')
         || data.hasOwnProperty('currencyBlockArray')
         || data.hasOwnProperty('cryptoGuideArray')) {
@@ -39,14 +38,6 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
             data.bitcoinArray.map(item => {
                 var getImage = getAsset(item.image);
                 item.image = getImage.toString();
-                return item;
-            })
-        }
-
-        if (data.walletCoinsArray) {
-            data.walletCoinsArray.map(item => {
-                var getImage = getAsset(item.icon);
-                item.icon = getImage.toString();
                 return item;
             })
         }
@@ -77,7 +68,7 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
     }
 
     return (
-        <MinePost
+        <PredictionPost
             fields={data.fields}
             author_image={author_image}
             author={data.author}
@@ -85,19 +76,16 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
             title={data.title}
             tags={data.tags}
             preview={true}
-            bannerTitle1={data.bannerTitle1}
-            blogBodyArray1={data.blogBodyArray1}
             bannerTitle={data.bannerTitle}
+            headTableArray={data.headTableArray}
             bannerDesc={data.bannerDesc}
             blogBodyArray={data.blogBodyArray}
             alsoReadTitle={data.alsoReadTitle}
             alsoReadSlug={data.alsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}
             youtubeArray={data.youtubeArray}
-            coinWorkTitle={data.coinWorkTitle}
-            coinWorkArray={data.coinWorkArray}
-            walletCoinsTitle={data.walletCoinsTitle}
-            walletCoinsArray={data.walletCoinsArray}
+            coinPointTitle={data.coinPointTitle}
+            coinPointArray={data.coinPointArray}
             bitCoinTitle={data.bitCoinTitle}
             bitcoinArray={data.bitcoinArray}
             collapseTitle={data.collapseTitle}
@@ -113,11 +101,11 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
 
 };
 
-MinePreview.propTypes = {
+PredictionPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
     getAsset: PropTypes.func,
 };
 
-export default MinePreview;
+export default PredictionPreview;

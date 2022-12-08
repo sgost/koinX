@@ -110,7 +110,6 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
             currencyBlockArray={data.currencyBlockArray}
             cryptoGuideTitle={data.cryptoGuideTitle}
             cryptoGuideArray={data.cryptoGuideArray}
-            sideNavArray={data.sideNavArray}
         />
     );
 

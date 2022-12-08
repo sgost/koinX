@@ -8,14 +8,16 @@ bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 bannerTitle1: "How to Mine Bitcoin: an in-depth, no-nonsense guide to mining Bitcoin"
 blogBodyArray1:
   - title: ""
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
   - title: Is Bitcoin Mining Profitable?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -24,7 +26,8 @@ blogBodyArray1:
 bannerTitle: "How to Mine Bitcoin : Our Top 5 Recommendations"
 blogBodyArray:
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -32,7 +35,8 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step1
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -40,7 +44,8 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step2
   - title: Lorem ipsum dolor sit amet, consectetur
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -48,7 +53,8 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step3
   - title: New Link
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit.
     slug: step3
 alsoReadTitle: Bitcoin Price Prediction
@@ -70,7 +76,8 @@ youtubeArray:
 coinWorkTitle: How does  Bitcoin work?
 coinWorkArray:
   - title: How long does it take to mine one Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -78,7 +85,8 @@ coinWorkArray:
       odio. Cras pulvinar ut justo eu tempor.
     pointArray: []
   - title: How difficult is it to mine Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -116,22 +124,26 @@ bitcoinArray:
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Bitcoin with a credit or debit card?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What will you need to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What is the easiest way to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: Best wallets to store your Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
@@ -154,13 +166,6 @@ excerpt: A serial port is a bidirectional communication interface that allows
   such as microcontrollers, 3D printers, removable USB and Bluetooth devices
   that emulate a serial port.
 author: Pachiyappan Velu
-sideNavArray:
-  - title: How to buy Bitcoin in 3 easy steps
-  - title: Popular video guides on buying Bitcoin
-  - title: Where to buy Bitcoin?
-  - title: Already holding Bitcoin?
-  - title: Frequently asked questions
-  - title: More Cryptos Similar to Bitcoin
 previewTitle: Backend Development
 tags:
   - Serial API
@@ -169,16 +174,19 @@ navLinkTitle: How to buy Bitcoin?
 currencyBlockArray:
   - title: How to stake Bitcoin
     date: 23 October 2020
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team.png
   - title: How to mine Bitcoin
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-1.png
   - title: Bitcoin price prediction
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-2.png
@@ -186,17 +194,20 @@ cryptoGuideTitle: More crypto mining guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-2-.png
   - title: How to buy Solana?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-1-2-.png
   - title: How to buy Doge?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-2-2-.png
 seo:
