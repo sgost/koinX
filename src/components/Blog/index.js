@@ -103,7 +103,7 @@ export const BlogPost = ({
         </Layout>
         <BlogLinks
           bannerTitle={bannerTitle}
-          blogBodyArray={blogBodyArray}
+          blogBodyArray=""
           youtubeContainerTitle={youtubeContainerTitle}
           bitCoinTitle={buyCoinTitle}
           bulletpointTitle={bitCoinTitle}
