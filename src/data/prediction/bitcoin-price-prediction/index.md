@@ -7,24 +7,11 @@ bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
 bannerTitle: "Bitcoin Overview"
 headTableArray:
-  - title: Cryptocurrency
-    value: Bitcoin
-    dataArr: []
-    dataArr2: []
-  - title: Launch Date
-    value: Jan 2016
-    dataArr: []
-    dataArr2: []
-  - title: Website
-    value: www.bitcoin.com
-    dataArr: []
-    dataArr2: []
-  - title: Price Today
-    value: $ 16,783
-    dataArr: []
-    dataArr2: []
-  - title: Price Change
-    value: Frequently asked questions
+  - value: Bitcoin
+  - value: Jan 2016
+  - value: www.bitcoin.com
+  - value: $ 16,783
+  - value: Frequently asked questions
     dataArr:
       - "24H"
       - "7D"
@@ -39,26 +26,11 @@ headTableArray:
       - "+ 14.2%"
       - "+ 14.2%"
       - "+ 14.2%"
-  - title: Bitcoin Market Cap
-    value: $ 326B
-    dataArr: []
-    dataArr2: []
-  - title: Circulating Supply
-    value: 19,224,350 BTC
-    dataArr: []
-    dataArr2: []
-  - title: Trading Volume
-    value: $17,586,552,045
-    dataArr: []
-    dataArr2: []
-  - title: All Time High
-    value: $68,789
-    dataArr: []
-    dataArr2: []
-  - title: All Time Low
-    value: $16,054
-    dataArr: []
-    dataArr2: []
+  - value: $ 326B
+  - value: 19,224,350 BTC
+  - value: $17,586,552,045
+  - value: $68,789
+  - value: $16,054
 blogBodyArray:
   - title: Bitcoin price prediction 2024
     description:

@@ -45,6 +45,28 @@ export const PredictionPost = ({
 }) => {
   const { Content } = Layout
 
+  const tableTitleFun = (index) => {
+    if (index === 0) {
+      return "Cryptocurrency"
+    } else if (index === 1) {
+      return "Launch Date"
+    } else if (index === 2) {
+      return "Website"
+    } else if (index === 3) {
+      return "Price Today"
+    } else if (index === 4) {
+      return "Price Change"
+    } else if (index === 5) {
+      return "Bitcoin Market Cap"
+    } else if (index === 6) {
+      return "Circulating Supply"
+    } else if (index === 8) {
+      return "All Time High"
+    } else {
+      return "All Time Low"
+    }
+  }
+
   return (
     <Fragment>
       <Navbar />
@@ -66,16 +88,16 @@ export const PredictionPost = ({
               {headTableArray.map((item, index) => {
                 return (
                   <tr className="table_head" key={index}>
-                    <td className="table_title">{item?.title}</td>
-                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 ?
+                    <td className="table_title">{tableTitleFun(index)}</td>
+                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && !(item.value) ?
                       <td className="table_block">
                         <tr>
-                          {item.dataArr.map((itm, index) =>
+                          {item?.dataArr?.map((itm, index) =>
                             <td key={index}>{itm}</td>
                           )}
                         </tr>
                         <tr>
-                          {item.dataArr2.map((itm, index) =>
+                          {item?.dataArr2?.map((itm, index) =>
                             <td key={index}>{itm}</td>
                           )}
                         </tr>
@@ -218,7 +240,6 @@ export const query = graphql`
         bannerTitle
         bannerDesc
         headTableArray {
-          title
           value
           dataArr
           dataArr2
