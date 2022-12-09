@@ -833,6 +833,26 @@ collections:
       - { name: bannerDesc, label: Description, default: "Banner Description" }
       - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
       - {
+          name: headTableArray,
+          label: Bitcoin Overview Table Edit,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, default: Title },
+              { label: Value, name: value, default: Value },
+              {
+                label: Price change block header edit,
+                name: dataArr,
+                widget: list,
+              },
+              {
+                label: Price change block value edit,
+                name: dataArr2,
+                widget: list,
+              },
+            ],
+        }
+      - {
           name: blogBodyArray,
           label: Body Data,
           widget: list,

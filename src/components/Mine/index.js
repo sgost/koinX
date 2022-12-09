@@ -62,7 +62,7 @@ export const MinePost = ({
             <img src={author_image} alt="img" />
             <p>{bannerDesc}</p>
             {/* Body 1 */}
-            <h2 id={resolveFunction(bannerTitle)}>{bannerTitle1}</h2>
+            <h2 id={resolveFunction(bannerTitle1)}>{bannerTitle1}</h2>
             {blogBodyArray1?.map((item) => {
               return (
                 <>

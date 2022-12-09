@@ -65,19 +65,16 @@ blogBodyArray:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step1
   - title: Bitcoin price prediction 2024
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step2
   - title: Bitcoin price prediction 2024
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
-    slug: title_step3
 alsoReadTitle: Bitcoin Price Prediction
 alsoReadSlug: title_step1
 youtubeContainerTitle: Popular video guides on buying Bitcoin
