@@ -11,7 +11,7 @@ headTableArray:
   - value: Jan 2016
   - value: www.bitcoin.com
   - value: $ 16,783
-  - value: Frequently asked questions
+  - value: ""
     dataArr:
       - "24H"
       - "7D"
