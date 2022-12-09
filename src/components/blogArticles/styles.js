@@ -59,4 +59,46 @@ export const BlogArticlesStyle = styled.div`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    .blog_dashboad_wrapper {
+      h2 {
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+      }
+      .blog_main_wrap {
+        gap: 4vw;
+        margin-top: 4vw;
+        grid-template-columns: 1fr 1fr;
+        .blog_dash_wrapper {
+          .thumb_img {
+            align-items: baseline;
+            flex-direction: column;
+            img {
+              width: 22vw;
+              height: 20vw;
+              border-radius: 2vw;
+            }
+            .blog_title {
+              margin-left: 0;
+              h3 {
+                font-size: 3vw;
+                letter-spacing: -0.8px;
+                margin-top: 3vw;
+              }
+              span {
+                font-size: 2vw;
+              }
+            }
+          }
+          .blog_desc {
+            font-size: 2vw;
+            margin-top: 0.8vw;
+            line-height: 3.5vw;
+          }
+        }
+      }
+    }
+  }
 `

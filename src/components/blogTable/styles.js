@@ -10,6 +10,10 @@ export const BlogTableStyle = styled.div`
       letter-spacing: -0.8px;
       color: ${palette.PRIMARY_TXT_COLOR};
       margin: 5rem 0 0 0;
+      @media (max-width: 600px) {
+        font-size: 8vw;
+        line-height: 10vw;
+      }
     }
     .anchor_tag {
       font-style: normal;
@@ -40,6 +44,13 @@ export const BlogTableStyle = styled.div`
           .logo {
             max-width: 5rem;
             margin-right: 1rem;
+          }
+          @media (max-width: 600px) {
+            flex-direction: column;
+            text-align: center;
+            .logo {
+              margin: 0 0 2rem 0;
+            }
           }
         }
         .table_label {

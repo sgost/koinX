@@ -2,7 +2,7 @@ import styled from "styled-components"
 import * as palette from "../../styles/variables"
 
 export const HoldCoinsContainer = styled.div`
-   .hold_coin {
+  .hold_coin {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
@@ -51,6 +51,7 @@ export const HoldCoinsContainer = styled.div`
           background: #ffffff;
           border-radius: 8px;
           margin-top: 18px;
+          padding-left: 1rem;
           border: none;
           outline: none;
           cursor: pointer;
@@ -60,6 +61,39 @@ export const HoldCoinsContainer = styled.div`
         }
         :nth-child(2) {
           background: linear-gradient(135.73deg, #ff9865 0%, #ef3031 110.55%);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 905px) {
+    .hold_coin {
+      .hold_coin_container_cards {
+        grid-template-columns: 1fr;
+        .card {
+          img {
+            width: 20vw;
+            height: 20vw;
+          }
+          .card_title {
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .hold_coin {
+      .hold_coin_container_cards {
+        .card {
+          button {
+            width: 23vw;
+            height: 6vw;
+            font-weight: 600;
+            font-size: 2vw;
+            margin-top: 2vw;
+          }
         }
       }
     }

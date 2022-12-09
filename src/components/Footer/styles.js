@@ -61,4 +61,46 @@ export const FooterContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 750px) {
+    padding: 9vw 4.3vw;
+    .footer_wrap {
+      .icon_conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .icon_grid_wrap {
+          .icon_title {
+            font-size: 3vw;
+            line-height: 5vw;
+          }
+          .icon_grid {
+            display: flex;
+            margin: 4.5vw 0 7vw 0;
+            gap: 4vw;
+            img {
+              width: 5vw;
+              height: 5vw;
+              margin: 0;
+            }
+          }
+        }
+
+        .list_grid {
+          flex-direction: column;
+          .footer_list {
+            display: flex;
+            flex-direction: column;
+            h3 {
+              font-size: 3vw;
+            }
+          }
+          .footer_links {
+            font-size: 3vw;
+            line-height: 7vw;
+          }
+        }
+      }
+    }
+  }
 `

@@ -37,4 +37,17 @@ export const BlogHeaderStyles = styled.div`
         }
       }
     }
+
+@media (max-width: 500px){
+  .blog_title {
+      font-size: 8vw;
+      line-height: auto;
+    }
+  .time_date {
+    margin: 0 0 0.5rem 0;
+    span {
+    font-size: 3vw;
+      }
+}
+}
 `

@@ -26,6 +26,10 @@ export const BlogsWrapper = styled.div`
         letter-spacing: -0.8px;
         color: ${palette.PRIMARY_TXT_COLOR};
         margin: 5rem 0 0 0;
+        @media (max-width: 600px){
+          font-size: 8vw;
+          line-height: 10vw;
+        }
       }
       p {
         font-style: normal;
@@ -169,4 +173,9 @@ export const BlogsWrapper = styled.div`
       padding-top: 0;
     }
   }
+  @media (max-width: 1000px){
+  .blog_data {
+    padding: 0 2rem;
+  }
+}
 `

@@ -50,6 +50,7 @@ export const Detail = styled.div`
           outline: none;
           border-radius: 0.3vw 0px 0px 0.3vw;
           padding-left: 1vw;
+          font-size: 1.5vw;
         }
         button {
           width: 7.9vw;
@@ -65,6 +66,62 @@ export const Detail = styled.div`
           transition: 0.5s ease-in-out;
           :hover {
             transform: scale(1.01, 1.01);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding: 18vw 8vw;
+    #detail_container {
+      height: 68vw;
+      position: relative;
+      background-color: blue;
+      border-radius: 3vw;
+      #img1 {
+        display: none;
+      }
+      #detail_container_matter {
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        .subscribe_image {
+          width: 27.8vw;
+          height: 27.9vw;
+          margin-top: 4vw;
+        }
+      }
+
+      .matter_cont {
+        width: fit-content;
+        height: fit-content;
+        margin: auto 0 auto 5vw;
+        h1 {
+          width: 66vw;
+          font-weight: 700;
+          font-size: 4vw;
+          margin-right: 4vw;
+          line-height: 5.5vw;
+        }
+        .detail_container_matter_mini {
+          margin: 3vw auto auto auto;
+          .email_field {
+            width: 41vw;
+            height: 8vw;
+            border-radius: 1vw 0px 0px 1vw;
+            padding-left: 2vw;
+            font-size: 2.5vw;
+          }
+          button {
+            width: 21vw;
+            height: 8vw;
+            border-radius: 0px 1vw 1vw 0px;
+            font-size: 2.4vw;
           }
         }
       }

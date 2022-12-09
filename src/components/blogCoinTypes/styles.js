@@ -39,4 +39,29 @@ export const BlogCoinTypesStyle = styled.div`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    .coin_wrapper {
+      margin-top: 5vw;
+      h2 {
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+      }
+      .cards_row {
+        .coin_card {
+          .coin_img {
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            margin: auto;
+          }
+          .card_title {
+            font-size: 2.3vw;
+            margin-top: 2vw;
+          }
+        }
+      }
+    }
+  }
 `

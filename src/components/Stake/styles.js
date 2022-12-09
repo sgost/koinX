@@ -29,6 +29,10 @@ export const BlogsWrapper = styled.div`
         letter-spacing: -0.8px;
         color: ${palette.PRIMARY_TXT_COLOR};
         margin: 5rem 0 0 0;
+        @media (max-width: 600px){
+          font-size: 8vw;
+          line-height: 10vw;
+        }
       }
       p {
         font-style: normal;
@@ -74,6 +78,14 @@ export const BlogsWrapper = styled.div`
           height: 4.5rem;
           border-radius: 50%;
         }
+        @media (max-width: 600px) {
+            flex-direction: column;
+            text-align: center;
+            height:fit-content;
+            .desc_wrap_icon {
+              margin: 4vw 0 0 0;
+            }
+          }
       }
       .bullets_label {
         font-weight: 500;
@@ -191,4 +203,10 @@ export const BlogsWrapper = styled.div`
       padding-top: 0;
     }
   }
+
+  @media (max-width: 1000px){
+  .blog_data {
+    padding: 0 2rem;
+  }
+}
 `
