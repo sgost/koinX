@@ -19,7 +19,7 @@ collections:
           - { label: Description, name: description }
   - name: blog
     label: How to buy ?
-    label_singular: "Blog"
+    label_singular: "blog"
     folder: src/data/blog
     slug: "{{slug}}"
     create: true
@@ -260,7 +260,7 @@ collections:
 
   - name: mine
     label: How to mine ?
-    label_singular: "Mine Blog"
+    label_singular: "mine"
     folder: src/data/mine
     slug: "{{slug}}"
     create: true
@@ -538,7 +538,7 @@ collections:
 
   - name: stake
     label: How to stake ?
-    label_singular: "Stake Blog"
+    label_singular: "stake"
     folder: src/data/stake
     slug: "{{slug}}"
     create: true
@@ -814,7 +814,7 @@ collections:
 
   - name: prediction
     label: Bitcoin price prediction!
-    label_singular: "Stake Prediction"
+    label_singular: "prediction"
     folder: src/data/prediction
     slug: "{{slug}}"
     create: true
