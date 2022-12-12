@@ -89,7 +89,7 @@ export const PredictionPost = ({
                 return (
                   <tr className="table_head" key={index}>
                     <td className="table_title">{tableTitleFun(index)}</td>
-                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && !(item.value) ?
+                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && index === 4 ?
                       <td className="table_block">
                         <tr>
                           {item?.dataArr?.map((itm, index) =>

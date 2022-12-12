@@ -2,44 +2,13 @@ import React from "react";
 import { BlogArticlesStyle } from "./styles";
 import { Layout } from "antd";
 import { resolveFunction } from "../../utils/functions";
-// import { graphql, Link, useStaticQuery } from "gatsby";
 
 const BlogArticles = ({
   articlesTitle,
   articlesArray
 }) => {
   const { Content } = Layout
-  // const posts = useStaticQuery(graphql`
-  //   query {
-  //     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/mine/serial-port-devices/"}}, sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
-  //       edges {
-  //         node {
-  //           id
-  //           fields {
-  //             slug
-  //           }
-  //           frontmatter {
-  //             title
-  //             navLinkTitle
-  //             date
-  //             author_image {
-  //               childImageSharp {
-  //                 fluid {
-  //                   src
-  //                 }
-  //               }
-  //               extension
-  //               publicURL
-  //             }
-  //             excerpt
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
 
-  // console.log("ssssssssssss", posts?.allMarkdownRemark?.edges)
   return (
     <BlogArticlesStyle>
       <Content className="blog_dashboad_wrapper" id={resolveFunction(articlesTitle)}>
