@@ -1,54 +1,51 @@
 import React from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 
 const BlogPage = ({ data }) => {
 
-  const posts = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              navLinkTitle
-              date
-              author_image {
-                childImageSharp {
-                  fluid {
-                    src
-                  }
-                }
-                extension
-                publicURL
-              }
-              excerpt
-            }
-          }
-        }
-      }
-    }
-  `);
+  const blogData = data.blogData.edges
 
 
-  const blogData = posts?.allMarkdownRemark?.edges
+  const blogData2 = data.mineData.edges
+
+
+  const blogData3 = data.stakeData.edges
+
+
+  const blogData4 = data.predictionData.edges
 
   return (
-    <div style={{ background: '#000' }}>
+    <div style={{ background: '#000', padding: `20px` }}>
       <div className="blogListContainer">
-        <h1 style={{ color: `red` }}>How To Buy ?</h1>
+        <h1 style={{ color: `red`, marginTop: `50px` }}>How To Buy ?</h1>
         {blogData?.map((item) =>
           <Link to={item.node.fields.slug} id="blog_card">
-            <h2 style={{ color: `blue` }}>{item.node.frontmatter.navLinkTitle}</h2>
+            <h2 style={{ color: `blue`, border: `1px solid blue`, marginTop: `10px` }}>{item.node.frontmatter.title}</h2>
           </Link>)}
-        {/* 
-        <h1 style={{ color: `red`, marginTop: `10px` }}>How to mine ?</h1>
-        <Link to={blogData[0].node.fields.slug} id="blog_card">
-          <h2 style={{ color: `blue` }}>{blogData[0].node.frontmatter.navLinkTitle}</h2>
-        </Link> */}
+      </div>
+
+      <div className="blogListContainer">
+        <h1 style={{ color: `red`, marginTop: `50px` }}>How To mine ?</h1>
+        {blogData2?.map((item) =>
+          <Link to={item.node.fields.slug} id="blog_card">
+            <h2 style={{ color: `blue`, border: `1px solid blue`, marginTop: `10px` }}>{item.node.frontmatter.title}</h2>
+          </Link>)}
+      </div>
+
+      <div className="blogListContainer">
+        <h1 style={{ color: `red`, marginTop: `50px` }}>How To stake ?</h1>
+        {blogData3?.map((item) =>
+          <Link to={item.node.fields.slug} id="blog_card">
+            <h2 style={{ color: `blue`, border: `1px solid blue`, marginTop: `10px` }}>{item.node.frontmatter.title}</h2>
+          </Link>)}
+      </div>
+
+      <div className="blogListContainer">
+        <h1 style={{ color: `red`, marginTop: `50px` }}>Price prediction ?</h1>
+        {blogData4?.map((item) =>
+          <Link to={item.node.fields.slug} id="blog_card">
+            <h2 style={{ color: `blue`, border: `1px solid blue`, marginTop: `10px` }}>{item.node.frontmatter.title}</h2>
+          </Link>)}
       </div>
     </div>
   )
