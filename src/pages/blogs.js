@@ -3,16 +3,16 @@ import { Link } from "gatsby";
 
 const BlogPage = ({ data }) => {
 
-  const blogData = data.blogData.edges
+  const blogData = data?.blogData?.edges
 
 
-  const blogData2 = data.mineData.edges
+  const blogData2 = data?.mineData?.edges
 
 
-  const blogData3 = data.stakeData.edges
+  const blogData3 = data?.stakeData?.edges
 
 
-  const blogData4 = data.predictionData.edges
+  const blogData4 = data?.predictionData?.edges
 
   return (
     <div style={{ background: '#000', padding: `20px` }}>
