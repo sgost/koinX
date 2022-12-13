@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { BlogPost } from "../../components/Blog";
+import { BuyPost } from "../../components/Buy";
 
-const BlogPreview = ({ entry, widgetFor, getAsset }) => {
+const BuyPreview = ({ entry, widgetFor, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
@@ -78,7 +78,7 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
     }
 
     return (
-        <BlogPost
+        <BuyPost
             fields={data.fields}
             author_image={author_image}
             author={data.author}
@@ -115,11 +115,11 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
 
 };
 
-BlogPreview.propTypes = {
+BuyPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
     getAsset: PropTypes.func,
 };
 
-export default BlogPreview;
+export default BuyPreview;

@@ -4,7 +4,7 @@ import { StyleSheetManager } from 'styled-components';
 import { GlobalStyle } from '../styles/global-styles';
 
 import HomePreview from "./preview-templates/HomePreview";
-import BlogPreview from "./preview-templates/BlogPreview";
+import BuyPreview from "./preview-templates/BuyPreview";
 import MinePreview from "./preview-templates/MinePreview";
 import StakePreview from "./preview-templates/StakePreview";
 import PredictionPreview from "./preview-templates/PredictionPreview";
@@ -39,7 +39,7 @@ export default function withStyledComponentsRendered(Comp) {
 
 CMS.registerPreviewTemplate("home", withStyledComponentsRendered(HomePreview));
 
-CMS.registerPreviewTemplate("blog", withStyledComponentsRendered(BlogPreview));
+CMS.registerPreviewTemplate("buy", withStyledComponentsRendered(BuyPreview));
 CMS.registerPreviewTemplate("mine", withStyledComponentsRendered(MinePreview));
 CMS.registerPreviewTemplate("stake", withStyledComponentsRendered(StakePreview));
 CMS.registerPreviewTemplate("prediction", withStyledComponentsRendered(PredictionPreview));

@@ -25,7 +25,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query {
     blogData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(blog)/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(buy)/.*\\\\.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

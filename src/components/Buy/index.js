@@ -16,7 +16,7 @@ import Footer from "../Footer";
 import Navbar from "../navbar";
 import { resolveFunction } from "../../utils/functions";
 
-export const BlogPost = ({
+export const BuyPost = ({
   fields,
   author_image,
   author,
@@ -135,7 +135,7 @@ export const BlogPost = ({
 
 const Blog = ({ data }) => {
 
-  const { blogpost: post } = data;
+  const { buypost: post } = data;
 
   const seoData = post.frontmatter.seo;
 
@@ -149,7 +149,7 @@ const Blog = ({ data }) => {
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
-      <BlogPost
+      <BuyPost
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
@@ -187,7 +187,7 @@ export default Blog
 
 export const query = graphql`
   query($slug: String!) {
-    blogpost: markdownRemark(fields: { slug: { eq: $slug } }) {
+    buypost: markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
         readingTime {

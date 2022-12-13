@@ -36,10 +36,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { createPage } = actions
 
-  const blogs = graphql(`
+  const buys = graphql(`
     query {
 			allMarkdownRemark(
-				filter: { fileAbsolutePath: { regex: "./src/data/(blog)\\/.*\\\\.md$/" } }
+				filter: { fileAbsolutePath: { regex: "./src/data/(buy)\\/.*\\\\.md$/" } }
 			) {
 				edges {
 					node {
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/components/Blog/index.js`),
+        component: path.resolve(`./src/components/Buy/index.js`),
         context: {
           slug: node.fields.slug
         },
@@ -166,6 +166,6 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  return Promise.all([blogs, mine, stake, prediction]);
+  return Promise.all([buys, mine, stake, prediction]);
 
 }

@@ -8,19 +8,10 @@ media_folder: "assets"
 public_folder: "/"
 
 collections:
-  - label: Home
-    name: home
-    files:
-      - label: Home
-        name: home
-        file: "home.md"
-        fields:
-          - { label: Title, name: title }
-          - { label: Description, name: description }
-  - name: blog
+  - name: buy
     label: How to buy ?
-    label_singular: "blog"
-    folder: src/data/blog
+    label_singular: "buy"
+    folder: src/data/buy
     slug: "{{slug}}"
     create: true
     media_folder: ""
@@ -44,7 +35,7 @@ collections:
       - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
       - {
           name: blogBodyArray,
-          label: "How to buy {Crypto Name} in {Number} easy steps",
+          label: "",
           widget: list,
           fields:
             [
@@ -517,27 +508,6 @@ collections:
             ],
         }
       - {
-          name: collapseTitle,
-          label: Questions block title,
-          widget: string,
-          default: "Frequently asked questions",
-        }
-      - {
-          name: questionsArray,
-          label: Frequently asked questions,
-          widget: list,
-          fields:
-            [
-              { label: Title, name: title, widget: string, default: Title },
-              {
-                label: Description,
-                name: description,
-                widget: string,
-                default: Description,
-              },
-            ],
-        }
-      - {
           name: moreCoinsTitle,
           label: Add coins title,
           widget: string,
@@ -558,6 +528,27 @@ collections:
                 required: false,
               },
               { label: Coin DP, name: icon, widget: image },
+            ],
+        }
+      - {
+          name: collapseTitle,
+          label: Questions block title,
+          widget: string,
+          default: "Frequently asked questions",
+        }
+      - {
+          name: questionsArray,
+          label: Frequently asked questions,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: Title },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: Description,
+              },
             ],
         }
       - {
@@ -646,14 +637,22 @@ collections:
       depth: 100
       summary: "{{title}}"
     fields:
-      - { name: title, label: Title, default: "Title" }
+      - { name: title, label: Title, default: "How to stake ?" }
       - { name: date, label: Date, widget: datetime }
-      - { label: Banner Image, name: author_image, widget: image }
-      - { name: bannerDesc, label: Description, default: "Banner Description" }
-      - { name: bannerTitle1, label: Banner Title Top, default: "Banner Title" }
+      - { label: Feature Image, name: author_image, widget: image }
+      - {
+          name: bannerDesc,
+          label: Description,
+          default: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+        }
+      - {
+          name: bannerTitle1,
+          label: Banner Title Top,
+          default: "How to Mine Bitcoin: an in-depth, no-nonsense guide to mining Bitcoin",
+        }
       - {
           name: blogBodyArray1,
-          label: Body Data Top,
+          label: How to Mine Bitcoin data,
           widget: list,
           fields:
             [
@@ -661,7 +660,7 @@ collections:
                 label: Title,
                 name: title,
                 widget: string,
-                default: "Title",
+                default: "Is Bitcoin Mining Profitable?",
                 required: false,
               },
               {
@@ -673,19 +672,28 @@ collections:
               },
             ],
         }
-      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
+      - {
+          name: bannerTitle,
+          label: "How to Stake {Crypto Name} (CRPTO)",
+          default: "Banner Title",
+        }
       - {
           name: blogBodyArray,
-          label: Body Data,
+          label: How to Stake Data,
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Lorem ipsum dolor sit amet, consectetur",
+              },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Description",
+                default: "Lorem ipsum dolor sit amet, consectetur",
               },
             ],
         }
@@ -703,18 +711,18 @@ collections:
         }
       - {
           name: youtubeContainerTitle,
-          label: Youtube title,
+          label: Popular video guides on buying Bitcoin,
           widget: string,
-          default: "Video Container Title",
+          default: "Popular video guides on buying Bitcoin",
         }
       - {
           name: youtubeArray,
-          label: Add Videos,
+          label: Popular video guides on buying Bitcoin container,
           widget: list,
           fields:
             [
               {
-                label: Video Link,
+                label: "Video Id",
                 name: link,
                 widget: string,
                 default: "Video Id",
@@ -729,13 +737,13 @@ collections:
         }
       - {
           name: coinWorkTitle,
-          label: Title,
+          label: How does Bitcoin work?,
           default: "How does  Bitcoin work?",
           required: false,
         }
       - {
           name: coinWorkArray,
-          label: Coin Work Data,
+          label: How does Bitcoin work - Data,
           widget: list,
           fields:
             [
@@ -782,11 +790,16 @@ collections:
         }
       - {
           name: coinPointTitle,
-          label: Bullet Points Title,
+          label: Top wallets to store your Bitcoin,
           widget: string,
-          default: "Benefits of staking Bitcoin",
+          default: "Top wallets to store your Bitcoin",
         }
-      - { name: coinPointArray, label: Bullet Points, widget: list }
+      - {
+          name: coinPointArray,
+          label: Top wallets to store your Bitcoin (Bullet Points),
+          widget: list,
+          default: ["Mining Software.", "Mining Hardware."],
+        }
       - {
           name: bitCoinTitle,
           label: Calculation Container title,
@@ -805,14 +818,42 @@ collections:
             ],
         }
       - {
+          name: moreCoinsTitle,
+          label: More Cryptos Similar to Bitcoin,
+          widget: string,
+          default: "More Cryptos Similar to Bitcoin",
+        }
+      - {
+          name: moreCoinsArray,
+          label: New coins array,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Ethereum",
+              },
+              {
+                label: Link,
+                name: link,
+                widget: string,
+                default: "https://www.koinx.com",
+                required: false,
+              },
+              { label: Coin DP, name: icon, widget: image },
+            ],
+        }
+      - {
           name: collapseTitle,
-          label: Questions block title,
+          label: Frequently asked questions,
           widget: string,
           default: "Frequently asked questions",
         }
       - {
           name: questionsArray,
-          label: Frequently asked questions,
+          label: Frequently asked questions - data,
           widget: list,
           fields:
             [
@@ -823,29 +864,6 @@ collections:
                 widget: string,
                 default: Description,
               },
-            ],
-        }
-      - {
-          name: moreCoinsTitle,
-          label: Add coins title,
-          widget: string,
-          default: "Add coins title",
-        }
-      - {
-          name: moreCoinsArray,
-          label: New coins array,
-          widget: list,
-          fields:
-            [
-              { label: Title, name: title, widget: string, default: "Title" },
-              {
-                label: Link,
-                name: link,
-                widget: string,
-                default: "https://www.koinx.com",
-                required: false,
-              },
-              { label: Coin DP, name: icon, widget: image },
             ],
         }
       - {
@@ -934,16 +952,23 @@ collections:
       depth: 100
       summary: "{{title}}"
     fields:
-      - { name: title, label: Title, default: "Title" }
+      - {
+          name: title,
+          label: Bitcoin Price Prediction,
+          default: "Bitcoin Price Prediction",
+        }
       - { name: date, label: Date, widget: datetime }
-      - { label: Banner Image, name: author_image, widget: image }
+      - { label: Feature Image, name: author_image, widget: image }
       - { name: bannerDesc, label: Description, default: "Banner Description" }
-      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
+      - {
+          name: bannerTitle,
+          label: "{Crypto Name} Overview",
+          default: "{Crypto Name} Overview",
+        }
       - {
           name: headTableArray,
-          label: Bitcoin Overview Table Edit,
+          label: "{Crypto Name} Overview",
           widget: list,
-          default: [{ value: "Bitcoin" }],
           fields:
             [
               { label: Cryptocurrency, name: Cryptocurrency, required: false },
@@ -990,7 +1015,7 @@ collections:
         }
       - {
           name: buyAlsoReadSlug,
-          label: Prices live link,
+          label: "Check {Crypto Name} prices live [internal link]",
           default: https://www.facebook.com/getkoinx,
         }
       - {
@@ -1022,9 +1047,10 @@ collections:
         }
       - {
           name: youtubeContainerTitle,
-          label: Youtube title,
+          label: Popular video guides on buying Bitcoin,
           widget: string,
-          default: "Video Container Title",
+          default: "Popular video guides on buying Bitcoin
+            ",
         }
       - {
           name: youtubeArray,
@@ -1033,7 +1059,7 @@ collections:
           fields:
             [
               {
-                label: Video Link,
+                label: Video Id,
                 name: link,
                 widget: string,
                 default: "Video Id",
@@ -1047,17 +1073,10 @@ collections:
             ],
         }
       - {
-          name: coinPointTitle,
-          label: Bullet Points Title,
-          widget: string,
-          default: "Benefits of staking Bitcoin",
-        }
-      - { name: coinPointArray, label: Bullet Points, widget: list }
-      - {
           name: bitCoinTitle,
-          label: Calculation Container title,
+          label: Already Holding Bitcoin?,
           widget: string,
-          default: "Calculation Container title",
+          default: "Already Holding Bitcoin?",
         }
       - {
           name: bitcoinArray,
@@ -1065,31 +1084,27 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Calculate your Profits",
+              },
               { label: Link, name: link, widget: string, default: "link" },
               { label: Thumbnail image, name: image, widget: image },
             ],
         }
       - {
-          name: collapseTitle,
-          label: Questions block title,
+          name: coinPointTitle,
+          label: Top wallets to store your Bitcoin,
           widget: string,
-          default: "Frequently asked questions",
+          default: "Top wallets to store your Bitcoin",
         }
       - {
-          name: questionsArray,
-          label: Frequently asked questions,
+          name: coinPointArray,
+          label: Top wallets to store your Bitcoin,
           widget: list,
-          fields:
-            [
-              { label: Title, name: title, widget: string, default: Title },
-              {
-                label: Description,
-                name: description,
-                widget: string,
-                default: Description,
-              },
-            ],
+          default: ["Mining Software.", "Mining Hardware."],
         }
       - {
           name: moreCoinsTitle,
@@ -1115,8 +1130,29 @@ collections:
             ],
         }
       - {
+          name: collapseTitle,
+          label: Questions block title,
+          widget: string,
+          default: "Frequently asked questions",
+        }
+      - {
+          name: questionsArray,
+          label: Frequently asked questions,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string, default: Title },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: Description,
+              },
+            ],
+        }
+      - {
           name: currencyBlockTitle,
-          label: Add Articles title,
+          label: Related articles to Bitcoins,
           widget: string,
           default: Related articles to Bitcoin,
         }
@@ -1130,13 +1166,13 @@ collections:
                 label: Title,
                 name: title,
                 widget: string,
-                default: "Article Title",
+                default: "How to stake Bitcoin",
               },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Article Description",
+                default: "Lorem ipsum dolor sit amet,",
               },
               {
                 label: Date,
@@ -1149,13 +1185,13 @@ collections:
         }
       - {
           name: cryptoGuideTitle,
-          label: Add Crypto Guides title,
+          label: More crypto mining guides,
           widget: string,
           default: More crypto mining guides,
         }
       - {
           name: cryptoGuideArray,
-          label: Add Crypto Guides,
+          label: More crypto mining guides,
           widget: list,
           fields:
             [
@@ -1163,7 +1199,7 @@ collections:
                 label: Title,
                 name: title,
                 widget: string,
-                default: "Article Title",
+                default: "How to buy Ethereum?",
               },
               {
                 label: Date,
@@ -1175,7 +1211,7 @@ collections:
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Article Description",
+                default: "Lorem ipsum dolor sit amet,",
               },
               { label: Thumnnail, name: icon, widget: image },
             ],
