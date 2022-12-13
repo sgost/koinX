@@ -16,22 +16,14 @@ buyCoinArray:
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
-      - title: Operational Since
-        sheetValue: Jan 2016
-      - title: Weekly Average Transaction Volume
-        sheetValue: $160M
-      - title: Deposit Methods
-        sheetValue: Credit Card, Debit Card, Netbanking
-      - title: Deposit Fees
-        sheetValue: 0.10%
-      - title: Cryptos Listed
-        sheetValue: "1650"
-      - title: Trading Fees
-        sheetValue: 0.2%
-      - title: Fiat Currencies Supported
-        sheetValue: USD, INR
-      - title: Trustworthiness
-        sheetValue: 78%
+      - OperationalSince: Jan 2016
+        WeeklyAverage: $160M
+        DepositMethods: Credit Card, Debit Card, Netbanking
+        DepositFees: 0.10%
+        CryptosListed: "1650"
+        TradingFees: 0.2%
+        CurrenciesSupported: USD, INR
+        Trustworthiness: 78%
   - id: 2
     title: Bitbns
     image: bitbns.png
@@ -40,22 +32,14 @@ buyCoinArray:
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio.
     Factsheet:
-      - title: Operational Since
-        sheetValue: Jan 2016
-      - title: Weekly Average Transaction Volume
-        sheetValue: $160M
-      - title: Deposit Methods
-        sheetValue: Credit Card, Debit Card, Netbanking
-      - title: Deposit Fees
-        sheetValue: 0.10%
-      - title: Cryptos Listed
-        sheetValue: "1650"
-      - title: Trading Fees
-        sheetValue: 0.2%
-      - title: Fiat Currencies Supported
-        sheetValue: USD, INR
-      - title: Trustworthiness
-        sheetValue: 78%
+      - OperationalSince: Jan 2016
+        WeeklyAverage: $160M
+        DepositMethods: Credit Card, Debit Card, Netbanking
+        DepositFees: 0.10%
+        CryptosListed: "1650"
+        TradingFees: 0.2%
+        CurrenciesSupported: USD, INR
+        Trustworthiness: 78%
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Bitcoin with a credit or debit card?

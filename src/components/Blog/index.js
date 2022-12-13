@@ -220,7 +220,14 @@ export const query = graphql`
           }
           description
           Factsheet {
-            sheetValue
+            OperationalSince
+            WeeklyAverage
+            DepositMethods
+            DepositFees
+            CryptosListed
+            TradingFees
+            CurrenciesSupported
+            Trustworthiness
           }
         }
         bitCoinTitle

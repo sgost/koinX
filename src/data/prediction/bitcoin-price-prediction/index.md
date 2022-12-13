@@ -12,41 +12,43 @@ bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
 bannerTitle: Bitcoin Overview
 headTableArray:
-  - value: Bitcoin
-  - value: Jan 2016
-  - value: www.bitcoin.com
-  - value: $ 16,783
-  - value: ""
-    dataArr:
+  - Cryptocurrency: Bitcoin
+    LaunchDate: Jan 2016
+    Website: www.bitcoin.com
+    PriceToday: $ 16,783
+    PriceChange:
       - 24H
       - 7D
       - 30D
       - 1M
       - 6M
       - 1Y
-    dataArr2:
+    PriceChange2:
       - "- 1.3%"
       - + 1.3%
       - + 3.4%
       - + 14.2%
       - + 14.2%
       - + 14.2%
-  - value: $ 326B
-  - value: 19,224,350 BTC
-  - value: $17,586,552,045
-  - value: $68,789
-  - value: $16,054
+    BitcoinMarket: $ 326B
+    CirculatingSupply: 19,224,350 BTC
+    TradingVolume: $17,586,552,045
+    AllTimeHigh: $68,789
+    AllTimeLow: $16,054
 blogBodyArray:
   - title: Bitcoin price prediction 2024
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
   - title: Bitcoin price prediction 2024
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
   - title: Bitcoin price prediction 2024
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
 buyAlsoReadTitle: Bitcoin Price Prediction
@@ -76,22 +78,26 @@ bitcoinArray:
     title: Calculate your tax liability
 questionsArray:
   - title: Where can you buy Bitcoin with a credit or debit card?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What will you need to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: What is the easiest way to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
   - title: Best wallets to store your Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Aliquam pulvinar in elit eget bibendum
@@ -131,16 +137,19 @@ currencyBlockTitle: Related articles to Bitcoin
 currencyBlockArray:
   - title: How to stake Bitcoin
     date: 23 October 2020
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team.png
   - title: How to mine Bitcoin
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-1.png
   - title: Bitcoin price prediction
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-2.png
@@ -148,17 +157,20 @@ cryptoGuideTitle: More crypto mining guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-2-.png
   - title: How to buy Solana?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-1-2-.png
   - title: How to buy Doge?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-2-2-.png
 seo:

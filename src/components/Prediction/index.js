@@ -47,27 +47,8 @@ export const PredictionPost = ({
 }) => {
   const { Content } = Layout
 
-  const tableTitleFun = (index) => {
-    if (index === 0) {
-      return "Cryptocurrency"
-    } else if (index === 1) {
-      return "Launch Date"
-    } else if (index === 2) {
-      return "Website"
-    } else if (index === 3) {
-      return "Price Today"
-    } else if (index === 4) {
-      return "Price Change"
-    } else if (index === 5) {
-      return "Bitcoin Market Cap"
-    } else if (index === 6) {
-      return "Circulating Supply"
-    } else if (index === 8) {
-      return "All Time High"
-    } else {
-      return "All Time Low"
-    }
-  }
+
+  console.log("headTableArrayheadTableArray", headTableArray)
 
   return (
     <Fragment>
@@ -87,28 +68,59 @@ export const PredictionPost = ({
             <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
             {/* table  */}
             <table className="table">
-              {headTableArray.map((item, index) => {
-                return (
-                  <tr className="table_head" key={index}>
-                    <td className="table_title">{tableTitleFun(index)}</td>
-                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && index === 4 ?
-                      <td className="table_block">
-                        <tr>
-                          {item?.dataArr?.map((itm, index) =>
-                            <td key={index}>{itm}</td>
-                          )}
-                        </tr>
-                        <tr>
-                          {item?.dataArr2?.map((itm, index) =>
-                            <td key={index}>{itm}</td>
-                          )}
-                        </tr>
-                      </td>
-                      : item.value}
-                    </td>
-                  </tr>
-                )
-              })}
+              <tr className="table_head">
+                <td className="table_title">Cryptocurrency</td>
+                <td>{headTableArray[0]?.Cryptocurrency}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Launch Date</td>
+                <td>{headTableArray[0]?.LaunchDate}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Website</td>
+                <td>{headTableArray[0]?.Website}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Price Today</td>
+                <td>{headTableArray[0]?.PriceToday}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Price Change</td>
+                <td className="table_padding">
+                  <td className="table_block">
+                    <tr>
+                      {headTableArray[0]?.PriceChange?.map((itm, index) =>
+                        <td key={index}>{itm}</td>
+                      )}
+                    </tr>
+                    <tr>
+                      {headTableArray[0]?.PriceChange2?.map((itm, index) =>
+                        <td key={index}>{itm}</td>
+                      )}
+                    </tr>
+                  </td>
+                </td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Bitcoin Market Cap</td>
+                <td>{headTableArray[0]?.BitcoinMarket}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Circulating Supply</td>
+                <td>{headTableArray[0]?.CirculatingSupply}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">Trading Volume</td>
+                <td>{headTableArray[0]?.TradingVolume}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">All Time High</td>
+                <td>{headTableArray[0]?.AllTimeHigh}</td>
+              </tr>
+              <tr className="table_head">
+                <td className="table_title">All Time Low</td>
+                <td>{headTableArray[0]?.AllTimeLow}</td>
+              </tr>
             </table>
             {/* About link */}
             <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
@@ -244,9 +256,17 @@ export const query = graphql`
         bannerTitle
         bannerDesc
         headTableArray {
-          value
-          dataArr
-          dataArr2
+          Cryptocurrency
+          LaunchDate
+          Website
+          PriceToday
+          PriceChange
+          PriceChange2
+          BitcoinMarket
+          CirculatingSupply
+          TradingVolume
+          AllTimeHigh
+          AllTimeLow
         }
         blogBodyArray {
           title

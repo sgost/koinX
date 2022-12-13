@@ -6,25 +6,6 @@ import { resolveFunction } from "../../utils/functions";
 const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
     const { Content } = Layout
 
-    const setTitle = (index) => {
-        if (index === 0) {
-            return "Operational Since"
-        } else if (index === 1) {
-            return "Weekly Average Transaction Volume"
-        } else if (index === 2) {
-            return "Deposit Methods"
-        } else if (index === 3) {
-            return "Deposit Fees"
-        } else if (index === 4) {
-            return "Cryptos Listed"
-        } else if (index === 5) {
-            return "Trading Fees"
-        } else if (index === 6) {
-            return "Fiat Currencies Supported"
-        } else if (index === 7) {
-            return "Trustworthiness"
-        }
-    }
     return (
         <BlogTableStyle>
             <Content className="table_wrapper">
@@ -38,14 +19,46 @@ const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
                                 <p className="table_data"><img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt={item?.title} className="logo" />{item?.description}</p>
                                 <h3 className="table_label">Factsheet</h3>
                                 <table className="table">
-                                    {item?.Factsheet?.map((sheetItem, index) => {
-                                        return (
-                                            <tr key={index}>
-                                                <td>{setTitle(index)}</td>
-                                                <td>{sheetItem?.sheetValue}</td>
-                                            </tr>
-                                        )
-                                    })}
+
+                                    <tr>
+                                        <td>Operational Since</td>
+                                        <td>{item?.Factsheet[0]?.OperationalSince}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Weekly Average Transaction Volume</td>
+                                        <td>{item?.Factsheet[0]?.WeeklyAverage}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Deposit Methods</td>
+                                        <td>{item?.Factsheet[0]?.DepositMethods}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Deposit Fees</td>
+                                        <td>{item?.Factsheet[0]?.DepositFees}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Cryptos Listed</td>
+                                        <td>{item?.Factsheet[0]?.CryptosListed}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Trading Fees</td>
+                                        <td>{item?.Factsheet[0]?.TradingFees}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Fiat Currencies Supported</td>
+                                        <td>{item?.Factsheet[0]?.CurrenciesSupported}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Trustworthiness</td>
+                                        <td>{item?.Factsheet[0]?.Trustworthiness}</td>
+                                    </tr>
                                 </table>
                             </div>
                         )

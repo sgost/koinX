@@ -29,14 +29,22 @@ collections:
       depth: 100
       summary: "{{title}}"
     fields:
-      - { name: title, label: Title, default: "Title" }
+      - {
+          name: title,
+          label: "How to buy {Crypto Name} (CRPTO)",
+          default: "Title",
+        }
       - { name: date, label: Date, widget: datetime }
-      - { label: Banner Image, name: author_image, widget: image }
+      - {
+          label: "How to buy {Crypto Name} (CRPTO)",
+          name: author_image,
+          widget: image,
+        }
       - { name: bannerDesc, label: Description, default: "Banner Description" }
       - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
       - {
           name: blogBodyArray,
-          label: Body Data,
+          label: "How to buy {Crypto Name} in {Number} easy steps",
           widget: list,
           fields:
             [
@@ -63,7 +71,7 @@ collections:
         }
       - {
           name: youtubeContainerTitle,
-          label: Youtube title,
+          label: "Popular video guides on buying {Crypto Name} (CRPTO)",
           widget: string,
           default: "Video Container Title",
         }
@@ -89,7 +97,7 @@ collections:
         }
       - {
           name: buyAlsoReadTitle,
-          label: "Crypto Name",
+          label: "Popular video guides on buying {Crypto Name} (CRPTO)",
           default: "Bitcoin Price Prediction",
         }
       - {
@@ -124,10 +132,52 @@ collections:
                 fields:
                   [
                     {
-                      label: Table Value,
-                      name: sheetValue,
+                      label: OperationalSince,
+                      name: OperationalSince,
                       widget: string,
-                      default: "Table Value",
+                      default: "Jan 2016",
+                    },
+                    {
+                      label: Weekly Average Transaction Volume,
+                      name: WeeklyAverage,
+                      widget: string,
+                      default: "$160M",
+                    },
+                    {
+                      label: Deposit Methods,
+                      name: DepositMethods,
+                      widget: string,
+                      default: "Credit Card, Debit Card, Netbanking",
+                    },
+                    {
+                      label: Deposit Fees,
+                      name: DepositFees,
+                      widget: string,
+                      default: "0.10%",
+                    },
+                    {
+                      label: Cryptos Listed,
+                      name: CryptosListed,
+                      widget: string,
+                      default: "1650",
+                    },
+                    {
+                      label: Trading Fees,
+                      name: TradingFees,
+                      widget: string,
+                      default: "0.2%",
+                    },
+                    {
+                      label: Fiat Currencies Supported,
+                      name: CurrenciesSupported,
+                      widget: string,
+                      default: "USD, INR",
+                    },
+                    {
+                      label: Trustworthiness,
+                      name: Trustworthiness,
+                      widget: string,
+                      default: "78%",
                     },
                   ],
               },
@@ -162,12 +212,18 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: Title },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: What will you need to buy Bitcoin?,
+              },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: Description,
+                default: Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
               },
             ],
         }
@@ -175,7 +231,7 @@ collections:
           name: moreCoinsTitle,
           label: Add coins title,
           widget: string,
-          default: "Add coins title",
+          default: "More Cryptos Similar to Bitcoin",
         }
       - {
           name: moreCoinsArray,
@@ -183,7 +239,12 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Ethereum",
+              },
               {
                 label: Link,
                 name: link,
@@ -196,7 +257,7 @@ collections:
         }
       - {
           name: currencyBlockTitle,
-          label: Add Articles title,
+          label: Related articles to Bitcoin,
           widget: string,
           default: Related articles to Bitcoin,
         }
@@ -207,16 +268,16 @@ collections:
           fields:
             [
               {
-                label: Title,
+                label: How to stake Bitcoin,
                 name: title,
                 widget: string,
-                default: "Article Title",
+                default: "How to stake Bitcoin",
               },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Article Description",
+                default: "Lorem ipsum dolor sit amet",
               },
               {
                 label: Date,
@@ -229,9 +290,9 @@ collections:
         }
       - {
           name: cryptoGuideTitle,
-          label: Add Crypto Guides title,
+          label: More cyrpto buying guides,
           widget: string,
-          default: Related articles to Bitcoin,
+          default: More cyrpto buying guides,
         }
       - {
           name: cryptoGuideArray,
@@ -243,7 +304,7 @@ collections:
                 label: Title,
                 name: title,
                 widget: string,
-                default: "Article Title",
+                default: "How to buy Ethereum?",
               },
               {
                 label: Date,
@@ -255,7 +316,7 @@ collections:
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Article Description",
+                default: "Lorem ipsum dolor sit amet,",
               },
               { label: Thumnnail, name: icon, widget: image },
             ],
@@ -280,11 +341,23 @@ collections:
       depth: 100
       summary: "{{title}}"
     fields:
-      - { name: title, label: Title, default: "Title" }
+      - {
+          name: title,
+          label: Title,
+          default: "Is {Crypto Name} Mining Profitable",
+        }
       - { name: date, label: Date, widget: datetime }
       - { label: Banner Image, name: author_image, widget: image }
-      - { name: bannerDesc, label: Description, default: "Banner Description" }
-      - { name: bannerTitle1, label: Banner Title Top, default: "Banner Title" }
+      - {
+          name: bannerDesc,
+          label: Description,
+          default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        }
+      - {
+          name: bannerTitle1,
+          label: Banner Title Top,
+          default: "How to Mine {Crypto Name}: Our Top 5 Recommendation",
+        }
       - {
           name: blogBodyArray1,
           label: Body Data Top,
@@ -337,9 +410,9 @@ collections:
         }
       - {
           name: youtubeContainerTitle,
-          label: Youtube title,
+          label: "Popular video guides on Mining {Crypto Name} (CRPTO)",
           widget: string,
-          default: "Video Container Title",
+          default: "Popular video guides on Mining {Crypto Name} (CRPTO)",
         }
       - {
           name: youtubeArray,
@@ -417,7 +490,12 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Coinbase",
+              },
               { label: Coin DP, name: icon, widget: image },
             ],
         }
@@ -865,24 +943,44 @@ collections:
           name: headTableArray,
           label: Bitcoin Overview Table Edit,
           widget: list,
+          default: [{ value: "Bitcoin" }],
           fields:
             [
-              { label: Value, name: value, required: false },
+              { label: Cryptocurrency, name: Cryptocurrency, required: false },
+              { label: Launch Date, name: LaunchDate, required: false },
+              { label: Website, name: Website, required: false },
+              { label: Price Today, name: PriceToday, required: false },
               {
-                label: Price change block header edit,
-                name: dataArr,
+                label: Price Change Header,
+                name: PriceChange,
+                required: false,
                 widget: list,
                 default: [24H, 7D, 30D, 1M, 6M, 1Y],
-                required: false,
-                s,
               },
               {
-                label: Price change block value edit,
-                name: dataArr2,
+                label: Price Change Body,
+                name: PriceChange2,
+                required: false,
                 widget: list,
                 default: [- 1.3%, + 1.3%, + 3.4%, + 14.2%, + 14.2%, + 14.2%],
+              },
+              {
+                label: Bitcoin Market Cap,
+                name: BitcoinMarket,
                 required: false,
               },
+              {
+                label: Circulating Supply,
+                name: CirculatingSupply,
+                required: false,
+              },
+              {
+                label: Bitcoin Market Cap,
+                name: TradingVolume,
+                required: false,
+              },
+              { label: All Time High, name: AllTimeHigh, required: false },
+              { label: All Time Low, name: AllTimeLows, required: false },
             ],
         }
       - {
