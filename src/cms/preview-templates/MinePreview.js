@@ -94,6 +94,8 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
             alsoReadSlug={data.alsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}
             youtubeArray={data.youtubeArray}
+            buyAlsoReadTitle={data.buyAlsoReadTitle}
+            buyAlsoReadSlug={data.buyAlsoReadSlug}
             coinWorkTitle={data.coinWorkTitle}
             coinWorkArray={data.coinWorkArray}
             walletCoinsTitle={data.walletCoinsTitle}

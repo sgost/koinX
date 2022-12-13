@@ -23,28 +23,42 @@ collections:
       - {
           name: title,
           label: "How to buy {Crypto Name} (CRPTO)",
-          default: "Title",
+          default: "How to buy Bitcoin?",
         }
       - { name: date, label: Date, widget: datetime }
       - {
-          label: "How to buy {Crypto Name} (CRPTO)",
+          label: "Featured Image",
           name: author_image,
           widget: image,
+          default: "https://blog-test.koinx.com/static/e01806efcc68b5c98f76e4131f58e412/unsplash_8td991gibiq.svg",
         }
-      - { name: bannerDesc, label: Description, default: "Banner Description" }
-      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
+      - {
+          name: bannerDesc,
+          label: Description,
+          default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        }
+      - {
+          name: bannerTitle,
+          label: Banner Title,
+          default: "How to buy Bitcoin in 3 easy steps",
+        }
       - {
           name: blogBodyArray,
           label: "",
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Lorem ipsum dolor sit amet, consectetur",
+              },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Description",
+                default: "Lorem ipsum dolor sit amet, consectetur",
               },
             ],
         }
@@ -73,7 +87,7 @@ collections:
           fields:
             [
               {
-                label: Video Link,
+                label: Video Id,
                 name: link,
                 widget: string,
                 default: "Video Id",
@@ -109,7 +123,12 @@ collections:
           fields:
             [
               { label: Title, name: title, widget: string, default: "Title" },
-              { label: Description Logo, name: image, widget: image },
+              {
+                label: Description Logo,
+                name: image,
+                widget: image,
+                default: https://blog-test.koinx.com/static/a25a3b6d920d45984734e893e8cf6298/image-168.png,
+              },
               {
                 label: Description,
                 name: description,
@@ -176,9 +195,9 @@ collections:
         }
       - {
           name: bitCoinTitle,
-          label: Calculation Container title,
+          label: Already Holding Bitcoin?,
           widget: string,
-          default: "Calculation Container title",
+          default: "Already Holding Bitcoin?",
         }
       - {
           name: bitcoinArray,
@@ -186,14 +205,24 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Calculate your Profits",
+              },
               { label: Link, name: link, widget: string, default: "link" },
-              { label: Thumbnail image, name: image, widget: image },
+              {
+                label: Thumbnail image,
+                name: image,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
           name: collapseTitle,
-          label: Questions block title,
+          label: Frequently asked questions,
           widget: string,
           default: "Frequently asked questions",
         }
@@ -243,7 +272,12 @@ collections:
                 default: "https://www.koinx.com",
                 required: false,
               },
-              { label: Coin DP, name: icon, widget: image },
+              {
+                label: Coin DP,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png,
+              },
             ],
         }
       - {
@@ -276,7 +310,12 @@ collections:
                 widget: string,
                 default: 23 October 2020,
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
@@ -309,7 +348,12 @@ collections:
                 widget: string,
                 default: "Lorem ipsum dolor sit amet,",
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - label: SEO
@@ -317,8 +361,8 @@ collections:
         widget: object
         fields:
           - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: keywords, label: Keywords, widget: list }
+          - { name: description, label: Meta Description }
+          - { name: keywords, label: Meta Keywords, widget: list }
 
   - name: mine
     label: How to mine ?
@@ -338,7 +382,12 @@ collections:
           default: "Is {Crypto Name} Mining Profitable",
         }
       - { name: date, label: Date, widget: datetime }
-      - { label: Banner Image, name: author_image, widget: image }
+      - {
+          label: Featured Image,
+          name: author_image,
+          widget: image,
+          default: "https://blog-test.koinx.com/static/e01806efcc68b5c98f76e4131f58e412/unsplash_8td991gibiq.svg",
+        }
       - {
           name: bannerDesc,
           label: Description,
@@ -347,7 +396,7 @@ collections:
       - {
           name: bannerTitle1,
           label: Banner Title Top,
-          default: "How to Mine {Crypto Name}: Our Top 5 Recommendation",
+          default: "How to Mine Bitcoin",
         }
       - {
           name: blogBodyArray1,
@@ -359,19 +408,23 @@ collections:
                 label: Title,
                 name: title,
                 widget: string,
-                default: "Title",
+                default: "Is Bitcoin Mining Profitable?",
                 required: false,
               },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Description",
+                default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 required: false,
               },
             ],
         }
-      - { name: bannerTitle, label: Banner Title, default: "Banner Title" }
+      - {
+          name: bannerTitle,
+          label: Banner Title,
+          default: "How to Mine Bitcoin : Our Top 5 Recommendations",
+        }
       - {
           name: blogBodyArray,
           label: Body Data,
@@ -391,13 +444,13 @@ collections:
           name: alsoReadTitle,
           label: Read link title,
           widget: string,
-          default: "Also read",
+          default: "Bitcoin Price Prediction",
         }
       - {
           name: alsoReadSlug,
           label: prices live (Internal Link),
           widget: string,
-          default: "Link",
+          default: "www.koinx.com",
         }
       - {
           name: youtubeContainerTitle,
@@ -487,14 +540,19 @@ collections:
                 widget: string,
                 default: "Coinbase",
               },
-              { label: Coin DP, name: icon, widget: image },
+              {
+                label: Coin DP,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/a25a3b6d920d45984734e893e8cf6298/image-168.png,
+              },
             ],
         }
       - {
           name: bitCoinTitle,
-          label: Calculation Container title,
+          label: Already Holding Bitcoin?,
           widget: string,
-          default: "Calculation Container title",
+          default: "Already Holding Bitcoin?",
         }
       - {
           name: bitcoinArray,
@@ -504,14 +562,19 @@ collections:
             [
               { label: Title, name: title, widget: string, default: "Title" },
               { label: Link, name: link, widget: string, default: "link" },
-              { label: Thumbnail image, name: image, widget: image },
+              {
+                label: Thumbnail image,
+                name: image,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
           name: moreCoinsTitle,
           label: Add coins title,
           widget: string,
-          default: "Add coins title",
+          default: "More Cryptos Similar to Bitcoin",
         }
       - {
           name: moreCoinsArray,
@@ -527,7 +590,12 @@ collections:
                 default: "https://www.koinx.com",
                 required: false,
               },
-              { label: Coin DP, name: icon, widget: image },
+              {
+                label: Coin DP,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png,
+              },
             ],
         }
       - {
@@ -581,7 +649,12 @@ collections:
                 widget: string,
                 default: 23 October 2020,
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
@@ -614,7 +687,12 @@ collections:
                 widget: string,
                 default: "Article Description",
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - label: SEO
@@ -622,8 +700,8 @@ collections:
         widget: object
         fields:
           - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: keywords, label: Keywords, widget: list }
+          - { name: description, label: Meta Description }
+          - { name: keywords, label: Meta Keywords, widget: list }
 
   - name: stake
     label: How to stake ?
@@ -639,7 +717,12 @@ collections:
     fields:
       - { name: title, label: Title, default: "How to stake ?" }
       - { name: date, label: Date, widget: datetime }
-      - { label: Feature Image, name: author_image, widget: image }
+      - {
+          label: Feature Image,
+          name: author_image,
+          widget: image,
+          default: "https://blog-test.koinx.com/static/e01806efcc68b5c98f76e4131f58e412/unsplash_8td991gibiq.svg",
+        }
       - {
           name: bannerDesc,
           label: Description,
@@ -707,7 +790,7 @@ collections:
           name: alsoReadSlug,
           label: prices live (Internal Link),
           widget: string,
-          default: "Link",
+          default: "Bitcoin Price Prediction",
         }
       - {
           name: youtubeContainerTitle,
@@ -761,7 +844,12 @@ collections:
                 default: "Lorem ipsum dolor sit amet",
                 required: false,
               },
-              { label: Description Logo, name: icon, widget: image },
+              {
+                label: Description Logo,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/a25a3b6d920d45984734e893e8cf6298/image-168.png,
+              },
               {
                 label: Bullet Points,
                 name: pointArray,
@@ -802,9 +890,9 @@ collections:
         }
       - {
           name: bitCoinTitle,
-          label: Calculation Container title,
+          label: Already Holding Bitcoin?,
           widget: string,
-          default: "Calculation Container title",
+          default: "Already Holding Bitcoin?",
         }
       - {
           name: bitcoinArray,
@@ -814,7 +902,12 @@ collections:
             [
               { label: Title, name: title, widget: string, default: "Title" },
               { label: Link, name: link, widget: string, default: "link" },
-              { label: Thumbnail image, name: image, widget: image },
+              {
+                label: Thumbnail image,
+                name: image,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
@@ -842,7 +935,12 @@ collections:
                 default: "https://www.koinx.com",
                 required: false,
               },
-              { label: Coin DP, name: icon, widget: image },
+              {
+                label: Coin DP,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png,
+              },
             ],
         }
       - {
@@ -896,7 +994,12 @@ collections:
                 widget: string,
                 default: 23 October 2020,
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - {
@@ -929,7 +1032,12 @@ collections:
                 widget: string,
                 default: "Article Description",
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png,
+              },
             ],
         }
       - label: SEO
@@ -937,8 +1045,8 @@ collections:
         widget: object
         fields:
           - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: keywords, label: Keywords, widget: list }
+          - { name: description, label: Meta Description }
+          - { name: keywords, label: Meta Keywords, widget: list }
 
   - name: prediction
     label: Bitcoin price prediction!
@@ -1024,12 +1132,17 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Bitcoin price prediction 2024",
+              },
               {
                 label: Description,
                 name: description,
                 widget: string,
-                default: "Description",
+                default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               },
             ],
         }
@@ -1108,9 +1221,9 @@ collections:
         }
       - {
           name: moreCoinsTitle,
-          label: Add coins title,
+          label: More Cryptos Similar to Bitcoin,
           widget: string,
-          default: "Add coins title",
+          default: "More Cryptos Similar to Bitcoin",
         }
       - {
           name: moreCoinsArray,
@@ -1118,7 +1231,12 @@ collections:
           widget: list,
           fields:
             [
-              { label: Title, name: title, widget: string, default: "Title" },
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Ethereum",
+              },
               {
                 label: Link,
                 name: link,
@@ -1221,5 +1339,5 @@ collections:
         widget: object
         fields:
           - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: keywords, label: Keywords, widget: list }
+          - { name: description, label: Meta Description }
+          - { name: keywords, label: Meta Keywords, widget: list }

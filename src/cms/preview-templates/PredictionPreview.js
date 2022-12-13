@@ -80,6 +80,8 @@ const PredictionPreview = ({ entry, getAsset }) => {
             headTableArray={data.headTableArray}
             bannerDesc={data.bannerDesc}
             blogBodyArray={data.blogBodyArray}
+            buyAlsoReadTitle={data.buyAlsoReadTitle}
+            buyAlsoReadSlug={data.buyAlsoReadSlug}
             alsoReadTitle={data.alsoReadTitle}
             alsoReadSlug={data.alsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}

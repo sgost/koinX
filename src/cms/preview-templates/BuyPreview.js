@@ -98,6 +98,8 @@ const BuyPreview = ({ entry, widgetFor, getAsset }) => {
             alsoReadSlug={data.alsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}
             youtubeArray={data.youtubeArray}
+            buyAlsoReadTitle={data.buyAlsoReadTitle}
+            buyAlsoReadSlug={data.buyAlsoReadSlug}
             buyCoinTitle={data.buyCoinTitle}
             buyCoinArray={data.buyCoinArray}
             bitCoinTitle={data.bitCoinTitle}

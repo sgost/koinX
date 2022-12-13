@@ -47,9 +47,6 @@ export const PredictionPost = ({
 }) => {
   const { Content } = Layout
 
-
-  console.log("headTableArrayheadTableArray", headTableArray)
-
   return (
     <Fragment>
       <Navbar />
