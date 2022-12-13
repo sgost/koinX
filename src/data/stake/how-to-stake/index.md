@@ -1,23 +1,23 @@
 ---
-title: How to buy Bitcoin?
+excerpt: A serial port is a bidirectional communication interface that allows
+  sending and receiving data byte by byte.    Web Serial API bridges the web and
+  the physical world by allowing websites to communicate with serial devices,
+  such as microcontrollers, 3D printers, removable USB and Bluetooth devices
+  that emulate a serial port.
+title: new title
 date: 2021-11-30T18:30:00.000Z
 author_image: unsplash_8td991gibiq.png
-bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-  pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
-  facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
 bannerTitle1: "How to Mine Bitcoin: an in-depth, no-nonsense guide to mining Bitcoin"
 blogBodyArray1:
   - title: ""
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
       bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus
       odio. Cras pulvinar ut justo eu tempor.
   - title: Is Bitcoin Mining Profitable?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -26,8 +26,7 @@ blogBodyArray1:
 bannerTitle: "How to Mine Bitcoin : Our Top 5 Recommendations"
 blogBodyArray:
   - title: Lorem ipsum dolor sit amet, consectetur
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -35,8 +34,7 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step1
   - title: Lorem ipsum dolor sit amet, consectetur
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -44,8 +42,7 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step2
   - title: Lorem ipsum dolor sit amet, consectetur
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor. Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget
@@ -53,13 +50,28 @@ blogBodyArray:
       odio. Cras pulvinar ut justo eu tempor.
     slug: title_step3
   - title: New Link
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit.
     slug: step3
 alsoReadTitle: Bitcoin Price Prediction
 alsoReadSlug: https://www.facebook.com/getkoinx
 youtubeContainerTitle: Popular video guides on buying Bitcoin
+coinWorkTitle: How does  Bitcoin work?
+coinPointArray:
+  - Mining Software.
+  - Mining Hardware.
+  - Application Specific Integrated Circuit.
+  - Home Computers.
+  - Hash Rate
+bitcoinArray:
+  - image: hold_coin.png
+    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
+    title: Calculate your Profits
+  - image: hold_coin_tax.png
+    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
+    title: Calculate your tax liability
+moreCoinsTitle: More Cryptos Similar to Bitcoin
+author: Pachiyappan Velu
 youtubeArray:
   - link: tgbNymZ7vqY
     title: Lorem ipsum do neque, ornare vitae ante id
@@ -73,10 +85,11 @@ youtubeArray:
     title: Lorem ipsum do neque, ornare vitae ante id
   - link: tsgUVv4_oLE
     title: Test video on Bitcoin
-coinWorkTitle: How does  Bitcoin work?
 coinWorkArray:
   - title: How long does it take to mine one Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio.
     icon: image-168.png
     pointArray:
       - Mining Software.
@@ -93,7 +106,9 @@ coinWorkArray:
     pridictionTitle: Bitcoin Price Prediction
     pridictionLink: https://www.facebook.com/getkoinx
   - title: How all do you need to mine Bitcoin?
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio.
     icon: image-168.png
     pointArray:
       - Mining Software.
@@ -110,47 +125,7 @@ coinWorkArray:
     pridictionTitle: Bitcoin Price Prediction
     pridictionLink: https://www.facebook.com/getkoinx
 coinPointTitle: Top wallets to store your Bitcoin
-coinPointArray:
-  - Mining Software.
-  - Mining Hardware.
-  - Application Specific Integrated Circuit.
-  - Home Computers.
-  - Hash Rate
 bitCoinTitle: Already Holding Bitcoin?
-bitcoinArray:
-  - image: hold_coin.png
-    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
-    title: Calculate your Profits
-  - image: hold_coin_tax.png
-    link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
-    title: Calculate your tax liability
-collapseTitle: Frequently asked questions
-questionsArray:
-  - title: Where can you buy Bitcoin with a credit or debit card?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Aliquam pulvinar in elit eget bibendum
-  - title: What will you need to buy Bitcoin?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Aliquam pulvinar in elit eget bibendum
-  - title: What is the easiest way to buy Bitcoin?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Aliquam pulvinar in elit eget bibendum
-  - title: Best wallets to store your Bitcoin?
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
-      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Aliquam pulvinar in elit eget bibendum
-moreCoinsTitle: More Cryptos Similar to Bitcoin
 moreCoinsArray:
   - title: Ethereum
     link: https://www.koinx.com/
@@ -167,34 +142,50 @@ moreCoinsArray:
   - title: Doge
     link: https://www.koinx.com/
     icon: doge.png
-currencyBlockTitle: Related articles to Bitcoin
-excerpt: A serial port is a bidirectional communication interface that allows
-  sending and receiving data byte by byte.    Web Serial API bridges the web and
-  the physical world by allowing websites to communicate with serial devices,
-  such as microcontrollers, 3D printers, removable USB and Bluetooth devices
-  that emulate a serial port.
-author: Pachiyappan Velu
+collapseTitle: Frequently asked questions
+questionsArray:
+  - title: Where can you buy Bitcoin with a credit or debit card?
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Aliquam pulvinar in elit eget bibendum
+  - title: What will you need to buy Bitcoin?
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Aliquam pulvinar in elit eget bibendum
+  - title: What is the easiest way to buy Bitcoin?
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Aliquam pulvinar in elit eget bibendum
+  - title: Best wallets to store your Bitcoin?
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
+      id, facilisis maximus odio. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Aliquam pulvinar in elit eget bibendum
 previewTitle: Backend Development
 tags:
   - Serial API
   - ReactJS  and Javascript.
 navLinkTitle: How to buy Bitcoin?
+bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+  pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
+  facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
+currencyBlockTitle: Related articles to Bitcoin
 currencyBlockArray:
   - title: How to stake Bitcoin
     date: 23 October 2020
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team.png
   - title: How to mine Bitcoin
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-1.png
   - title: Bitcoin price prediction
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-2.png
@@ -202,20 +193,17 @@ cryptoGuideTitle: More crypto mining guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-2-.png
   - title: How to buy Solana?
     date: 23 October 2020
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-1-2-.png
   - title: How to buy Doge?
     date: 23 October 2020
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
     icon: team-2-2-.png
 seo:
