@@ -3,7 +3,9 @@ date: 2021-11-30T18:30:00.000Z
 author_image: unsplash_8td991gibiq.svg
 bannerTitle: How to buy Bitcoin in 3 easy steps
 alsoReadTitle: Bitcoin Price Prediction
-alsoReadSlug: title_step1
+alsoReadSlug: https://www.facebook.com/getkoinx
+buyAlsoReadTitle: Bitcoin Price Prediction
+buyAlsoReadSlug: https://www.facebook.com/getkoinx
 buyCoinTitle: Where to buy BITCOIN?
 buyCoinArray:
   - id: 1

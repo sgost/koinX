@@ -32,6 +32,8 @@ export const MinePost = ({
   youtubeContainerTitle,
   youtubeArray,
   coinWorkTitle,
+  buyAlsoReadTitle,
+  buyAlsoReadSlug,
   coinWorkArray,
   walletCoinsTitle,
   walletCoinsArray,
@@ -92,7 +94,7 @@ export const MinePost = ({
             })}
 
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
@@ -105,7 +107,7 @@ export const MinePost = ({
                   {item?.title && <h3>{item?.title} </h3>}
                   {item?.description && <p>{item?.description}</p>}
                   {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index === 0 && <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>}
+                  {index === 0 && <p className="text_link">Also Read: <a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a></p>}
                 </>
               )
             })}
@@ -192,6 +194,8 @@ const Blog = ({ data }) => {
         alsoReadSlug={post.frontmatter.alsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
+        buyAlsoReadTitle={post.frontmatter.buyAlsoReadTitle}
+        buyAlsoReadSlug={post.frontmatter.buyAlsoReadSlug}
         coinWorkTitle={post.frontmatter.coinWorkTitle}
         coinWorkArray={post.frontmatter.coinWorkArray}
         walletCoinsTitle={post.frontmatter.walletCoinsTitle}
@@ -242,6 +246,8 @@ export const query = graphql`
           link
           title
         }
+        buyAlsoReadTitle
+        buyAlsoReadSlug
         coinWorkTitle
         coinWorkArray {
           title

@@ -47,8 +47,10 @@ blogBodyArray:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
       pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante
       id, facilisis maximus odio. Cras pulvinar ut justo eu tempor.
+buyAlsoReadTitle: Bitcoin Price Prediction
+buyAlsoReadSlug: https://www.facebook.com/getkoinx
 alsoReadTitle: Bitcoin Price Prediction
-alsoReadSlug: title_step1
+alsoReadSlug: https://www.facebook.com/getkoinx
 youtubeContainerTitle: Popular video guides on buying Bitcoin
 youtubeArray:
   - link: tgbNymZ7vqY

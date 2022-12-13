@@ -58,7 +58,7 @@ blogBodyArray:
       pulvinar in elit.
     slug: step3
 alsoReadTitle: Bitcoin Price Prediction
-alsoReadSlug: title_step1
+alsoReadSlug: https://www.facebook.com/getkoinx
 youtubeContainerTitle: Popular video guides on buying Bitcoin
 youtubeArray:
   - link: tgbNymZ7vqY
@@ -90,6 +90,8 @@ coinWorkArray:
       - Application Specific Integrated Circuit.
       - Home Computers.
       - Hash Rate
+    pridictionTitle: Bitcoin Price Prediction
+    pridictionLink: https://www.facebook.com/getkoinx
   - title: How all do you need to mine Bitcoin?
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id, facilisis maximus odio.
     icon: image-168.png
@@ -105,6 +107,8 @@ coinWorkArray:
       - Application Specific Integrated Circuit.
       - Home Computers.
       - Hash Rate
+    pridictionTitle: Bitcoin Price Prediction
+    pridictionLink: https://www.facebook.com/getkoinx
 coinPointTitle: Top wallets to store your Bitcoin
 coinPointArray:
   - Mining Software.

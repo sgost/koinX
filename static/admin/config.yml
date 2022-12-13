@@ -57,9 +57,9 @@ collections:
         }
       - {
           name: alsoReadSlug,
-          label: Read link (Slug),
+          label: prices live (Internal Link),
           widget: string,
-          default: "Link",
+          default: "www.bitcoin.com",
         }
       - {
           name: youtubeContainerTitle,
@@ -86,6 +86,12 @@ collections:
                 default: "Video Title",
               },
             ],
+        }
+      - { name: buyAlsoReadTitle, label: "Crypto Name", default: "Crypto Name" }
+      - {
+          name: buyAlsoReadSlug,
+          label: "prices live (Internal Link)",
+          default: "www.bitcoin.com",
         }
       - {
           name: buyCoinTitle,
@@ -321,7 +327,7 @@ collections:
         }
       - {
           name: alsoReadSlug,
-          label: Read link (Slug),
+          label: prices live (Internal Link),
           widget: string,
           default: "Link",
         }
@@ -356,6 +362,12 @@ collections:
           label: Title,
           default: "How does  Bitcoin work?",
           required: false,
+        }
+      - { name: buyAlsoReadTitle, label: "Crypto Name", default: "Crypto Name" }
+      - {
+          name: buyAlsoReadSlug,
+          label: "prices live (Internal Link)",
+          default: "www.bitcoin.com",
         }
       - {
           name: coinWorkArray,
@@ -599,7 +611,7 @@ collections:
         }
       - {
           name: alsoReadSlug,
-          label: Read link (Slug),
+          label: prices live (Internal Link),
           widget: string,
           default: "Link",
         }
@@ -669,6 +681,16 @@ collections:
                 widget: list,
                 default: ["Point1"],
                 required: false,
+              },
+              {
+                name: pridictionTitle,
+                label: Link Title,
+                default: Bitcoin Price Prediction,
+              },
+              {
+                name: pridictionLink,
+                label: Link,
+                default: https://www.facebook.com/getkoinx,
               },
             ],
         }
@@ -856,6 +878,16 @@ collections:
             ],
         }
       - {
+          name: buyAlsoReadTitle,
+          label: Prices live link title,
+          default: Bitcoin Price Prediction,
+        }
+      - {
+          name: buyAlsoReadSlug,
+          label: Prices live link,
+          default: https://www.facebook.com/getkoinx,
+        }
+      - {
           name: blogBodyArray,
           label: Body Data,
           widget: list,
@@ -878,7 +910,7 @@ collections:
         }
       - {
           name: alsoReadSlug,
-          label: Read link (Slug),
+          label: prices live (Internal Link),
           widget: string,
           default: "Link",
         }

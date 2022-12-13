@@ -30,6 +30,8 @@ export const BlogPost = ({
   alsoReadSlug,
   youtubeContainerTitle,
   youtubeArray,
+  buyAlsoReadTitle,
+  buyAlsoReadSlug,
   buyCoinTitle,
   buyCoinArray,
   bitCoinTitle,
@@ -77,7 +79,7 @@ export const BlogPost = ({
             })}
 
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
@@ -85,7 +87,7 @@ export const BlogPost = ({
           <BlogTable
             buyCoinTitle={buyCoinTitle}
             buyCoinArray={buyCoinArray}
-            linkcompo={<Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link>}
+            linkcompo={<a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a>}
           />
           <HoldCoins
             bitCoinTitle={bitCoinTitle}
@@ -160,6 +162,8 @@ const Blog = ({ data }) => {
         blogBodyArray={post.frontmatter.blogBodyArray}
         alsoReadTitle={post.frontmatter.alsoReadTitle}
         alsoReadSlug={post.frontmatter.alsoReadSlug}
+        buyAlsoReadTitle={post.frontmatter.buyAlsoReadTitle}
+        buyAlsoReadSlug={post.frontmatter.buyAlsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
         buyCoinTitle={post.frontmatter.buyCoinTitle}
@@ -205,6 +209,8 @@ export const query = graphql`
           link
           title
         }
+        buyAlsoReadTitle
+        buyAlsoReadSlug
         buyCoinTitle
         buyCoinArray {
           id

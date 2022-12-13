@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
 import { Layout } from "antd";
@@ -26,6 +26,8 @@ export const PredictionPost = ({
   headTableArray,
   bannerDesc,
   blogBodyArray,
+  buyAlsoReadTitle,
+  buyAlsoReadSlug,
   alsoReadTitle,
   alsoReadSlug,
   youtubeContainerTitle,
@@ -89,7 +91,7 @@ export const PredictionPost = ({
                 return (
                   <tr className="table_head" key={index}>
                     <td className="table_title">{tableTitleFun(index)}</td>
-                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && index === 4 ?
+                    <td className={index === 4 && "table_padding"}>{item?.dataArr?.length > 0 && !(item.value) ?
                       <td className="table_block">
                         <tr>
                           {item?.dataArr?.map((itm, index) =>
@@ -109,7 +111,7 @@ export const PredictionPost = ({
               })}
             </table>
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
 
             {/* body map */}
             {blogBodyArray?.map((item) => {
@@ -122,7 +124,7 @@ export const PredictionPost = ({
             })}
 
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a></p>
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
@@ -203,6 +205,8 @@ const Blog = ({ data }) => {
         headTableArray={post.frontmatter.headTableArray}
         bannerDesc={post.frontmatter.bannerDesc}
         blogBodyArray={post.frontmatter.blogBodyArray}
+        buyAlsoReadTitle={post.frontmatter.buyAlsoReadTitle}
+        buyAlsoReadSlug={post.frontmatter.buyAlsoReadSlug}
         alsoReadTitle={post.frontmatter.alsoReadTitle}
         alsoReadSlug={post.frontmatter.alsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
@@ -248,6 +252,8 @@ export const query = graphql`
           title
           description
         }
+        buyAlsoReadTitle
+        buyAlsoReadSlug
         alsoReadTitle
         alsoReadSlug
         youtubeContainerTitle

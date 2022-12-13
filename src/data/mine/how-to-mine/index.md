@@ -58,7 +58,7 @@ blogBodyArray:
       pulvinar in elit.
     slug: step3
 alsoReadTitle: Bitcoin Price Prediction
-alsoReadSlug: title_step1
+alsoReadSlug: https://www.facebook.com/getkoinx
 youtubeContainerTitle: Popular video guides on buying Bitcoin
 youtubeArray:
   - link: tgbNymZ7vqY
@@ -73,6 +73,8 @@ youtubeArray:
     title: Lorem ipsum do neque, ornare vitae ante id
   - link: tsgUVv4_oLE
     title: Test video on Bitcoin
+buyAlsoReadTitle: Bitcoin Price Prediction
+buyAlsoReadSlug: https://www.facebook.com/getkoinx
 coinWorkTitle: How does  Bitcoin work?
 coinWorkArray:
   - title: How long does it take to mine one Bitcoin?

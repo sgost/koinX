@@ -92,7 +92,7 @@ export const StakePost = ({
             })}
 
             {/* About link */}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
+            <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
@@ -120,11 +120,10 @@ export const StakePost = ({
                   {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
                   <p className="bullets_label bullets_label_margin_top">Pros</p>
                   {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index === 0 && <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>}
+                  <p className="text_link">Also Read: <a href={item?.pridictionLink} target="_blank" rel="noopener noreferrer">{item?.pridictionTitle}</a></p>
                 </>
               )
             })}
-            <p className="text_link">Also Read: <Link to={fields?.slug + "/#" + alsoReadSlug}>{alsoReadTitle}</Link></p>
             <h2>{coinPointTitle}</h2>
             {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
           </Content>
@@ -257,6 +256,8 @@ export const query = graphql`
           description
           pointArray
           pointArray2
+          pridictionTitle
+          pridictionLink
           icon {
             publicURL
           }
