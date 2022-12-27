@@ -22,42 +22,42 @@ const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
 
                                     <tr>
                                         <td>Operational Since</td>
-                                        <td>{item?.Factsheet[0]?.OperationalSince}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.OperationalSince}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Weekly Average Transaction Volume</td>
-                                        <td>{item?.Factsheet[0]?.WeeklyAverage}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.WeeklyAverage}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Deposit Methods</td>
-                                        <td>{item?.Factsheet[0]?.DepositMethods}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.DepositMethods}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Deposit Fees</td>
-                                        <td>{item?.Factsheet[0]?.DepositFees}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.DepositFees}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Cryptos Listed</td>
-                                        <td>{item?.Factsheet[0]?.CryptosListed}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.CryptosListed}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Trading Fees</td>
-                                        <td>{item?.Factsheet[0]?.TradingFees}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.TradingFees}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Fiat Currencies Supported</td>
-                                        <td>{item?.Factsheet[0]?.CurrenciesSupported}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.CurrenciesSupported}</td>
                                     </tr>
 
                                     <tr>
                                         <td>Trustworthiness</td>
-                                        <td>{item?.Factsheet[0]?.Trustworthiness}</td>
+                                        <td>{item?.Factsheet && item?.Factsheet[0]?.Trustworthiness}</td>
                                     </tr>
                                 </table>
                             </div>

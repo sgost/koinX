@@ -1113,18 +1113,20 @@ collections:
                 required: false,
               },
               { label: All Time High, name: AllTimeHigh, required: false },
-              { label: All Time Low, name: AllTimeLows, required: false },
+              { label: All Time Low, name: AllTimeLow, required: false },
             ],
         }
       - {
-          name: buyAlsoReadTitle,
-          label: Prices live link title,
-          default: Bitcoin Price Prediction,
+          name: alsoReadTitle,
+          label: Read link title,
+          widget: string,
+          default: "Bitcoin Price Prediction",
         }
       - {
-          name: buyAlsoReadSlug,
-          label: "Check {Crypto Name} prices live [internal link]",
-          default: https://www.facebook.com/getkoinx,
+          name: alsoReadSlug,
+          label: prices live (Internal Link),
+          widget: string,
+          default: "www.bitcoin.com",
         }
       - {
           name: blogBodyArray,
@@ -1147,16 +1149,14 @@ collections:
             ],
         }
       - {
-          name: alsoReadTitle,
-          label: Read link title,
-          widget: string,
-          default: "Bitcoin Price Prediction",
+          name: buyAlsoReadTitle,
+          label: Prices live link title,
+          default: Bitcoin Price Prediction,
         }
       - {
-          name: alsoReadSlug,
-          label: prices live (Internal Link),
-          widget: string,
-          default: "www.bitcoin.com",
+          name: buyAlsoReadSlug,
+          label: "Check {Crypto Name} prices live [internal link]",
+          default: https://www.facebook.com/getkoinx,
         }
       - {
           name: youtubeContainerTitle,
