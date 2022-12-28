@@ -129,5 +129,5 @@ seo:
     - buy ethereum
     - buy eth
     - eth
-  description: Learn how to buy Ethereum (ETH) on three+ crypto exchanges
+  description: Learn how to buy Ethereum (ETH) on two crypto exchanges
 ---
