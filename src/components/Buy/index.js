@@ -221,7 +221,6 @@ export const query = graphql`
           description
           Factsheet {
             OperationalSince
-            WeeklyAverage
             DepositMethods
             DepositFees
             CryptosListed

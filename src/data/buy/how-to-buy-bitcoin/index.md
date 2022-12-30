@@ -17,7 +17,6 @@ buyCoinArray:
       id, facilisis maximus odio.
     Factsheet:
       - OperationalSince: Jan 2016
-        WeeklyAverage: $160M
         DepositMethods: Credit Card, Debit Card, Netbanking
         DepositFees: 0.10%
         CryptosListed: "1650"
@@ -33,7 +32,6 @@ buyCoinArray:
       id, facilisis maximus odio.
     Factsheet:
       - OperationalSince: Jan 2016
-        WeeklyAverage: $160M
         DepositMethods: Credit Card, Debit Card, Netbanking
         DepositFees: 0.10%
         CryptosListed: "1650"

@@ -148,12 +148,6 @@ collections:
                       default: "Jan 2016",
                     },
                     {
-                      label: Weekly Average Transaction Volume,
-                      name: WeeklyAverage,
-                      widget: string,
-                      default: "$160M",
-                    },
-                    {
                       label: Deposit Methods,
                       name: DepositMethods,
                       widget: string,

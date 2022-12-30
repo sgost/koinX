@@ -25,10 +25,10 @@ const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
                                         <td>{item?.Factsheet && item?.Factsheet[0]?.OperationalSince}</td>
                                     </tr>
 
-                                    <tr>
+                                    {/* <tr>
                                         <td>Weekly Average Transaction Volume</td>
                                         <td>{item?.Factsheet && item?.Factsheet[0]?.WeeklyAverage}</td>
-                                    </tr>
+                                    </tr> */}
 
                                     <tr>
                                         <td>Deposit Methods</td>

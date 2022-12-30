@@ -118,7 +118,7 @@ export const StakePost = ({
                   </div>
                   <p className="bullets_label">Pros</p>
                   {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  <p className="bullets_label bullets_label_margin_top">Pros</p>
+                  <p className="bullets_label bullets_label_margin_top">Cons</p>
                   {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p>&#8226; {itm}</p>)}</>}
                   <p className="text_link">Also Read: <a href={item?.pridictionLink} target="_blank" rel="noopener noreferrer">{item?.pridictionTitle}</a></p>
                 </>
