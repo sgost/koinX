@@ -255,6 +255,7 @@ export const query = graphql`
           title
           date
           description
+          link
           icon {
             publicURL
           }
@@ -264,6 +265,7 @@ export const query = graphql`
           title
           date
           description
+          link
           icon {
             publicURL
           }

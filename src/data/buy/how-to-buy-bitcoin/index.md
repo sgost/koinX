@@ -182,22 +182,26 @@ articlesArray:
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
+    link: https://koinx.com/
     image: bitcoin_banner.png
   - title: How to mine Bitcoin
     date: 2021-11-30T18:30:00.000Z
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
+    link: https://koinx.com/
     image: bitcoin_banner.png
   - title: Bitcoin price prediction
     date: 2021-11-30T18:30:00.000Z
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
+    link: https://koinx.com/
     image: bitcoin_banner.png
   - date: 2022-12-06T13:27:28.349Z
     title: sssss
     description: ssss
+    link: https://koinx.com/
     image: ET.png
 currencyBlockArray:
   - title: How to stake Bitcoin
@@ -205,20 +209,24 @@ currencyBlockArray:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 25 October 2022
+    link: https://koinx.com/
     icon: team.png
   - title: How to mine Bitcoin
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
+    link: https://koinx.com/
     icon: team-2-.png
 cryptoGuideTitle: "More cyrpto buying guides "
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 25 October 2022
+    link: https://koinx.com/
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-      quis eros sed risus sollicitudin fringilla dictum in metus. "
+      quis eros sed risus sollicitudin fringilla dictum in metus."
+
     icon: team-3-.png
 seo:
   description: Learn how to buy Bitcoin (CRPTO) on 100+ crypto exchanges

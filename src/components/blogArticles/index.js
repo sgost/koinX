@@ -8,7 +8,6 @@ const BlogArticles = ({
   articlesArray
 }) => {
   const { Content } = Layout
-
   return (
     <BlogArticlesStyle>
       <Content className="blog_dashboad_wrapper" id={resolveFunction(articlesTitle)}>
@@ -16,7 +15,7 @@ const BlogArticles = ({
         <div className="blog_main_wrap">
           {articlesArray?.map((item, index) => {
             return (
-              <div className="blog_dash_wrapper" key={index}>
+              <a href={item?.link} target="_blank" rel="noopener noreferrer" className="blog_dash_wrapper" key={index}>
                 <div className="thumb_img">
                   <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt="thumbnail" />
                   <div className="blog_title">
@@ -25,7 +24,7 @@ const BlogArticles = ({
                   </div>
                 </div>
                 <p className="blog_desc">{item?.description}</p>
-              </div>
+              </a>
             )
           })}
         </div>

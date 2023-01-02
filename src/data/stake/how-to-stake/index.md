@@ -191,17 +191,20 @@ currencyBlockArray:
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
+    link: https://www.koinx.com/
     icon: team.png
   - title: How to mine Bitcoin
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
+    link: https://www.koinx.com/
     date: 23 October 2020
     icon: team-1.png
   - title: Bitcoin price prediction
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
+    link: https://www.koinx.com/
     date: 23 October 2020
     icon: team-2.png
 cryptoGuideTitle: More crypto mining guides
@@ -211,18 +214,21 @@ cryptoGuideArray:
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
+    link: https://www.koinx.com/
     icon: team-2-.png
   - title: How to buy Solana?
     date: 23 October 2020
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
+    link: https://www.koinx.com/
     icon: team-1-2-.png
   - title: How to buy Doge?
     date: 23 October 2020
     description:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus.
+    link: https://www.koinx.com/
     icon: team-2-2-.png
 seo:
   description: How to stake Bitcoin - Step by Step Instructions

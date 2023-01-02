@@ -299,6 +299,12 @@ collections:
                 default: "Lorem ipsum dolor sit amet",
               },
               {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
+              },
+              {
                 label: Date,
                 name: date,
                 widget: string,
@@ -341,6 +347,12 @@ collections:
                 name: description,
                 widget: string,
                 default: "Lorem ipsum dolor sit amet,",
+              },
+              {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
               },
               {
                 label: Thumnnail,
@@ -638,6 +650,12 @@ collections:
                 default: "Article Description",
               },
               {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
+              },
+              {
                 label: Date,
                 name: date,
                 widget: string,
@@ -680,6 +698,12 @@ collections:
                 name: description,
                 widget: string,
                 default: "Article Description",
+              },
+              {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
               },
               {
                 label: Thumnnail,
@@ -983,6 +1007,12 @@ collections:
                 default: "Article Description",
               },
               {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
+              },
+              {
                 label: Date,
                 name: date,
                 widget: string,
@@ -1025,6 +1055,12 @@ collections:
                 name: description,
                 widget: string,
                 default: "Article Description",
+              },
+              {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
               },
               {
                 label: Thumnnail,
@@ -1287,6 +1323,12 @@ collections:
                 default: "Lorem ipsum dolor sit amet,",
               },
               {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
+              },
+              {
                 label: Date,
                 name: date,
                 widget: string,
@@ -1318,6 +1360,12 @@ collections:
                 name: date,
                 widget: string,
                 default: 23 October 2020,
+              },
+              {
+                label: External Link,
+                name: link,
+                widget: string,
+                default: https://koinx.com/,
               },
               {
                 label: Description,
