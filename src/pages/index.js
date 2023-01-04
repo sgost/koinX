@@ -25,7 +25,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query {
     blogData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(buying-guides)/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(buy)/.*\\\\.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
 
 
     mineData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(mining-guides)/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(mine)/.*\\\\.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
 
 
     stakeData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(staking-guides)/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(stake)/.*\\\\.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -105,7 +105,7 @@ export const pageQuery = graphql`
       }
     }
     predictionData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(prediction-guides)/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(prediction)/.*\\\\.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
