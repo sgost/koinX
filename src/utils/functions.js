@@ -3,6 +3,6 @@ export const resolveFunction = (title) => {
 }
 
 export const handleImage = (imageUrl) => {
-    const pathname = window.location.href;
+    const pathname = typeof window !== 'undefined' && window.location.href;
     return pathname.includes('www.koinx.com') ? `r${imageUrl}` : imageUrl;
 }
