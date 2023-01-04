@@ -40,7 +40,7 @@ buyCoinArray:
 youtube: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 facebook: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
 date: 2021-11-30T18:30:00.000Z
-author_image: unsplash_8td991gibiq.svg
+author_image: ET.png
 bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
@@ -193,11 +193,13 @@ currencyBlockArray:
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 25 October 2022
     icon: team.png
+    link: ddd
   - title: How to mine Bitcoin
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     date: 23 October 2020
     icon: team-2-.png
+    link: dddd
 cryptoGuideTitle: "More cyrpto buying guides "
 cryptoGuideArray:
   - title: How to buy Ethereum?
@@ -205,6 +207,7 @@ cryptoGuideArray:
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     icon: team-3-.png
+    link: sssssssssssssssssss
 seo:
   description: Learn how to buy Bitcoin (CRPTO) on 100+ crypto exchanges
   title: How to buy Bitcoin | Buy Bitcoin in 5 easy steps | KoinX
