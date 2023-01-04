@@ -146,6 +146,7 @@ const Blog = ({ data }) => {
     author_image = handleImage(post.frontmatter.author_image);
   }
 
+  console.log("sssssfe", handleImage(post.frontmatter.author_image.publicURL))
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
