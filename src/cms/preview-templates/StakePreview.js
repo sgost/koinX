@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { StakePost } from "../../components/Stake";
+import { StakePost } from "../../components/Staking-guides";
 
 const StakePreview = ({ entry, getAsset }) => {
 
