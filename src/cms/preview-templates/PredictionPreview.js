@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { PredictionPost } from "../../components/Prediction-guides";
+import { PredictionPost } from "../../components/Prediction";
 
 const PredictionPreview = ({ entry, getAsset }) => {
 

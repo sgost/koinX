@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { MinePost } from "../../components/Mining-guides";
+import { MinePost } from "../../components/Mine";
 
 const MinePreview = ({ entry, widgetFor, getAsset }) => {
 
