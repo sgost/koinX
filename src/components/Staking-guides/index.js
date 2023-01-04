@@ -13,7 +13,7 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 export const StakePost = ({
   fields,
@@ -113,7 +113,7 @@ export const StakePost = ({
                 <>
                   {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
                   <div className="desc_wrap">
-                    <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} className="desc_wrap_icon" alt={item?.description} />
+                    <img src={item?.icon?.publicURL ? handleImage(item?.icon?.publicURL) : item?.icon} className="desc_wrap_icon" alt={item?.description} />
                     {item?.description && <p>{item?.description}</p>}
                   </div>
                   <p className="bullets_label">Pros</p>
@@ -175,9 +175,9 @@ const Blog = ({ data }) => {
 
   var author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = post.frontmatter.author_image.publicURL;
+    author_image = handleImage(post.frontmatter.author_image.publicURL);
   } else {
-    author_image = post.frontmatter.author_image;
+    author_image = handleImage(post.frontmatter.author_image);
   }
 
   return (

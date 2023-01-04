@@ -3,7 +3,7 @@ import { HoldCoinsContainer } from "./styles";
 import { Link } from "gatsby";
 import { Layout } from "antd";
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const HoldCoins = ({
     bitCoinTitle,
@@ -18,7 +18,7 @@ const HoldCoins = ({
                     {bitcoinArray?.map((item, index) => {
                         return (
                             <div className="card" key={index}>
-                                <img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt="item?.title" />
+                                <img src={item?.image?.publicURL ? handleImage(item?.image?.publicURL) : item?.image} alt="item?.title" />
                                 <div className="coin_text">
                                     <span className="card_title">{item?.title}</span>
                                     <Link to={item?.link}><button>Check Now<ArrowRightOutlined className="icon" /></button></Link>

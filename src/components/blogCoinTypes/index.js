@@ -1,7 +1,7 @@
 import React from "react";
 import { BlogCoinTypesStyle } from "./styles";
 import { Layout } from "antd";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const BlogCoinTypes = ({
     moreCoinsTitle,
@@ -16,7 +16,7 @@ const BlogCoinTypes = ({
                     {moreCoinsArray?.map((item, index) => {
                         return (
                             <a href={item?.link} className="coin_card" key={index} target="_blank" rel="noopener noreferrer">
-                                <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item?.title} className="coin_img" />
+                                <img src={item?.icon?.publicURL ? handleImage(item?.icon?.publicURL) : item?.icon} alt={item?.title} className="coin_img" />
                                 <span className="card_title">{item?.title}</span>
                             </a>
                         )

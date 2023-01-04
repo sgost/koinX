@@ -1,7 +1,7 @@
 import React from "react";
 import { BlogArticlesStyle } from "./styles";
 import { Layout } from "antd";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const BlogArticles = ({
   articlesTitle,
@@ -18,7 +18,7 @@ const BlogArticles = ({
               <a href={item?.link} target="_blank" rel="noopener noreferrer" className="blog_dash_wrapper" key={index}>
                 <div className="thumb_img">
                   {console.log("item?.icon?.publicURL", item?.icon?.publicURL)}
-                  <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt="thumbnail" />
+                  <img src={item?.icon?.publicURL ? handleImage(item?.icon?.publicURL) : item?.icon} alt="thumbnail" />
                   <div className="blog_title">
                     <h3>{item?.title}</h3>
                     <span>Added: {item?.date}</span>
