@@ -39,7 +39,7 @@ export default function withStyledComponentsRendered(Comp) {
 
 CMS.registerPreviewTemplate("home", withStyledComponentsRendered(HomePreview));
 
-CMS.registerPreviewTemplate("buy", withStyledComponentsRendered(BuyPreview));
-CMS.registerPreviewTemplate("mine", withStyledComponentsRendered(MinePreview));
-CMS.registerPreviewTemplate("stake", withStyledComponentsRendered(StakePreview));
-CMS.registerPreviewTemplate("prediction", withStyledComponentsRendered(PredictionPreview));
+CMS.registerPreviewTemplate("buying-guides", withStyledComponentsRendered(BuyPreview));
+CMS.registerPreviewTemplate("mining-guides", withStyledComponentsRendered(MinePreview));
+CMS.registerPreviewTemplate("staking-guides", withStyledComponentsRendered(StakePreview));
+CMS.registerPreviewTemplate("prediction-guides", withStyledComponentsRendered(PredictionPreview));

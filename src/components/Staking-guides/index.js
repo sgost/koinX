@@ -13,9 +13,9 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
-export const MinePost = ({
+export const StakePost = ({
   fields,
   author_image,
   author,
@@ -32,11 +32,9 @@ export const MinePost = ({
   youtubeContainerTitle,
   youtubeArray,
   coinWorkTitle,
-  buyAlsoReadTitle,
-  buyAlsoReadSlug,
   coinWorkArray,
-  walletCoinsTitle,
-  walletCoinsArray,
+  coinPointTitle,
+  coinPointArray,
   bitCoinTitle,
   bitcoinArray,
   collapseTitle,
@@ -68,7 +66,7 @@ export const MinePost = ({
             {blogBodyArray1?.map((item) => {
               return (
                 <>
-                  {item?.title && <h3>{item?.title} </h3>}
+                  {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
                   {item?.description && <p>{item?.description}</p>}
                 </>
               )
@@ -79,7 +77,7 @@ export const MinePost = ({
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">Option {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -98,29 +96,37 @@ export const MinePost = ({
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
+          <HoldCoins
+            bitCoinTitle={bitCoinTitle}
+            bitcoinArray={bitcoinArray}
+          />
           {/* Body 1 */}
           <Content className="blog_body">
             <h2 id={resolveFunction(coinWorkTitle)}>{coinWorkTitle}</h2>
             {coinWorkArray?.map((item, index) => {
               return (
+                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+              )
+            })}
+            {coinWorkArray?.map((item, index) => {
+              return (
                 <>
-                  {item?.title && <h3>{item?.title} </h3>}
-                  {item?.description && <p>{item?.description}</p>}
+                  {item?.title && <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>}
+                  <div className="desc_wrap">
+                    <img src={item?.icon?.publicURL ? handleImage(item?.icon?.publicURL) : item?.icon} className="desc_wrap_icon" alt={item?.description} />
+                    {item?.description && <p>{item?.description}</p>}
+                  </div>
+                  <p className="bullets_label">Pros</p>
                   {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index === 0 && <p className="text_link">Also Read: <a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a></p>}
+                  <p className="bullets_label bullets_label_margin_top">Cons</p>
+                  {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p>&#8226; {itm}</p>)}</>}
+                  <p className="text_link">Also Read: <a href={item?.pridictionLink} target="_blank" rel="noopener noreferrer">{item?.pridictionTitle}</a></p>
                 </>
               )
             })}
+            <h2>{coinPointTitle}</h2>
+            {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
           </Content>
-          {/* Wallet types */}
-          <BlogCoinTypes
-            moreCoinsTitle={walletCoinsTitle}
-            moreCoinsArray={walletCoinsArray}
-          />
-          <HoldCoins
-            bitCoinTitle={bitCoinTitle}
-            bitcoinArray={bitcoinArray}
-          />
           {/* Blog releated coin types */}
           <BlogCoinTypes
             moreCoinsTitle={moreCoinsTitle}
@@ -163,21 +169,21 @@ export const MinePost = ({
 
 const Blog = ({ data }) => {
 
-  const { Minepost: post } = data;
+  const { Stakepost: post } = data;
 
   const seoData = post.frontmatter.seo;
 
   var author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = post.frontmatter.author_image.publicURL;
+    author_image = handleImage(post.frontmatter.author_image.publicURL);
   } else {
-    author_image = post.frontmatter.author_image;
+    author_image = handleImage(post.frontmatter.author_image);
   }
 
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
-      <MinePost
+      <StakePost
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
@@ -194,12 +200,10 @@ const Blog = ({ data }) => {
         alsoReadSlug={post.frontmatter.alsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
-        buyAlsoReadTitle={post.frontmatter.buyAlsoReadTitle}
-        buyAlsoReadSlug={post.frontmatter.buyAlsoReadSlug}
         coinWorkTitle={post.frontmatter.coinWorkTitle}
         coinWorkArray={post.frontmatter.coinWorkArray}
-        walletCoinsTitle={post.frontmatter.walletCoinsTitle}
-        walletCoinsArray={post.frontmatter.walletCoinsArray}
+        coinPointTitle={post.frontmatter.coinPointTitle}
+        coinPointArray={post.frontmatter.coinPointArray}
         bitcoinArray={post.frontmatter.bitcoinArray}
         bitCoinTitle={post.frontmatter.bitCoinTitle}
         collapseTitle={post.frontmatter.collapseTitle}
@@ -219,7 +223,7 @@ export default Blog
 
 export const query = graphql`
   query($slug: String!) {
-    Minepost: markdownRemark(fields: { slug: { eq: $slug } }) {
+    Stakepost: markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
         readingTime {
@@ -246,21 +250,20 @@ export const query = graphql`
           link
           title
         }
-        buyAlsoReadTitle
-        buyAlsoReadSlug
         coinWorkTitle
         coinWorkArray {
           title
           description
           pointArray
-        }
-        walletCoinsTitle
-        walletCoinsArray{
-          title
+          pointArray2
+          pridictionTitle
+          pridictionLink
           icon {
             publicURL
           }
         }
+        coinPointTitle
+        coinPointArray
         bitCoinTitle
         bitcoinArray{
           title
