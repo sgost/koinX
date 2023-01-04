@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import { BlogsWrapper } from "./styles";
 import { Layout } from "antd";
+import BlogTable from "../blogTable";
 import BlogVideo from "../blogVideo";
 import BlogCollapse from "../blogCollapse";
 import BlogArticles from "../blogArticles";
@@ -13,17 +14,15 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction, handleImage } from "../../utils/functions";
+import { resolveFunction } from "../../utils/functions";
 
-export const MinePost = ({
+export const BuyPost = ({
   fields,
   author_image,
   author,
   date,
   title,
   preview,
-  bannerTitle1,
-  blogBodyArray1,
   bannerTitle,
   bannerDesc,
   blogBodyArray,
@@ -31,12 +30,10 @@ export const MinePost = ({
   alsoReadSlug,
   youtubeContainerTitle,
   youtubeArray,
-  coinWorkTitle,
   buyAlsoReadTitle,
   buyAlsoReadSlug,
-  coinWorkArray,
-  walletCoinsTitle,
-  walletCoinsArray,
+  buyCoinTitle,
+  buyCoinArray,
   bitCoinTitle,
   bitcoinArray,
   collapseTitle,
@@ -63,23 +60,11 @@ export const MinePost = ({
           <Content className="blog_body">
             <img src={author_image} alt="img" />
             <p>{bannerDesc}</p>
-            {/* Body 1 */}
-            <h2 id={resolveFunction(bannerTitle1)}>{bannerTitle1}</h2>
-            {blogBodyArray1?.map((item) => {
-              return (
-                <>
-                  {item?.title && <h3>{item?.title} </h3>}
-                  {item?.description && <p>{item?.description}</p>}
-                </>
-              )
-            })}
-
-            {/* Body 2  */}
             <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">Option {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -87,7 +72,7 @@ export const MinePost = ({
             {blogBodyArray?.map((item, index) => {
               return (
                 <>
-                  <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>
+                  <h3 id={resolveFunction(item?.title)}>Step {index + 1} : {item?.title} </h3>
                   <p>{item?.description}</p>
                 </>
               )
@@ -98,44 +83,31 @@ export const MinePost = ({
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
-          {/* Body 1 */}
-          <Content className="blog_body">
-            <h2 id={resolveFunction(coinWorkTitle)}>{coinWorkTitle}</h2>
-            {coinWorkArray?.map((item, index) => {
-              return (
-                <>
-                  {item?.title && <h3>{item?.title} </h3>}
-                  {item?.description && <p>{item?.description}</p>}
-                  {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
-                  {index === 0 && <p className="text_link">Also Read: <a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a></p>}
-                </>
-              )
-            })}
-          </Content>
-          {/* Wallet types */}
-          <BlogCoinTypes
-            moreCoinsTitle={walletCoinsTitle}
-            moreCoinsArray={walletCoinsArray}
+          {/* blogs table component */}
+          <BlogTable
+            buyCoinTitle={buyCoinTitle}
+            buyCoinArray={buyCoinArray}
+            linkcompo={<a href={buyAlsoReadSlug} target="_blank" rel="noopener noreferrer">{buyAlsoReadTitle}</a>}
           />
           <HoldCoins
             bitCoinTitle={bitCoinTitle}
             bitcoinArray={bitcoinArray}
+          />
+          <BlogCollapse
+            collapseTitle={collapseTitle}
+            questionsArray={questionsArray}
           />
           {/* Blog releated coin types */}
           <BlogCoinTypes
             moreCoinsTitle={moreCoinsTitle}
             moreCoinsArray={moreCoinsArray}
           />
-          <BlogCollapse
-            collapseTitle={collapseTitle}
-            questionsArray={questionsArray}
-          />
         </Layout>
         <BlogLinks
-          bannerTitle={bannerTitle1}
-          blogBodyArray={bannerTitle}
+          bannerTitle={bannerTitle}
+          blogBodyArray=""
           youtubeContainerTitle={youtubeContainerTitle}
-          bitCoinTitle={coinWorkTitle}
+          bitCoinTitle={buyCoinTitle}
           bulletpointTitle={bitCoinTitle}
           moreCoinsTitle={moreCoinsTitle}
           collapseTitle={collapseTitle}
@@ -163,21 +135,21 @@ export const MinePost = ({
 
 const Blog = ({ data }) => {
 
-  const { Minepost: post } = data;
+  const { buypost: post } = data;
 
   const seoData = post.frontmatter.seo;
 
   var author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = handleImage(post.frontmatter.author_image.publicURL);
+    author_image = post.frontmatter.author_image.publicURL;
   } else {
-    author_image = handleImage(post.frontmatter.author_image);
+    author_image = post.frontmatter.author_image;
   }
 
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
-      <MinePost
+      <BuyPost
         fields={post.fields}
         author_image={author_image}
         author={post.frontmatter.author}
@@ -185,21 +157,17 @@ const Blog = ({ data }) => {
         title={post.frontmatter.title}
         tags={post.frontmatter.tags}
         preview={false}
-        bannerTitle1={post.frontmatter.bannerTitle1}
-        blogBodyArray1={post.frontmatter.blogBodyArray1}
         bannerTitle={post.frontmatter.bannerTitle}
         bannerDesc={post.frontmatter.bannerDesc}
         blogBodyArray={post.frontmatter.blogBodyArray}
         alsoReadTitle={post.frontmatter.alsoReadTitle}
         alsoReadSlug={post.frontmatter.alsoReadSlug}
-        youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
-        youtubeArray={post.frontmatter.youtubeArray}
         buyAlsoReadTitle={post.frontmatter.buyAlsoReadTitle}
         buyAlsoReadSlug={post.frontmatter.buyAlsoReadSlug}
-        coinWorkTitle={post.frontmatter.coinWorkTitle}
-        coinWorkArray={post.frontmatter.coinWorkArray}
-        walletCoinsTitle={post.frontmatter.walletCoinsTitle}
-        walletCoinsArray={post.frontmatter.walletCoinsArray}
+        youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
+        youtubeArray={post.frontmatter.youtubeArray}
+        buyCoinTitle={post.frontmatter.buyCoinTitle}
+        buyCoinArray={post.frontmatter.buyCoinArray}
         bitcoinArray={post.frontmatter.bitcoinArray}
         bitCoinTitle={post.frontmatter.bitCoinTitle}
         collapseTitle={post.frontmatter.collapseTitle}
@@ -219,7 +187,7 @@ export default Blog
 
 export const query = graphql`
   query($slug: String!) {
-    Minepost: markdownRemark(fields: { slug: { eq: $slug } }) {
+    buypost: markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
         readingTime {
@@ -228,11 +196,6 @@ export const query = graphql`
       }
       frontmatter {
         author
-        bannerTitle1
-        blogBodyArray1 {
-          title
-          description
-        }
         bannerTitle
         bannerDesc
         blogBodyArray {
@@ -248,17 +211,22 @@ export const query = graphql`
         }
         buyAlsoReadTitle
         buyAlsoReadSlug
-        coinWorkTitle
-        coinWorkArray {
+        buyCoinTitle
+        buyCoinArray {
+          id
           title
-          description
-          pointArray
-        }
-        walletCoinsTitle
-        walletCoinsArray{
-          title
-          icon {
+          image {
             publicURL
+          }
+          description
+          Factsheet {
+            OperationalSince
+            DepositMethods
+            DepositFees
+            CryptosListed
+            TradingFees
+            CurrenciesSupported
+            Trustworthiness
           }
         }
         bitCoinTitle
