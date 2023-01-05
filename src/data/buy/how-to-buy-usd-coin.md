@@ -1,5 +1,5 @@
 ---
-title: How to buy USD Coin
+title: How to buy USD Coin (USDC)
 date: 2023-01-02T13:09:22.340Z
 author_image: usd-coin.png
 bannerDesc: USDC, an Ethereum-powered US dollar stablecoin, is the product of
@@ -130,7 +130,7 @@ currencyBlockArray:
     date: 23 October 2020
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
     link: https://koinx.com/
-cryptoGuideTitle: More cyrpto buying guides
+cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
