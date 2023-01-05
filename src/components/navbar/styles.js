@@ -47,6 +47,15 @@ export const NavContainer = styled.div`
     }
   }
 
+  @media (max-width: 1197px) {
+    .nav_wrapper {
+      .nav_links {
+      margin-right: 1vw;
+      font-size: 1.5vw;
+      }
+    }
+  }
+
   @media (max-width: 1000px) {
     .nav_icon {
       display: unset;

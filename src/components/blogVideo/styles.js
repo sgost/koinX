@@ -21,6 +21,12 @@ export const BlogVideoStyle = styled.div`
       overflow: scroll;
       margin-top: 1rem;
       overflow-y: hidden; /* Hide vertical scrollbar */
+      .youtube_card_main {
+        .youtube_card_desc {
+          width: 13rem !important;
+          font-size: 1rem;
+        }
+      }
       .card_cover {
         position: relative;
         width: 213px;

@@ -6,7 +6,7 @@ export const BlogsWrapper = styled.div`
   background: white;
   padding-top: 50px;
   .blog_data {
-    max-width: 60rem;
+    max-width: 63vw;
     padding: 0 5rem;
     position: relative;
     margin: 0 auto 0 auto;
@@ -176,6 +176,7 @@ export const BlogsWrapper = styled.div`
 
 @media (max-width: 1000px){
   .blog_data {
+    max-width: 60rem;
     padding: 0 2rem;
   }
 }

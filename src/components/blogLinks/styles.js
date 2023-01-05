@@ -38,6 +38,15 @@ export const BlogLinksStyle = styled.div`
         }
     }
   }
+@media (max-width: 1256px) {
+    .side_menu {
+      .sub_link_main {
+        .link_class {
+            width: 15vw;
+        }
+      }
+    }
+}
 @media(max-width: 1000px){
     .side_menu {
         display: none;
