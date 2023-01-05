@@ -107,10 +107,10 @@ bitCoinTitle: Already Holding Litecoin?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
   - title: Calculate your tax liability
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-liability.png
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Litecoin with a credit or debit card?
