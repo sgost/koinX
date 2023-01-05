@@ -1,5 +1,5 @@
 ---
-title: How to buy Binance USD (BUSD)
+title: How to buy Binance USD (BUSD) ?
 date: 2023-01-02T13:42:44.655Z
 author_image: binance-usd.png
 bannerDesc: Binance USD (BUSD), a well-known stable coin or cryptocurrency, is
