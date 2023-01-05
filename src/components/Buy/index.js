@@ -213,7 +213,6 @@ export const query = graphql`
         buyAlsoReadSlug
         buyCoinTitle
         buyCoinArray {
-          id
           title
           image {
             publicURL
