@@ -127,14 +127,14 @@ currencyBlockArray:
   - title: How to stake Bitcoin
     description: Learn how to stake Bitcoin in easy steps
     date: 23 October 2020
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: bitcoin.png
     link: https://www.koinx.com/
 cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
     description: Learn how to buy Ethereum in easy steps
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: ethereum.png
     link: https://www.koinx.com/
 seo:
   title: How to buy Dogecoin | Buy Dogecoin in four easy steps | KoinX
