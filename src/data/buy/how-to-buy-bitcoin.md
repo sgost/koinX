@@ -92,7 +92,7 @@ bitCoinTitle: Already Holding Bitcoin?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Bitcoin with a credit or debit card?
