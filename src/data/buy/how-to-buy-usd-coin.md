@@ -126,15 +126,17 @@ moreCoinsArray:
 currencyBlockTitle: Related articles to Bitcoin
 currencyBlockArray:
   - title: How to stake Bitcoin
-    description: Lorem ipsum dolor sit amet
+    description: Learn how to stake Bitcoin in easy steps
     date: 23 October 2020
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    link: https://koinx.com/
 cryptoGuideTitle: More cyrpto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet,
+    description: Learn how to buy Ethereum in easy steps
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    link: https://koinx.com/
 seo:
   title: How to buy USD Coin | Buy USD Coin in four easy steps | KoinX
   description: Learn how to buy USD Coin (USDC) on Four + crypto exchanges
