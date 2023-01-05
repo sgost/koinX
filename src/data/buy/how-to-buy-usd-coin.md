@@ -139,7 +139,7 @@ cryptoGuideArray:
     link: https://koinx.com/
 seo:
   title: How to buy USD Coin | Buy USD Coin in four easy steps | KoinX
-  description: Learn how to buy USD Coin (USDC) on Four + crypto exchanges
+  description: Learn how to buy USD Coin (USDC) on Three + crypto exchanges
   keywords:
     - usd coin
     - buy usd coin
