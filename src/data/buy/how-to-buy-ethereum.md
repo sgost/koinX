@@ -67,7 +67,7 @@ buyCoinArray:
         CurrenciesSupported: "27 "
         Trustworthiness: Safe
   - title: eToro
-    image: etoro.png
+    image: etoro-logo.png
     description: eToro is an Israel based investing and multi-asset trading company,
       that allows users to buy a number of cryptocurrencies through it. eToro
       allows you to trade and invest in Ethereum through their website with
@@ -87,7 +87,7 @@ bitCoinTitle: Already Holding Ethereum?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Ethereum with a credit or debit card?
@@ -107,21 +107,23 @@ questionsArray:
     description: "The best wallets to buy Ethereum are Guarda and Exodus. "
 moreCoinsTitle: More Cryptos Similar to Ethereum
 moreCoinsArray:
-  - title: Ethereum
+  - title: Bitcoin
     link: https://www.koinx.com
-    icon: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png
+    icon: property-1-1.bitcoin.png
 currencyBlockTitle: Related articles to Ethereum
 currencyBlockArray:
   - title: How to stake Bitcoin
-    description: Lorem ipsum dolor sit amet
+    description: Learn how to stake Bitcoin in easy steps
     date: 23 October 2020
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
-cryptoGuideTitle: More cyrpto buying guides
+    icon: bitcoin.png
+    link: https://koinx.com/
+cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
-  - title: How to buy Ethereum?
+  - title: How to buy Cardano?
     date: 23 October 2020
-    description: Lorem ipsum dolor sit amet,
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    description: Learn how to buy Cardano in easy steps
+    icon: cardano-1-.png
+    link: https://resources.koinx.com/buy/how-to-buy-cardano-ada/
 seo:
   title: How to buy Ethereum | Buy Ethereum in four easy steps | KoinX
   keywords:
