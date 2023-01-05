@@ -1,5 +1,5 @@
 ---
-title: How to buy Ethereum?
+title: How to buy Ethereum (ETH)?
 date: 2022-12-27T09:03:40.785Z
 author_image: ethereum.png
 bannerDesc: Ethereum or often termed as ETH is a decentralised, open-source
