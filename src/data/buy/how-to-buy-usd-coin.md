@@ -1,5 +1,5 @@
 ---
-title: How to buy USD Coin (USDC)
+title: How to buy USD Coin (USDC)?
 date: 2023-01-02T13:09:22.340Z
 author_image: usd-coin.png
 bannerDesc: USDC, an Ethereum-powered US dollar stablecoin, is the product of
