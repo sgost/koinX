@@ -115,7 +115,7 @@ moreCoinsTitle: More Cryptos Similar to Dogecoin
 moreCoinsArray:
   - title: Ethereum
     link: https://www.koinx.com
-    icon: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png
+    icon: property-1-2.-ethereum.png
   - title: Shiba Inu
     link: https://www.koinx.com
     icon: property-1-12.-shiba-inu-shib.png
