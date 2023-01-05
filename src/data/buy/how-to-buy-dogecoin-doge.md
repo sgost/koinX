@@ -1,5 +1,5 @@
 ---
-title: How to buy Dogecoin (DOGE)
+title: How to buy Dogecoin (DOGE)?
 date: 2023-01-02T15:59:59.878Z
 author_image: dogecoin.png
 bannerDesc: Dogecoin (DOGE) is a peer-to-peer, open-source cryptocurrency. It
