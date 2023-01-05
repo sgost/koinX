@@ -1,7 +1,7 @@
 ---
 title: How to buy Bitcoin(BTC)
 date: 2023-01-03T06:22:15.207Z
-author_image: bitcoin.png
+author_image: bitcoin-1-.png
 bannerDesc: Bitcoin or often referred to as BTC is the world’s first
   decentralized cryptocurrency that operates free of any central control and is
   also out of the control of even banks and governments. If you are looking to
