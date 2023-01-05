@@ -94,10 +94,10 @@ bitCoinTitle: Already Holding Dai?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
   - title: Calculate your tax liability
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-liability.png
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Dai with a credit or debit card?
@@ -130,14 +130,14 @@ currencyBlockArray:
   - title: How to stake Bitcoin
     description: Learn how to stake Bitcoin in easy steps
     date: 23 October 2020
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: bitcoin.png
     link: https://koinx.com/
 cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
     description: Learn how to buy Ethereum in easy steps
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: ethereum.png
     link: https://koinx.com/
 seo:
   title: How to buy Dai | Buy Dai in Three easy steps | KoinX
