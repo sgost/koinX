@@ -114,13 +114,13 @@ currencyBlockTitle: Related articles to Ethereum
 currencyBlockArray:
   - title: How to stake Bitcoin
     description: Learn how to stake Bitcoin in easy steps
-    date: 23 October 2020
+    date: January 2023
     icon: bitcoin.png
     link: https://koinx.com/
 cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
   - title: How to buy Cardano?
-    date: 23 October 2020
+    date: January 2023
     description: Learn how to buy Cardano in easy steps
     icon: cardano-1-.png
     link: https://resources.koinx.com/buy/how-to-buy-cardano-ada/
