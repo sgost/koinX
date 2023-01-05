@@ -1,5 +1,5 @@
 ---
-title: How to buy Bitcoin
+title: How to buy Bitcoin(BTC)
 date: 2023-01-03T06:22:15.207Z
 author_image: bitcoin.png
 bannerDesc: Bitcoin or often referred to as BTC is the world’s first
@@ -129,7 +129,7 @@ currencyBlockArray:
     date: 23 October 2020
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
     link: https://www.koinx.com/
-cryptoGuideTitle: More cyrpto buying guides
+cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2020
