@@ -1,5 +1,5 @@
 ---
-title: How to buy Tether?
+title: How to buy Tether (USDT)?
 date: 2022-12-28T19:03:27.602Z
 author_image: tether.png
 bannerDesc: Tether is a stablecoin, which is a cryptocurrency that tracks the
@@ -100,7 +100,7 @@ bitCoinTitle: Already Holding Tether?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Tether with a credit or debit card?
@@ -133,13 +133,13 @@ currencyBlockArray:
     description: Learn how to buy Binance USD
     link: https://resources.koinx.com/buy/how-to-buy-binance-usd-busd/
     date: 23 October 2020
-    icon: binance.png
+    icon: binance-usd.png
 cryptoGuideTitle: More cyrpto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
     date: 23 October 2022
     description: Buy Ethereum in 4 easy steps
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: ethereum.png
     link: https://resources.koinx.com/buy/how-to-buy-ethereum/
 seo:
   title: How to buy Tether | Buy Tether in Four easy steps | KoinX
