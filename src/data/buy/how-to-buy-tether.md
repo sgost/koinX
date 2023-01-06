@@ -60,35 +60,87 @@ buyCoinArray:
         TradingFees: 1%
         CurrenciesSupported: "USD, GBP, EUR "
         Trustworthiness: Safe
-  - title: Title
-    image: https://blog-test.koinx.com/static/a25a3b6d920d45984734e893e8cf6298/image-168.png
-    description: Description
-bitCoinTitle: Already Holding Bitcoin?
+  - title: Binance
+    image: binance-wallet.png
+    description: With more than 1.4 million transactions per second, Binance is the
+      world's largest cryptocurrency exchange. Binance's world-class matching
+      engine guarantees that your cryptocurrency trading experience is both
+      speedy and dependable. Binance's extra support makes it safer because
+      there is no need to worry about one chain being accountable for all
+      activities. As a result, you may buy USDT with confidence from this
+      trading volume.
+    Factsheet:
+      - OperationalSince: "2017"
+        DepositMethods: Bank Deposit, Cash Balance, Credit/Debit Card, P2P Trading
+        DepositFees: Free
+        CryptosListed: BNB, XRP, DOGE, USDT, ETH,  LTC,  ADA, LINK
+        TradingFees: 0.1%
+        CurrenciesSupported: "27"
+        Trustworthiness: Safe to use
+  - title: eToro
+    image: etoro.jpg
+    description: eToro is a social investing and multi-asset trading firm that
+      allows users to buy cryptocurrencies (including USDT) on its website.
+      eToro provides a variety of cryptocurrencies as well as other financial
+      items such as equities and ETFs. The CopyTrader tool on the eToro platform
+      is one of its most interesting features. Users of eToro are able to mimic
+      the trading of their favourite high-performance traders with the click of
+      a button. With this tool in eToro, you may effortlessly trade in USDT.
+    Factsheet:
+      - OperationalSince: "2007"
+        DepositMethods: " eToro Money, Credit/Debit Cards, PAYPAL, NETELLER, RAPID
+          TRANSFER, SKRILL"
+        DepositFees: Free
+        CryptosListed: 30+ Cryptos
+        TradingFees: 1%
+        CurrenciesSupported: Australian Dollar, Swiss Franc, Canadian Dollar, Czech
+          Koruna, Danish Krone, Pound Sterling, etc.(17+)
+        Trustworthiness: Safe to use
+bitCoinTitle: Already Holding Tether?
 bitcoinArray:
   - title: Calculate your Profits
     link: link
     image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
 collapseTitle: Frequently asked questions
 questionsArray:
-  - title: What will you need to buy Bitcoin?
-    description: Lorem ipsum dolor sit amet
+  - title: Where can you buy Tether with a credit or debit card?
+    description: You can buy USDT using a credit or debit card through Bybit. Link
+      your debit or credit card, enter the amount you wish to spend on your
+      order in the field provided, check your payment, and wait for the process
+      to be finished.
+  - title: What will you need to buy Tether?
+    description: To buy Tether, you need to register an account on the
+      cryptocurrency exchange of your choice, like Binance, and make a deposit.
+  - title: What is the easiest way to buy Tether?
+    description: The easiest way to buy Tether is to use a reputable cryptocurrency
+      exchange like Binance or Coinbase. Once you've registered, all you have to
+      do is deposit money before easily butting USDT.
+  - title: Best wallets to store your Tether (USDT)
+    description: "The best wallets to store your Tether(USDT) are: CryptoWallet,
+      Tether Wallet, MyEtherWallet, OmniWallet, Coinomi, and Binance Wallet are
+      some of the top choices."
 moreCoinsTitle: More Cryptos Similar to Bitcoin
 moreCoinsArray:
-  - title: Ethereum
-    link: https://www.koinx.com
-    icon: https://blog-test.koinx.com/static/63fb940b349a5ce2733545eae4116c5c/ET.png
-currencyBlockTitle: Related articles to Bitcoin
+  - title: Litecoin
+    link: https://resources.koinx.com/buy/how-to-buy-litecoin-ltc/
+    icon: property-1-21.-litecoin-ltc.png
+  - title: Cardano
+    link: https://resources.koinx.com/buy/how-to-buy-cardano-ada/
+    icon: property-1-8.-cardano-ada-1-.png
+currencyBlockTitle: Related articles to Tether
 currencyBlockArray:
-  - title: How to stake Bitcoin
-    description: Lorem ipsum dolor sit amet
+  - title: How to buy Binance USD?
+    description: Learn how to buy Binance USD
+    link: https://resources.koinx.com/buy/how-to-buy-binance-usd-busd/
     date: 23 October 2020
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: binance.png
 cryptoGuideTitle: More cyrpto buying guides
 cryptoGuideArray:
   - title: How to buy Ethereum?
-    date: 23 October 2020
-    description: Lorem ipsum dolor sit amet,
+    date: 23 October 2022
+    description: Buy Ethereum in 4 easy steps
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    link: https://resources.koinx.com/buy/how-to-buy-ethereum/
 seo:
   title: How to buy Tether | Buy Tether in Four easy steps | KoinX
   description: Learn how to buy Tether (USDT) on 4+ crypto exchanges
