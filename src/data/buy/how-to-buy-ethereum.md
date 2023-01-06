@@ -67,7 +67,7 @@ buyCoinArray:
         CurrenciesSupported: "27 "
         Trustworthiness: Safe
   - title: eToro
-    image: etoro-logo.png
+    image: etoro.jpg
     description: eToro is an Israel based investing and multi-asset trading company,
       that allows users to buy a number of cryptocurrencies through it. eToro
       allows you to trade and invest in Ethereum through their website with
