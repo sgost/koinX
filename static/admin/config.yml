@@ -1096,7 +1096,12 @@ collections:
           default: "Bitcoin Price Prediction",
         }
       - { name: date, label: Date, widget: datetime }
-      - { label: Feature Image, name: author_image, widget: image }
+      - {
+          label: Feature Image,
+          name: author_image,
+          widget: image,
+          default: "https://i.ibb.co/1rZx0YH/dummybanner.png",
+        }
       - { name: bannerDesc, label: Description, default: "Banner Description" }
       - {
           name: bannerTitle,
@@ -1234,7 +1239,12 @@ collections:
                 default: "Calculate your Profits",
               },
               { label: Link, name: link, widget: string, default: "link" },
-              { label: Thumbnail image, name: image, widget: image },
+              {
+                label: Thumbnail image,
+                name: image,
+                widget: image,
+                default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
+              },
             ],
         }
       - {
@@ -1274,7 +1284,12 @@ collections:
                 default: "https://www.koinx.com",
                 required: false,
               },
-              { label: Coin DP, name: icon, widget: image },
+              {
+                label: Coin DP,
+                name: icon,
+                widget: image,
+                default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
+              },
             ],
         }
       - {
@@ -1334,7 +1349,12 @@ collections:
                 widget: string,
                 default: 23 October 2020,
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
+              },
             ],
         }
       - {
@@ -1373,7 +1393,12 @@ collections:
                 widget: string,
                 default: "Lorem ipsum dolor sit amet,",
               },
-              { label: Thumnnail, name: icon, widget: image },
+              {
+                label: Thumnnail,
+                name: icon,
+                widget: image,
+                default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
+              },
             ],
         }
       - label: SEO
