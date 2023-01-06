@@ -86,13 +86,13 @@ export const PredictionPost = ({
                 <td className="table_padding">
                   <td className="table_block">
                     <tr>
-                      {headTableArray[0]?.PriceChange?.map((itm, index) =>
-                        <td key={index}>{itm}</td>
+                      {headTableArray[0]?.PriceChange?.map((itm) =>
+                        <td key={itm}>{itm}</td>
                       )}
                     </tr>
                     <tr>
-                      {headTableArray[0]?.PriceChange2?.map((itm, index) =>
-                        <td key={index}>{itm}</td>
+                      {headTableArray[0]?.PriceChange2?.map((itm) =>
+                        <td key={itm}>{itm}</td>
                       )}
                     </tr>
                   </td>
@@ -144,7 +144,7 @@ export const PredictionPost = ({
           {/* Body 1 */}
           <Content className="blog_body" id={resolveFunction(coinPointTitle)}>
             <h2>{coinPointTitle}</h2>
-            {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
+            {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p key={itm}>&#8226; {itm}</p>)}</>}
           </Content>
           {/* Blog releated coin types */}
           <BlogCoinTypes
@@ -192,7 +192,7 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  var author_image;
+  let author_image;
   if (post.frontmatter.author_image.publicURL) {
     author_image = post.frontmatter.author_image.publicURL;
   } else {

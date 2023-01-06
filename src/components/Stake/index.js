@@ -77,7 +77,7 @@ export const StakePost = ({
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link" key={item?.title}>Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -105,7 +105,7 @@ export const StakePost = ({
             <h2 id={resolveFunction(coinWorkTitle)}>{coinWorkTitle}</h2>
             {coinWorkArray?.map((item, index) => {
               return (
-                <p className="text_link">Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link" key={item?.title}>Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
             {coinWorkArray?.map((item, index) => {
@@ -117,15 +117,15 @@ export const StakePost = ({
                     {item?.description && <p>{item?.description}</p>}
                   </div>
                   <p className="bullets_label">Pros</p>
-                  {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
+                  {item?.pointArray?.length > 0 && <> {item.pointArray.map((itm) => <p key={itm}>&#8226; {itm}</p>)}</>}
                   <p className="bullets_label bullets_label_margin_top">Cons</p>
-                  {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p>&#8226; {itm}</p>)}</>}
+                  {item?.pointArray?.length > 0 && <> {item.pointArray2.map((itm) => <p key={itm}>&#8226; {itm}</p>)}</>}
                   <p className="text_link">Also Read: <a href={item?.pridictionLink} target="_blank" rel="noopener noreferrer">{item?.pridictionTitle}</a></p>
                 </>
               )
             })}
             <h2>{coinPointTitle}</h2>
-            {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p>&#8226; {itm}</p>)}</>}
+            {coinPointArray?.length > 0 && <> {coinPointArray.map((itm) => <p key={itm}>&#8226; {itm}</p>)}</>}
           </Content>
           {/* Blog releated coin types */}
           <BlogCoinTypes
@@ -173,7 +173,7 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  var author_image;
+  let author_image;
   if (post.frontmatter.author_image.publicURL) {
     author_image = post.frontmatter.author_image.publicURL;
   } else {

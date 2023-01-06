@@ -64,7 +64,7 @@ export const BuyPost = ({
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
               return (
-                <p className="text_link">STEP {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                <p className="text_link" key={item?.title}>STEP {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
               )
             })}
 
@@ -139,7 +139,7 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  var author_image;
+  let author_image;
   if (post.frontmatter.author_image.publicURL) {
     author_image = post.frontmatter.author_image.publicURL;
   } else {
