@@ -51,12 +51,13 @@ coinWorkArray:
       choose from.
     icon: okx.png
     pointArray:
-      - It charges low trading fees that begin with 0.10% and decrease with rise
-        in trading volumes on using OKX's currency- OKB token.
-      - There are many deposit and withdrawal methods.
+      - OKX also allows a wide variety of fiat currencies for you to open an
+        account
+      - OKX offers a custodial wallet for you to store your Toncoin
+      - OKX also supports the TONCOIN to TON token migration at a 1:1 ratio
     pointArray2:
-      - It is not available in several countries such as the US.
-      - High third-party merchant fees when depositing and withdrawing fiat.
+      - The multi-tiered fee structure makes it difficult for beginners to
+        understand where to start staking.
     pridictionTitle: Toncoin Price Prediction
     pridictionLink: https://www.facebook.com/getkoinx
   - title: Bitmart
@@ -69,11 +70,11 @@ coinWorkArray:
     icon: bitmart.png
     pointArray:
       - It doesn’t charge any fees in staking TON.
-      - It is very easy to use.
+      - Account setup and staking Toncoin is relatively easier.
     pointArray2:
       - Customer support is a bit slow.
-      - The interface could be improved.
-      - It was hacked in 2021 leading to doubt in security issues.
+      - Withdrawing Toncoin fees keeps on changing depending on the blockchain
+        conditions.
     pridictionTitle: Toncoin Price Prediction
     pridictionLink: https://www.facebook.com/getkoinx
   - title: MEXC
@@ -84,9 +85,7 @@ coinWorkArray:
     icon: mexc-global-1.png
     pointArray:
       - It allows users to earn while holding.
-      - It prioritises security and has independently hosted servers across
-        several countries to ensure optimal data integrity and security.
-      - It supports good customer service.
+      - There is adequate information and methods to buy Toncoin via MEXC
     pointArray2:
       - It’s not available in various countries.
       - It has higher transaction costs than its counterparts.
@@ -140,16 +139,13 @@ questionsArray:
       charge to any crypto platform.
 currencyBlockTitle: Related articles to Toncoin
 currencyBlockArray:
-  - title: Article Title
-    description: Article Description
+  - title: How to buy BUSD?
+    description: Learn how to buy Binance USD
     date: 23 October 2020
     icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
-cryptoGuideTitle: More crypto staking guides
-cryptoGuideArray:
-  - title: Article Title
-    date: 23 October 2020
-    description: Article Description
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    link: https://resources.koinx.com/buy/how-to-buy-binance-usd-busd/
+cryptoGuideTitle: .
+cryptoGuideArray: []
 seo:
   title: "How to stake Toncoin | KoinX "
   description: How to stake Toncoin (TON) - Step by Step Instructions
