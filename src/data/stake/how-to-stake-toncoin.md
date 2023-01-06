@@ -7,9 +7,9 @@ bannerTitle1: Toncoin Staking Overview
 blogBodyArray1:
   - title: ""
     description: Staking in Toncoin (TON) is unique as compared to other
-      corresponding platforms because of its decentralised staking pool system,
+      corresponding platforms because of its open network staking pool system,
       which makes it easier to use for traders. Additionally, it charges tiny
-      fees, has easy to use apps, and is energy efficient. In Toncoin, at least
+      fees, has easy-to-use apps and is energy efficient. In Toncoin, at least
       10,001 TON is required to start staking.
 bannerTitle: How to Stake Toncoin (TON)
 blogBodyArray:
@@ -25,7 +25,7 @@ blogBodyArray:
       Toncoin. From the paid amount, buy the desired amount of TON coins.
   - title: Enter the amount of TON you want to stake and duration
     description: Go to the 'Stake' section of the crypto platform and enter the
-      amount of TON coins you wish to stake. Then enter the duration for which
+      number of TON coins you wish to stake. Then enter the duration for which
       you want to stake the entered amount of TON coins. Remember that there is
       a minimum and maximum amount of TON you can stake in an exchange. Ensure
       that your entered amount falls in the allowable range.
@@ -72,7 +72,6 @@ coinWorkArray:
       - It doesn’t charge any fees in staking TON.
       - Account setup and staking Toncoin is relatively easier.
     pointArray2:
-      - Customer support is a bit slow.
       - Withdrawing Toncoin fees keeps on changing depending on the blockchain
         conditions.
     pridictionTitle: Toncoin Price Prediction
