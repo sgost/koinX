@@ -103,10 +103,10 @@ bitCoinTitle: Already Holding Toncoin?
 bitcoinArray:
   - title: Calculate your profits
     link: koinx.com
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    image: calculate-profits.png
   - title: Calculate your tax liability
-    link: koinx
-    image: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    link: koinx.com
+    image: calculate-liability.png
 moreCoinsTitle: More Cryptos Similar to Toncoin
 moreCoinsArray:
   - title: Ethereum
@@ -142,7 +142,7 @@ currencyBlockArray:
   - title: How to buy BUSD?
     description: Learn how to buy Binance USD
     date: 23 October 2020
-    icon: https://blog-test.koinx.com/static/b04be1c982fdc2bbccf8321eb29acf4c/hold_coin.png
+    icon: binance-usd.png
     link: https://resources.koinx.com/buy/how-to-buy-binance-usd-busd/
 cryptoGuideTitle: .
 cryptoGuideArray: []
