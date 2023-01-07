@@ -8,10 +8,10 @@ media_folder: "assets"
 public_folder: "/"
 
 collections:
-  - name: buy
+  - name: buying-guides
     label: How to buy ?
-    label_singular: "buy"
-    folder: src/data/buy
+    label_singular: "buying-guides"
+    folder: src/data/buying-guides
     slug: "{{slug}}"
     create: true
     media_folder: ""
@@ -370,10 +370,10 @@ collections:
           - { name: description, label: Meta Description }
           - { name: keywords, label: Meta Keywords, widget: list }
 
-  - name: mine
+  - name: mining-guides
     label: How to mine ?
-    label_singular: "mine"
-    folder: src/data/mine
+    label_singular: "mining-guides"
+    folder: src/data/mining-guides
     slug: "{{slug}}"
     create: true
     media_folder: ""
@@ -721,10 +721,10 @@ collections:
           - { name: description, label: Meta Description }
           - { name: keywords, label: Meta Keywords, widget: list }
 
-  - name: stake
+  - name: staking-guides
     label: How to stake ?
-    label_singular: "stake"
-    folder: src/data/stake
+    label_singular: "staking-guides"
+    folder: src/data/staking-guides
     slug: "{{slug}}"
     create: true
     media_folder: ""
@@ -1078,10 +1078,10 @@ collections:
           - { name: description, label: Meta Description }
           - { name: keywords, label: Meta Keywords, widget: list }
 
-  - name: prediction
+  - name: prediction-guides
     label: Bitcoin price prediction!
-    label_singular: "prediction"
-    folder: src/data/prediction
+    label_singular: "prediction-guides"
+    folder: src/data/prediction-guides
     slug: "{{slug}}"
     create: true
     media_folder: ""

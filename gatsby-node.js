@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const buys = graphql(`
     query {
 			allMarkdownRemark(
-				filter: { fileAbsolutePath: { regex: "./src/data/(buy)\\/.*\\\\.md$/" } }
+				filter: { fileAbsolutePath: { regex: "./src/data/(buying-guides)\\/.*\\\\.md$/" } }
 			) {
 				edges {
 					node {
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/components/Buy/index.js`),
+        component: path.resolve(`./src/components/Buying-guides/index.js`),
         context: {
           slug: node.fields.slug
         },
@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const mine = graphql(`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(mine)\\/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(mining-guides)\\/.*\\\\.md$/" } }
     ) {
       edges {
         node {
@@ -92,7 +92,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/components/Mine/index.js`),
+        component: path.resolve(`./src/components/Mining-guides/index.js`),
         context: {
           slug: node.fields.slug
         },
@@ -105,7 +105,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const stake = graphql(`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "./src/data/(stake)\\/.*\\\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "./src/data/(staking-guides)\\/.*\\\\.md$/" } }
     ) {
       edges {
         node {
@@ -125,7 +125,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/components/Stake/index.js`),
+        component: path.resolve(`./src/components/Staking-guides/index.js`),
         context: {
           slug: node.fields.slug
         },
@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const prediction = graphql(`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "./src/data/(prediction)\\/.*\\\\.md$/" } }
+        filter: { fileAbsolutePath: { regex: "./src/data/(prediction-guides)\\/.*\\\\.md$/" } }
       ) {
         edges {
           node {
@@ -158,7 +158,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/components/Prediction/index.js`),
+        component: path.resolve(`./src/components/Prediction-guides/index.js`),
         context: {
           slug: node.fields.slug
         },

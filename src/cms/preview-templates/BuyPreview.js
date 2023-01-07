@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
-import { BuyPost } from "../../components/Buy";
+import { BuyPost } from "../../components/Buying-guides";
 
 const BuyPreview = ({ entry, widgetFor, getAsset }) => {
 
