@@ -2,6 +2,7 @@
 title: How to buy Binance USD (BUSD) ?
 date: 2023-01-02T13:42:44.655Z
 author_image: binance-usd.png
+author_image_alt: alt
 bannerDesc: Binance USD (BUSD), a well-known stable coin or cryptocurrency, is
   tied to the US dollar. This means that 1 BUSD is always available to buy and
   sell at 1 USD. Binance USD has been approved by the New York State Department
@@ -16,13 +17,15 @@ blogBodyArray:
       the number of cryptos listed, deposit methods, ease of use, and 24-hour
       support. "
   - title: Create an account and select the payment method
-    description: Once you've decided on a cryptocurrency exchange, you'll need to
+    description:
+      Once you've decided on a cryptocurrency exchange, you'll need to
       create an account and then choose a payment method to finance your
       account. You must validate your identity once your account is created
       before you buy BUSD. Most exchanges allow you to buy BUSD via normal
       payment methods like bank deposits or credit/debit cards.
   - title: Buy BUSD
-    description: After your identity is validated and you have placed funds in your
+    description:
+      After your identity is validated and you have placed funds in your
       account, you may begin purchasing BUSD. It's as simple as entering the
       amount you wish to spend and pressing the buy button. Once that is done,
       you can withdraw Binance USD to your own wallet.
@@ -42,7 +45,9 @@ buyCoinTitle: Where to buy Binance USD (BUSD)
 buyCoinArray:
   - title: Binance
     image: binance.png
-    description: Since Binance has minimal transaction costs, you can easily trade
+    alt: alt
+    description:
+      Since Binance has minimal transaction costs, you can easily trade
       BUSD here. In addition to this, Binance provides multiple trading
       currencies, which provides crypto traders and investors with several
       possibilities while trading their cryptocurrencies.
@@ -56,13 +61,15 @@ buyCoinArray:
         Trustworthiness: Safe to use
   - title: Coinbase
     image: coinbase.png
-    description: Another popular exchange for buying Binance USD coins is Coinbase.
+    description:
+      Another popular exchange for buying Binance USD coins is Coinbase.
       Here, you receive 24-hour customer support and can deposit your money
       using multiple methods like bank transfer, and credit/debit cards. The
       fees are also minimalistic, making it suitable for purchasing BUSD coins.
     Factsheet:
       - OperationalSince: Jun 2012
-        DepositMethods: Instant Cash, Debit Cards, Wire Transfers, Bank Accounts,
+        DepositMethods:
+          Instant Cash, Debit Cards, Wire Transfers, Bank Accounts,
           Paypal, Apple Pay, Google Pay
         DepositFees: 0.00% to 0.50% per trade
         CryptosListed: Bitcoin, Tether, USD Coin, BNB, Ethereum 2
@@ -78,13 +85,16 @@ buyCoinArray:
       other alternative exchanges.
     Factsheet:
       - OperationalSince: "2013"
-        DepositMethods: Bank Transfer, Cryptocurrency, Credit Card, Faster Payments
+        DepositMethods:
+          Bank Transfer, Cryptocurrency, Credit Card, Faster Payments
           (FPS), SEPA, SWIFT
-        DepositFees: "Maker: VISA & Mastercard: 2.99% (USD), (GBP), (EUR), (RUB); Bank
+        DepositFees:
+          "Maker: VISA & Mastercard: 2.99% (USD), (GBP), (EUR), (RUB); Bank
           transfer: None; Skrill: 3.99% (USD, GBP, EUR); ACH: None; Faster
           Payments: None"
         CryptosListed: 145+
-        TradingFees: "Maker: 0 - 0.15% and Taker: 0.10 - 0.25% based on the trade volume
+        TradingFees:
+          "Maker: 0 - 0.15% and Taker: 0.10 - 0.25% based on the trade volume
           in 30 days"
         CurrenciesSupported: USD, EUR, GBP, RUB
         Trustworthiness: Safe to use
@@ -93,13 +103,15 @@ bitcoinArray:
   - title: Calculate your Profits
     link: link
     image: calculate-profits.png
+    alt: alt
 collapseTitle: Frequently asked questions
 questionsArray:
   - title: Where can you buy Binance USD with a credit or debit card?
     description: "You can buy Binance USD using a credit or debit card from
       exchanges like Binance or Coinbase. "
   - title: What will you need to buy Binance USD?
-    description: To buy Binance USD you will need to create an account on any one of
+    description:
+      To buy Binance USD you will need to create an account on any one of
       the crypto exchanges and fund it according to your budget.
   - title: What is the easiest way to buy Binance USD?
     description: The easiest way to buy Binance USD is to create an account on
@@ -112,6 +124,7 @@ moreCoinsArray:
   - title: Ethereum
     link: https://www.koinx.com
     icon: property-1-2.-ethereum.png
+    alt: alt
   - title: Bitcoin
     link: https://www.koinx.com
     icon: property-1-1.bitcoin.png
@@ -124,6 +137,7 @@ currencyBlockArray:
     description: Learn how to stake Bitcoin in easy steps
     date: 23 October 2020
     icon: bitcoin.png
+    alt: alt
     link: https://koinx.com/
 cryptoGuideTitle: More crypto buying guides
 cryptoGuideArray:

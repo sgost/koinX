@@ -71,6 +71,7 @@ const PredictionPreview = ({ entry, getAsset }) => {
         <PredictionPost
             fields={data.fields}
             author_image={author_image}
+            author_image_alt={data.author_image_alt}
             author={data.author}
             date={date}
             title={data.title}

@@ -2,6 +2,7 @@
 title: How to stake Toncoin?
 date: 2022-12-29T18:19:47.566Z
 author_image: toncoin.png
+author_image_alt: Alt Text
 bannerDesc: Learn how to stake Toncoin in 4 easy steps.
 bannerTitle1: Toncoin Staking Overview
 blogBodyArray1:
@@ -19,7 +20,8 @@ blogBodyArray:
       Enter your correct details and give necessary information from
       corresponding documents for verification.
   - title: Add funds to your accounts
-    description: After creating your account in a centralised crypto-exchange, go to
+    description:
+      After creating your account in a centralised crypto-exchange, go to
       its 'Bank Deposit' section, select your desired currency, and make
       payments that will be further used to buy desired crypto, which here is
       Toncoin. From the paid amount, buy the desired amount of TON coins.
@@ -30,7 +32,8 @@ blogBodyArray:
       a minimum and maximum amount of TON you can stake in an exchange. Ensure
       that your entered amount falls in the allowable range.
   - title: Click CONFIRM
-    description: Finally, confirm your choices for the amount of TON to stake and
+    description:
+      Finally, confirm your choices for the amount of TON to stake and
       the duration.
 alsoReadTitle: Where to buy Toncoin
 alsoReadSlug: Bitcoin Price Prediction
@@ -45,11 +48,13 @@ youtubeArray:
 coinWorkTitle: Best Places to Stake Toncoin
 coinWorkArray:
   - title: OKX
-    description: It is a relatively new cryptocurrency exchange as compared to its
+    description:
+      It is a relatively new cryptocurrency exchange as compared to its
       counterparts. Its main features revolve around making crypto trading
       advanced and efficient. It provides 250+ cryptocurrencies for traders to
       choose from.
     icon: okx.png
+    alt: alt
     pointArray:
       - OKX also allows a wide variety of fiat currencies for you to open an
         account
@@ -77,7 +82,8 @@ coinWorkArray:
     pridictionTitle: Toncoin Price Prediction
     pridictionLink: https://www.facebook.com/getkoinx
   - title: MEXC
-    description: It is a lesser known exchange, but it is highly efficient and has
+    description:
+      It is a lesser known exchange, but it is highly efficient and has
       remarkable transaction matching technology. It does transactions at around
       supersonic speed. It uses a multi-tier, multi-cluster security system that
       makes hacking nearly impossible.
@@ -102,6 +108,7 @@ bitCoinTitle: Already Holding Toncoin?
 bitcoinArray:
   - title: Calculate your profits
     link: koinx.com
+    alt: alt
     image: calculate-profits.png
   - title: Calculate your tax liability
     link: koinx.com
@@ -110,6 +117,7 @@ moreCoinsTitle: More Cryptos Similar to Toncoin
 moreCoinsArray:
   - title: Ethereum
     link: https://www.koinx.com
+    alt: alt
     icon: property-1-2.-ethereum.png
   - title: Bitcoin
     link: https://www.koinx.com
@@ -123,7 +131,8 @@ questionsArray:
     description: The minimum amount of Toncoin needed to stake it is 10,001 TON,
       where 1 TON  is deducted as commission fees for processing the request.
   - title: Is staking Toncoin profitable?
-    description: Yes, staking TON is profitable. However, it is not without risk.
+    description:
+      Yes, staking TON is profitable. However, it is not without risk.
       You'll earn rewards in crypto, a volatile asset. You could lose some of
       the cryptocurrency you've staked as a penalty if the system doesn't work
       as expected. But as a whole, one can say that it's worth it.
@@ -133,7 +142,8 @@ questionsArray:
       your own, with a mobile or desktop and stable internet connection a basic
       requisite.
   - title: Where is the best place to stake Toncoin?
-    description: The best place to stake Toncoin is on your own device, considering
+    description:
+      The best place to stake Toncoin is on your own device, considering
       that it will give complete authority to you. You won't need to pay any
       charge to any crypto platform.
 currencyBlockTitle: Related articles to Toncoin
@@ -142,6 +152,7 @@ currencyBlockArray:
     description: Learn how to buy Binance USD
     date: 23 October 2020
     icon: binance-usd.png
+    alt: alt
     link: https://resources.koinx.com/buy/how-to-buy-binance-usd-busd/
 cryptoGuideTitle: .
 cryptoGuideArray: []

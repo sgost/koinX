@@ -2,6 +2,7 @@
 title: How to buy Bitcoin?
 date: 2021-11-30T18:30:00.000Z
 author_image: unsplash_8td991gibiq.png
+author_image_alt: alt test
 bannerDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
   pulvinar in elit eget bibendum. Vestibulum diam neque, ornare vitae ante id,
   facilisis maximus odio. Cras pulvinar ut justo eu tempor lorem dolor colon
@@ -107,6 +108,7 @@ walletCoinsTitle: Top wallets to store your Bitcoin
 walletCoinsArray:
   - title: Crypto.com
     icon: image-168.png
+    alt: alt
   - title: Coinbase
     icon: image-169.png
   - title: Ledger
@@ -118,6 +120,7 @@ walletCoinsArray:
 bitCoinTitle: Already Holding Bitcoin?
 bitcoinArray:
   - image: hold_coin.png
+    alt: alt
     link: https://www.linkedin.com/in/pachiyappan-v-46a35311b/
     title: Calculate your Profits
   - image: hold_coin_tax.png
@@ -154,6 +157,7 @@ moreCoinsArray:
   - title: Ethereum
     link: https://www.koinx.com/
     icon: ET.png
+    alt: alt
   - title: USDT
     link: https://www.koinx.com/
     icon: usdt.png
@@ -186,6 +190,7 @@ currencyBlockArray:
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     link: https://www.koinx.com/
     icon: team.png
+    alt: alt
   - title: How to mine Bitcoin
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -209,6 +214,7 @@ cryptoGuideArray:
       quis eros sed risus sollicitudin fringilla dictum in metus. "
     link: https://www.koinx.com/
     icon: team-2-.png
+    alt: alt
   - title: How to buy Solana?
     date: 23 October 2020
     description:

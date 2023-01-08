@@ -81,6 +81,7 @@ const BuyPreview = ({ entry, widgetFor, getAsset }) => {
         <BuyPost
             fields={data.fields}
             author_image={author_image}
+            author_image_alt={data.author_image_alt}
             author={data.author}
             facebook={data.facebook}
             instagram={data.instagram}

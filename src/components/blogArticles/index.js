@@ -17,7 +17,7 @@ const BlogArticles = ({
             return (
               <a href={item?.link} target="_blank" rel="noopener noreferrer" className="blog_dash_wrapper" key={index}>
                 <div className="thumb_img">
-                  <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt="thumbnail" />
+                  <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item.alt} />
                   <div className="blog_title">
                     <h3>{item?.title}</h3>
                     <span>Added: {item?.date}</span>

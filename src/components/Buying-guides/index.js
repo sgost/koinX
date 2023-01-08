@@ -19,6 +19,7 @@ import { resolveFunction } from "../../utils/functions";
 export const BuyPost = ({
   fields,
   author_image,
+  author_image_alt,
   author,
   date,
   title,
@@ -58,7 +59,7 @@ export const BuyPost = ({
             fields={fields}
           />
           <Content className="blog_body">
-            <img src={author_image} alt="img" />
+            <img src={author_image} alt={author_image_alt} />
             <p>{bannerDesc}</p>
             <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
             {/* Link map */}
@@ -146,12 +147,14 @@ const Blog = ({ data }) => {
     author_image = post.frontmatter.author_image;
   }
 
+
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
       <BuyPost
         fields={post.fields}
         author_image={author_image}
+        author_image_alt={post.author_image_alt}
         author={post.frontmatter.author}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
@@ -217,6 +220,7 @@ export const query = graphql`
           image {
             publicURL
           }
+          alt
           description
           Factsheet {
             OperationalSince
@@ -235,6 +239,7 @@ export const query = graphql`
           image {
             publicURL
           }
+          alt
         }
         collapseTitle
         questionsArray {
@@ -248,6 +253,7 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         currencyBlockTitle
         currencyBlockArray {
@@ -258,6 +264,7 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         cryptoGuideTitle
         cryptoGuideArray {
@@ -268,10 +275,12 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         author_image {
           publicURL
         }
+        author_image_alt
         date(formatString: "MMMM DD, YYYY")
         title
         seo {

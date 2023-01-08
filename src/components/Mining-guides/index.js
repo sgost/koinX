@@ -18,6 +18,7 @@ import { resolveFunction } from "../../utils/functions";
 export const MinePost = ({
   fields,
   author_image,
+  author_image_alt,
   author,
   date,
   title,
@@ -61,7 +62,7 @@ export const MinePost = ({
             fields={fields}
           />
           <Content className="blog_body">
-            <img src={author_image} alt="img" />
+            <img src={author_image} alt={author_image_alt} />
             <p>{bannerDesc}</p>
             {/* Body 1 */}
             <h2 id={resolveFunction(bannerTitle1)}>{bannerTitle1}</h2>
@@ -180,6 +181,7 @@ const Blog = ({ data }) => {
       <MinePost
         fields={post.fields}
         author_image={author_image}
+        author_image_alt={post.author_image_alt}
         author={post.frontmatter.author}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
@@ -260,6 +262,7 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         bitCoinTitle
         bitcoinArray{
@@ -268,6 +271,7 @@ export const query = graphql`
           image {
             publicURL
           }
+          alt
         }
         collapseTitle
         questionsArray {
@@ -281,6 +285,7 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         currencyBlockTitle
         currencyBlockArray {
@@ -291,6 +296,7 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         cryptoGuideTitle
         cryptoGuideArray {
@@ -301,10 +307,12 @@ export const query = graphql`
           icon {
             publicURL
           }
+          alt
         }
         author_image {
           publicURL
         }
+        author_image_alt
         date(formatString: "MMMM DD, YYYY")
         title
         seo {

@@ -16,7 +16,7 @@ const BlogCoinTypes = ({
                     {moreCoinsArray?.map((item, index) => {
                         return (
                             <a href={item?.link} className="coin_card" key={index} target="_blank" rel="noopener noreferrer">
-                                <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item?.title} className="coin_img" />
+                                <img src={item?.icon?.publicURL ? item?.icon?.publicURL : item?.icon} alt={item?.alt} className="coin_img" />
                                 <span className="card_title">{item?.title}</span>
                             </a>
                         )

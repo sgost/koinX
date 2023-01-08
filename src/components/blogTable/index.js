@@ -16,7 +16,7 @@ const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
                         return (
                             <div className="table_main" key={index}>
                                 <h2 className="table_title">{index + 1}{". "}{item?.title}</h2>
-                                <p className="table_data"><img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt={item?.title} className="logo" />{item?.description}</p>
+                                <p className="table_data"><img src={item?.image?.publicURL ? item?.image?.publicURL : item?.image} alt={item?.alt} className="logo" />{item?.description}</p>
                                 <h3 className="table_label">Factsheet</h3>
                                 <table className="table">
 

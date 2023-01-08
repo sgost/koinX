@@ -80,6 +80,7 @@ const MinePreview = ({ entry, widgetFor, getAsset }) => {
         <MinePost
             fields={data.fields}
             author_image={author_image}
+            author_image_alt={data.author_image_alt}
             author={data.author}
             date={date}
             title={data.title}

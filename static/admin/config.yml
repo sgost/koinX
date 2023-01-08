@@ -33,6 +33,11 @@ collections:
           default: "https://i.ibb.co/1rZx0YH/dummybanner.png",
         }
       - {
+          label: Banner Alt,
+          name: author_image_alt,
+          default: Featured Image Alt Text,
+        }
+      - {
           name: bannerDesc,
           label: Description,
           default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -129,6 +134,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
               {
                 label: Description,
                 name: description,
@@ -212,6 +218,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -272,6 +279,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -316,6 +324,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -360,6 +369,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - label: SEO
@@ -393,6 +403,11 @@ collections:
           name: author_image,
           widget: image,
           default: "https://i.ibb.co/1rZx0YH/dummybanner.png",
+        }
+      - {
+          label: Banner Alt,
+          name: author_image_alt,
+          default: Featured Image Alt Text,
         }
       - {
           name: bannerDesc,
@@ -552,6 +567,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -574,6 +590,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -602,6 +619,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -667,6 +685,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -711,6 +730,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - label: SEO
@@ -740,6 +760,11 @@ collections:
           name: author_image,
           widget: image,
           default: "https://i.ibb.co/1rZx0YH/dummybanner.png",
+        }
+      - {
+          label: Banner Alt,
+          name: author_image_alt,
+          default: Featured Image Alt Text,
         }
       - {
           name: bannerDesc,
@@ -868,6 +893,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
               {
                 label: Bullet Points,
                 name: pointArray,
@@ -926,6 +952,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -959,6 +986,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -1024,6 +1052,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -1068,6 +1097,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - label: SEO
@@ -1101,6 +1131,11 @@ collections:
           name: author_image,
           widget: image,
           default: "https://i.ibb.co/1rZx0YH/dummybanner.png",
+        }
+      - {
+          label: Banner Alt,
+          name: author_image_alt,
+          default: Featured Image Alt Text,
         }
       - { name: bannerDesc, label: Description, default: "Banner Description" }
       - {
@@ -1245,6 +1280,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -1290,6 +1326,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -1355,6 +1392,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - {
@@ -1399,6 +1437,7 @@ collections:
                 widget: image,
                 default: https://i.ibb.co/GHzmTdP/dummy-Icon.png,
               },
+              { label: Image Alt, name: alt, default: Alt Text },
             ],
         }
       - label: SEO
