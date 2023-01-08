@@ -4,5 +4,5 @@ export const resolveFunction = (title) => {
 
 export const handleImage = (imageUrl) => {
     const pathname = typeof window !== 'undefined' && window.location.href;
-    return typeof pathname === 'string' && pathname?.includes('koinx.com') ? `/r${imageUrl}` : imageUrl;
+    return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
 }
