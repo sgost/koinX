@@ -13,7 +13,7 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 export const MinePost = ({
   fields,
@@ -170,9 +170,9 @@ const Blog = ({ data }) => {
 
   var author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = post.frontmatter.author_image.publicURL;
+    author_image = handleImage(post.frontmatter.author_image.publicURL);
   } else {
-    author_image = post.frontmatter.author_image;
+    author_image = handleImage(post.frontmatter.author_image);
   }
 
   return (
