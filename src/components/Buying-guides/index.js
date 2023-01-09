@@ -142,7 +142,7 @@ const Blog = ({ data }) => {
 
   let author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = handleImage(post.frontmatter.author_image.publicURL);
+    author_image = '/r' + `${post.frontmatter.author_image.publicURL}`;
   } else {
     author_image = handleImage(post.frontmatter.author_image);
   }
