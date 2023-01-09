@@ -146,7 +146,7 @@ const Blog = ({ data }) => {
   } else {
     author_image = handleImage(post.frontmatter.author_image);
   }
-
+  console.log("handleImage", handleImage(post.frontmatter.author_image.publicURL))
 
   return (
     <Fragment>
