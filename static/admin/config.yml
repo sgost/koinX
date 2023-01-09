@@ -801,7 +801,7 @@ collections:
       - {
           name: bannerTitle,
           label: "How to Stake {Crypto Name} (CRPTO)",
-          default: "Banner Title",
+          default: "Custodial wallet",
         }
       - {
           name: blogBodyArray,
@@ -831,6 +831,43 @@ collections:
         }
       - {
           name: alsoReadSlug,
+          label: prices live (Internal Link),
+          widget: string,
+          default: "Bitcoin Price Prediction",
+        }
+      - {
+          name: NonbannerTitle,
+          label: "How to Stake Non custodial wallet",
+          default: "Non custodial wallet",
+        }
+      - {
+          name: NonblogBodyArray,
+          label: How to Stake Data,
+          widget: list,
+          fields:
+            [
+              {
+                label: Title,
+                name: title,
+                widget: string,
+                default: "Lorem ipsum dolor sit amet, consectetur",
+              },
+              {
+                label: Description,
+                name: description,
+                widget: string,
+                default: "Lorem ipsum dolor sit amet, consectetur",
+              },
+            ],
+        }
+      - {
+          name: NonalsoReadTitle,
+          label: Read link title,
+          widget: string,
+          default: "Also read",
+        }
+      - {
+          name: NonalsoReadSlug,
           label: prices live (Internal Link),
           widget: string,
           default: "Bitcoin Price Prediction",

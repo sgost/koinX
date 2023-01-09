@@ -97,6 +97,10 @@ const StakePreview = ({ entry, getAsset }) => {
             blogBodyArray={data.blogBodyArray}
             alsoReadTitle={data.alsoReadTitle}
             alsoReadSlug={data.alsoReadSlug}
+            NonbannerTitle={data.NonbannerTitle}
+            NonblogBodyArray={data.NonblogBodyArray}
+            NonalsoReadTitle={data.NonalsoReadTitle}
+            NonalsoReadSlug={data.NonalsoReadSlug}
             youtubeContainerTitle={data.youtubeContainerTitle}
             youtubeArray={data.youtubeArray}
             coinWorkTitle={data.coinWorkTitle}

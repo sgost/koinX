@@ -37,6 +37,31 @@ blogBodyArray:
       the duration.
 alsoReadTitle: Where to buy Toncoin
 alsoReadSlug: Bitcoin Price Prediction
+NonbannerTitle: Non custodial wallet
+NonblogBodyArray:
+  - title: Open an account in an exchange
+    description: Since you are using a custodial wallet, you need to create an
+      account at the desired exchange for verification and to make payments.
+      Enter your correct details and give necessary information from
+      corresponding documents for verification.
+  - title: Add funds to your accounts
+    description:
+      After creating your account in a centralised crypto-exchange, go to
+      its 'Bank Deposit' section, select your desired currency, and make
+      payments that will be further used to buy desired crypto, which here is
+      Toncoin. From the paid amount, buy the desired amount of TON coins.
+  - title: Enter the amount of TON you want to stake and duration
+    description: Go to the 'Stake' section of the crypto platform and enter the
+      number of TON coins you wish to stake. Then enter the duration for which
+      you want to stake the entered amount of TON coins. Remember that there is
+      a minimum and maximum amount of TON you can stake in an exchange. Ensure
+      that your entered amount falls in the allowable range.
+  - title: Click CONFIRM
+    description:
+      Finally, confirm your choices for the amount of TON to stake and
+      the duration.
+NonalsoReadTitle: Where to buy Toncoin
+NonalsoReadSlug: Bitcoin Price Prediction
 youtubeContainerTitle: "Popular video guides on Staking Toncoin "
 youtubeArray:
   - link: c4LTPZ_8Am0

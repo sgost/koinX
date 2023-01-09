@@ -28,6 +28,10 @@ export const StakePost = ({
   bannerTitle,
   bannerDesc,
   blogBodyArray,
+  NonbannerTitle,
+  NonblogBodyArray,
+  NonalsoReadTitle,
+  NonalsoReadSlug,
   alsoReadTitle,
   alsoReadSlug,
   youtubeContainerTitle,
@@ -73,7 +77,7 @@ export const StakePost = ({
               )
             })}
 
-            {/* Body 2  */}
+            {/* custodial wallet */}
             <h2 id={resolveFunction(bannerTitle)}>{bannerTitle}</h2>
             {/* Link map */}
             {blogBodyArray?.map((item, index) => {
@@ -94,6 +98,32 @@ export const StakePost = ({
 
             {/* About link */}
             <p className="text_link">Also Read: <a href={alsoReadSlug} target="_blank" rel="noopener noreferrer">{alsoReadTitle}</a></p>
+
+            {/* Non custodial wallet  */}
+            {NonbannerTitle &&
+              <>
+                <h2 id={resolveFunction(NonbannerTitle)}>{NonbannerTitle}</h2>
+                {/* Non custodial wallet Link map */}
+                {NonblogBodyArray?.map((item, index) => {
+                  return (
+                    <p className="text_link" key={item?.title}>Step {index + 1}: <Link to={fields?.slug + "/#" + resolveFunction(item?.title)} className="head_link" activeclassName="active_head_link">{item?.title}</Link></p>
+                  )
+                })}
+
+                {/* Non custodial wallet Link map */}
+                {NonblogBodyArray?.map((item) => {
+                  return (
+                    <>
+                      <h3 id={resolveFunction(item?.title)}>{item?.title} </h3>
+                      <p>{item?.description}</p>
+                    </>
+                  )
+                })}
+
+                {/* Non custodial wallet Link map About link */}
+                <p className="text_link">Also Read: <a href={NonalsoReadSlug} target="_blank" rel="noopener noreferrer">{NonalsoReadTitle}</a></p>
+              </>
+            }
           </Content>
           {/* blogs video component */}
           <BlogVideo youtubeContainerTitle={youtubeContainerTitle} youtubeArray={youtubeArray} />
@@ -200,6 +230,10 @@ const Blog = ({ data }) => {
         blogBodyArray={post.frontmatter.blogBodyArray}
         alsoReadTitle={post.frontmatter.alsoReadTitle}
         alsoReadSlug={post.frontmatter.alsoReadSlug}
+        NonbannerTitle={post.frontmatter.NonbannerTitle}
+        NonblogBodyArray={post.frontmatter.NonblogBodyArray}
+        NonalsoReadTitle={post.frontmatter.NonalsoReadTitle}
+        NonalsoReadSlug={post.frontmatter.NonalsoReadSlug}
         youtubeContainerTitle={post.frontmatter.youtubeContainerTitle}
         youtubeArray={post.frontmatter.youtubeArray}
         coinWorkTitle={post.frontmatter.coinWorkTitle}
@@ -247,6 +281,13 @@ export const query = graphql`
         }
         alsoReadTitle
         alsoReadSlug
+        NonbannerTitle
+        NonblogBodyArray {
+          title
+          description
+        }
+        NonalsoReadTitle
+        NonalsoReadSlug
         youtubeContainerTitle
         youtubeArray {
           link
