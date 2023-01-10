@@ -140,16 +140,19 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  const handleImage = (imageUrl) => {
-    const pathname = typeof window !== 'undefined' && window.location.href;
-    return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-  }
+  // const handleImage = (imageUrl) => {
+  //   const pathname = typeof window !== 'undefined' && window.location.href;
+  //   return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
+  // }
+
+  const pathname = typeof window !== 'undefined' && window.location.href;
+  console.log("pathname", pathname)
 
   let author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = handleImage(post.frontmatter.author_image.publicURL);
+    author_image = typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${post.frontmatter.author_image.publicURL}` : post.frontmatter.author_image.publicURL;
   } else {
-    author_image = handleImage(post.frontmatter.author_image);
+    author_image = typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${post.frontmatter.author_image}` : post.frontmatter.author_image;
   }
 
   return (
