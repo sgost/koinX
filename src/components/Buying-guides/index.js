@@ -14,7 +14,7 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 export const BuyPost = ({
   fields,
@@ -140,20 +140,13 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  // const handleImage = (imageUrl) => {
-  //   const pathname = typeof window !== 'undefined' && window.location.href;
-  //   return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-  // }
-
-  const pathname = typeof window !== 'undefined' && window.location.href;
-  console.log("pathname", pathname)
-
   let author_image;
   if (post.frontmatter.author_image.publicURL) {
-    author_image = typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${post.frontmatter.author_image.publicURL}` : post.frontmatter.author_image.publicURL;
+    author_image = handleImage(post.frontmatter.author_image.publicURL);
   } else {
-    author_image = typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${post.frontmatter.author_image}` : post.frontmatter.author_image;
+    author_image = handleImage(post.frontmatter.author_image);
   }
+  console.log("handleImage", handleImage(post.frontmatter.author_image.publicURL))
 
   return (
     <Fragment>

@@ -1,18 +1,13 @@
 import React from "react";
 import { BlogArticlesStyle } from "./styles";
 import { Layout } from "antd";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const BlogArticles = ({
   articlesTitle,
   articlesArray
 }) => {
   const { Content } = Layout
-
-  const handleImage = (imageUrl) => {
-    const pathname = typeof window !== 'undefined' && window.location.href;
-    return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-  }
   return (
     <BlogArticlesStyle>
       <Content className="blog_dashboad_wrapper" id={resolveFunction(articlesTitle)}>

@@ -1,15 +1,10 @@
 import React from "react";
 import { BlogTableStyle } from "./styles";
 import { Layout } from "antd";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const BlogTable = ({ buyCoinTitle, buyCoinArray, linkcompo }) => {
     const { Content } = Layout
-
-    const handleImage = (imageUrl) => {
-        const pathname = typeof window !== 'undefined' && window.location.href;
-        return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-    }
 
     return (
         <BlogTableStyle>

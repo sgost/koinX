@@ -3,18 +3,13 @@ import { HoldCoinsContainer } from "./styles";
 import { Link } from "gatsby";
 import { Layout } from "antd";
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 const HoldCoins = ({
     bitCoinTitle,
     bitcoinArray
 }) => {
     const { Content } = Layout
-
-    const handleImage = (imageUrl) => {
-        const pathname = typeof window !== 'undefined' && window.location.href;
-        return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-    }
     return (
         <HoldCoinsContainer>
             <Content className="hold_coin" id={resolveFunction(bitCoinTitle)}>

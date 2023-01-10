@@ -13,7 +13,7 @@ import HoldCoins from "../holdCoins";
 import Subscribe from "../subscribe";
 import Footer from "../Footer";
 import Navbar from "../navbar";
-import { resolveFunction } from "../../utils/functions";
+import { resolveFunction, handleImage } from "../../utils/functions";
 
 export const StakePost = ({
   fields,
@@ -203,11 +203,6 @@ const Blog = ({ data }) => {
   const { Stakepost: post } = data;
 
   const seoData = post.frontmatter.seo;
-
-  const handleImage = (imageUrl) => {
-    const pathname = typeof window !== 'undefined' && window.location.href;
-    return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
-  }
 
   let author_image;
   if (post.frontmatter.author_image.publicURL) {
