@@ -1,13 +1,18 @@
 import React from "react";
 import { BlogCoinTypesStyle } from "./styles";
 import { Layout } from "antd";
-import { resolveFunction, handleImage } from "../../utils/functions";
+import { resolveFunction } from "../../utils/functions";
 
 const BlogCoinTypes = ({
     moreCoinsTitle,
     moreCoinsArray
 }) => {
     const { Content } = Layout
+
+    const handleImage = (imageUrl) => {
+        const pathname = typeof window !== 'undefined' && window.location.href;
+        return typeof pathname === 'string' && pathname?.includes('https://www.koinx.com/') ? `/r${imageUrl}` : imageUrl;
+    }
     return (
         <BlogCoinTypesStyle>
             <Content className="coin_wrapper" id={resolveFunction(moreCoinsTitle)}>
